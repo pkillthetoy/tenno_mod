@@ -62,5 +62,5 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
 
         logger.info("done editing cards");
     }
-    }
+
 }
