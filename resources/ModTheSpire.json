@@ -1,0 +1,10 @@
+{
+  "modid": "tenno",
+  "name": "Tenno Mod",
+  "author_list": ["pktt"],
+  "description": "Tenno Character Mod",
+  "version": "0.1",
+  "sts_version": "03-16-2019",
+  "mts_version": "2.8.0",
+  "dependencies": ["basemod"]
+}
