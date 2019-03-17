@@ -54,7 +54,7 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target/tenno_mod.TennoMod.jar" tofile="../lib/tenno_mod.TennoMod.jar"/>
+                                <copy file="target/tenno_mod.TennoMod.jar" tofile="../lib/mods/tenno_mod.TennoMod.jar"/>
                             </target>
                         </configuration>
                         <goals>

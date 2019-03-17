@@ -5,5 +5,5 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 
 public class TennoPlayerClassEnum {
     @SpireEnum
-    public static AbstractPlayer.PlayerClass TENNO_CLASS;
+    public static AbstractPlayer.PlayerClass TENNO;
 }

@@ -9,13 +9,18 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tenno_mod.cards.Strike_TENNO;
+import tenno_mod.characters.Tenno;
 import tenno_mod.patches.AbstractCardEnum;
+import tenno_mod.patches.TennoPlayerClassEnum;
 
 import java.util.ArrayList;
 
 
 @SpireInitializer
 public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
+    private static final String MY_CHARACTER_BUTTON = "img/charSelect/MarisaButton.png";
+    private static final String MARISA_PORTRAIT = "img/charSelect/marisaPortrait.jpg";
+
     private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
 
     public static final Logger logger = LogManager.getLogger(TennoMod.class.getName());
@@ -38,6 +43,8 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
 
     @Override
     public void receiveEditCharacters() {
+        logger.info("adding "+ TennoPlayerClassEnum.TENNO);
+        BaseMod.addCharacter(new Tenno("Tenno"), MY_CHARACTER_BUTTON, MARISA_PORTRAIT, TennoPlayerClassEnum.TENNO);
 
     }
 
