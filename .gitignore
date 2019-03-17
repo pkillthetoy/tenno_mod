@@ -1,6 +1,4 @@
-# See https://www.dartlang.org/guides/libraries/private-files
-
 # Intellij files
-.idea/**
+.idea/
 # compiled files
 target/
