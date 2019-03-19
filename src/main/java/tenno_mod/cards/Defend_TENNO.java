@@ -3,63 +3,60 @@ package tenno_mod.cards;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class Strike_TENNO extends CustomCard {
-    public static final String ID = "Strike_TENNO";
+public class Defend_TENNO extends CustomCard {
+    public static final String ID = "Defend_TENNO";
     //private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String NAME = "Strike";
-    public static final String DESCRIPTION = "Deal !D! damage.";
-    public static final String IMG_PATH = "img/cards/Strike.png";
+    public static final String NAME = "Defend";
+    public static final String DESCRIPTION = "Gain !B! Block.";
+    public static final String IMG_PATH = "img/cards/Beta.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 6;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int BLOCK_AMT = 5;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
 
-    public Strike_TENNO() {
+    public Defend_TENNO() {
         super(
                 ID,
                 NAME,
                 IMG_PATH,
                 COST,
                 DESCRIPTION,
-                CardType.ATTACK,
+                CardType.SKILL,
                 AbstractCardEnum.TENNO_COLOR,
                 CardRarity.BASIC,
-                CardTarget.ENEMY
+                CardTarget.SELF
         );
-        this.tags.add(BaseModCardTags.BASIC_STRIKE);
-        this.tags.add(CardTags.STRIKE);
-        this.baseDamage = ATTACK_DMG;
+        this.tags.add(BaseModCardTags.BASIC_DEFEND);
+        this.baseBlock = BLOCK_AMT;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(
-                        m,
-                        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
-                )
+                new GainBlockAction(p, p, this.block)
         );
-
     }
 
     public AbstractCard makeCopy() {
-        return new Strike_TENNO();
+        return new Defend_TENNO();
+    }
+
+    @Override
+    public boolean isDefend() {
+        return true;
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
         }
     }
 }

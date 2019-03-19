@@ -4,13 +4,16 @@ import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.apache.logging.log4j.LogManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
@@ -25,9 +28,9 @@ public class Tenno extends CustomPlayer {
     private static final int ENERGY_PER_TURN = 3;
 
     private static final String TENNO_MAIN = "img/char/Marisa/tennoMain.png"; // main image
-    private static final String MARISA_SHOULDER_2 = "img/char/Marisa/shoulder2.png"; // shoulder2 / shoulder_1
-    private static final String MARISA_SHOULDER_1 = "img/char/Marisa/shoulder1.png"; // shoulder1 / shoulder_2
-    private static final String MARISA_CORPSE = "img/char/Marisa/fallen.png"; // dead corpse
+    private static final String TENNO_SHOULDER_2 = "img/char/Marisa/tennoMain.png"; // shoulder2 / shoulder_1
+    private static final String TENNO_SHOULDER_1 = "img/char/Marisa/tennoMain.png"; // shoulder1 / shoulder_2
+    private static final String TENNO_CORPSE = "img/char/Marisa/tennoMain.png"; // dead corpse
     public static final Logger logger = LogManager.getLogger(TennoMod.class.getName());
     //private static final float[] layerSpeeds = { 20.0F, 0.0F, -40.0F, 0.0F, 0.0F, 5.0F, 0.0F, -8.0F, 0.0F, 8.0F };
     private static final String MARISA_SKELETON_ATLAS = "img/char/Marisa/MarisaModelv3.atlas";// Marisa_v0 / MarisaModel_v02 /MarisaModelv3
@@ -49,6 +52,7 @@ public class Tenno extends CustomPlayer {
     private static final String ORB_VFX = "img/UI/energyBlueVFX.png";
     private static final float[] LAYER_SPEED =
             {-40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F};
+
     public Tenno(String name) {
         super(name, TennoPlayerClassEnum.TENNO, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, null, null);
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
@@ -60,9 +64,9 @@ public class Tenno extends CustomPlayer {
         // TODO: Use non-marisa images and animations.
         initializeClass(
                 TENNO_MAIN,
-                MARISA_SHOULDER_2, // required call to load textures and setup energy/loadout
-                MARISA_SHOULDER_1,
-                MARISA_CORPSE,
+                TENNO_SHOULDER_2, // required call to load textures and setup energy/loadout
+                TENNO_SHOULDER_1,
+                TENNO_CORPSE,
                 getLoadout(),
                 20.0F, -10.0F, 220.0F, 290.0F,
                 new EnergyManager(ENERGY_PER_TURN)
@@ -79,6 +83,12 @@ public class Tenno extends CustomPlayer {
         retVal.add("Strike_TENNO");
         retVal.add("Strike_TENNO");
         retVal.add("Strike_TENNO");
+        retVal.add("Defend_TENNO");
+        retVal.add("Defend_TENNO");
+        retVal.add("Defend_TENNO");
+        retVal.add("Defend_TENNO");
+        retVal.add("BulletJump_TENNO");
+        retVal.add("MaimingStrike_TENNO");
         return retVal;
     }
 
@@ -96,7 +106,7 @@ public class Tenno extends CustomPlayer {
 
     public CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         String title = "The Tenno";
-        String flavor = "A warrior from the void of space. A master of gun and blade.";
+        String flavor = "A warrior from the void of space. Dismantle enemies with gun and blade.";
         return new CharSelectInfo(
                 title,
                 flavor,
@@ -111,13 +121,14 @@ public class Tenno extends CustomPlayer {
                 false
         );
     }
+
     public AbstractCard.CardColor getCardColor() {
         return AbstractCardEnum.TENNO_COLOR;
     }
 
     @Override
     public Color getCardRenderColor() {
-        return null;
+        return Color.GOLD;
     }
 
     @Override
@@ -148,7 +159,8 @@ public class Tenno extends CustomPlayer {
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-
+        CardCrawlGame.sound.playA("ATTACK_HEAVY", MathUtils.random(-0.2F, 0.2F));
+        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, true);
     }
 
     @Override
@@ -173,13 +185,13 @@ public class Tenno extends CustomPlayer {
     @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
         return new AttackEffect[]{
-            AttackEffect.SLASH_HEAVY,
-            AttackEffect.FIRE,
-            AttackEffect.SLASH_DIAGONAL,
-            AttackEffect.SLASH_HEAVY,
-            AttackEffect.FIRE,
-            AttackEffect.SLASH_DIAGONAL
-    };
+                AttackEffect.SLASH_HEAVY,
+                AttackEffect.FIRE,
+                AttackEffect.SLASH_DIAGONAL,
+                AttackEffect.SLASH_HEAVY,
+                AttackEffect.FIRE,
+                AttackEffect.SLASH_DIAGONAL
+        };
     }
 
     @Override

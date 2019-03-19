@@ -10,21 +10,21 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class Strike_TENNO extends CustomCard {
-    public static final String ID = "Strike_TENNO";
+public class MaimingStrike_TENNO extends CustomCard {
+    public static final String ID = "MaimingStrike_TENNO";
     //private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String NAME = "Strike";
-    public static final String DESCRIPTION = "Deal !D! damage.";
-    public static final String IMG_PATH = "img/cards/Strike.png";
+    public static final String NAME = "Maiming Strike";
+    public static final String DESCRIPTION = "Deal !D! damage. Apply !M! Weak.";
+    public static final String IMG_PATH = "img/cards/Beta.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 6;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPG_COST = 0;
+    private static final int ATTACK_DMG = 7;
+    private static final int MAGIC_NUMBER = 1;
 
-    public Strike_TENNO() {
+    public MaimingStrike_TENNO() {
         super(
                 ID,
                 NAME,
@@ -36,8 +36,8 @@ public class Strike_TENNO extends CustomCard {
                 CardRarity.BASIC,
                 CardTarget.ENEMY
         );
-        this.tags.add(BaseModCardTags.BASIC_STRIKE);
         this.tags.add(CardTags.STRIKE);
+        this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
         this.baseDamage = ATTACK_DMG;
     }
 
@@ -46,20 +46,28 @@ public class Strike_TENNO extends CustomCard {
                 new DamageAction(
                         m,
                         new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
+                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL
                 )
         );
-
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(
+                        m,
+                        p,
+                        new WeakPower(m, this.magicNumber, false),
+                        this.magicNumber,
+                        true,
+                        AbstractGameAction.AttackEffect.NONE)
+        );
     }
 
     public AbstractCard makeCopy() {
-        return new Strike_TENNO();
+        return new MaimingStrike_TENNO();
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBaseCost(UPG_COST);
         }
     }
 }

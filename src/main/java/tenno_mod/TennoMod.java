@@ -8,6 +8,9 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import tenno_mod.cards.BulletJump_TENNO;
+import tenno_mod.cards.Defend_TENNO;
+import tenno_mod.cards.MaimingStrike_TENNO;
 import tenno_mod.cards.Strike_TENNO;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.AbstractCardEnum;
@@ -18,8 +21,8 @@ import java.util.ArrayList;
 
 @SpireInitializer
 public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
-    private static final String MY_CHARACTER_BUTTON = "img/charSelect/MarisaButton.png";
-    private static final String MARISA_PORTRAIT = "img/charSelect/marisaPortrait.jpg";
+    private static final String MY_CHARACTER_BUTTON = "img/charSelect/TennoButton.png";
+    private static final String MARISA_PORTRAIT = "img/charSelect/Excalibur.png";
 
     private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
 
@@ -31,19 +34,25 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
         BaseMod.addColor(AbstractCardEnum.TENNO_COLOR,
                 Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD,
                 "img/512/bg_attack_MRS_s.png", "img/512/bg_skill_MRS_s.png", "img/512/bg_power_MRS_s.png",
-                "img/512/cardOrb.png",
-                "img/1024/bg_attack_MRS.png","img/1024/bg_skill_MRS.png", "img/1024/bg_power_MRS.png",
-                "img/1024/cardOrb.png", "img/UI/energyOrb.png");
+                "img/512/card_orb.png",
+                "img/1024/bg_attack_MRS.png", "img/1024/bg_skill_MRS.png", "img/1024/bg_power_MRS.png",
+                "img/1024/card_orb.png", "img/UI/energyOrb.png");
+        BaseMod.addColor(AbstractCardEnum.TENNO_GENERATED,
+                Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD,
+                "img/512/bg_attack_MRS_s.png", "img/512/bg_skill_MRS_s.png", "img/512/bg_power_MRS_s.png",
+                "img/512/card_orb.png",
+                "img/1024/bg_attack_MRS.png", "img/1024/bg_skill_MRS.png", "img/1024/bg_power_MRS.png",
+                "img/1024/card_orb.png", "img/UI/energyOrb.png");
 
     }
 
-    public static void initialize(){
+    public static void initialize() {
         new TennoMod();
     }
 
     @Override
     public void receiveEditCharacters() {
-        logger.info("adding "+ TennoPlayerClassEnum.TENNO);
+        logger.info("adding " + TennoPlayerClassEnum.TENNO);
         BaseMod.addCharacter(new Tenno("Tenno"), MY_CHARACTER_BUTTON, MARISA_PORTRAIT, TennoPlayerClassEnum.TENNO);
 
     }
@@ -51,6 +60,9 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
     public void loadCardsToAdd() {
         cardsToAdd.clear();
         cardsToAdd.add(new Strike_TENNO());
+        cardsToAdd.add(new Defend_TENNO());
+        cardsToAdd.add(new BulletJump_TENNO());
+        cardsToAdd.add(new MaimingStrike_TENNO());
     }
 
     @Override
