@@ -15,12 +15,15 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbRed;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import org.apache.logging.log4j.Logger;
 import tenno_mod.TennoMod;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.patches.TennoPlayerClassEnum;
+import tenno_mod.relics.Nikana_TENNO;
 
 import java.util.ArrayList;
 
@@ -94,7 +97,8 @@ public class Tenno extends CustomPlayer {
 
     public ArrayList<String> getStartingRelics() { // starting relics - also simple
         ArrayList<String> retVal = new ArrayList<>();
-        // Add the Nikana
+        retVal.add(Nikana_TENNO.ID);
+        UnlockTracker.markRelicAsSeen(Nikana_TENNO.ID);
         return retVal;
     }
 

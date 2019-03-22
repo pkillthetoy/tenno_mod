@@ -1,11 +1,19 @@
 package tenno_mod;
 
+import static tenno_mod.patches.AbstractCardEnum.TENNO_COLOR;
+import static tenno_mod.patches.AbstractCardEnum.TENNO_GENERATED;
+
 import basemod.BaseMod;
+import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
+import basemod.interfaces.EditRelicsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tenno_mod.cards.BulletJump_TENNO;
@@ -15,12 +23,14 @@ import tenno_mod.cards.Strike_TENNO;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.patches.TennoPlayerClassEnum;
+import tenno_mod.relics.Nikana_TENNO;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 
 @SpireInitializer
-public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
+public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber {
     private static final String MY_CHARACTER_BUTTON = "img/charSelect/TennoButton.png";
     private static final String MARISA_PORTRAIT = "img/charSelect/Excalibur.png";
 
@@ -31,13 +41,13 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
     public TennoMod() {
         BaseMod.subscribe(this);
         logger.info("creating color TENNO_COLOR");
-        BaseMod.addColor(AbstractCardEnum.TENNO_COLOR,
+        BaseMod.addColor(TENNO_COLOR,
                 Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD,
                 "img/512/bg_attack_MRS_s.png", "img/512/bg_skill_MRS_s.png", "img/512/bg_power_MRS_s.png",
                 "img/512/card_orb.png",
                 "img/1024/bg_attack_MRS.png", "img/1024/bg_skill_MRS.png", "img/1024/bg_power_MRS.png",
                 "img/1024/card_orb.png", "img/UI/energyOrb.png");
-        BaseMod.addColor(AbstractCardEnum.TENNO_GENERATED,
+        BaseMod.addColor(TENNO_GENERATED,
                 Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD,
                 "img/512/bg_attack_MRS_s.png", "img/512/bg_skill_MRS_s.png", "img/512/bg_power_MRS_s.png",
                 "img/512/card_orb.png",
@@ -82,4 +92,18 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber {
         logger.info("done editing cards");
     }
 
+    @Override
+    public void receiveEditRelics() {
+        BaseMod.addRelicToCustomPool(new Nikana_TENNO(), TENNO_COLOR);
+    }
+
+    @Override
+    public void receiveEditStrings() {
+
+        String relicStrings = Gdx.files.internal("localization/Tenno_relics.json").readString(
+                String.valueOf(StandardCharsets.UTF_8)
+        );
+        logger.info(relicStrings);
+        BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+    }
 }
