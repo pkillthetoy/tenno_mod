@@ -1,20 +1,56 @@
 {
   "Nikana_TENNO": {
-	"NAME": "Nikana",
-	"FLAVOR": "A Tenno blade, rich in the old ways.",
-	"DESCRIPTIONS": [
-	  "Gain #b",
-	  " #yStrength this turn when you play a #ySkill. Gain #b",
-	  " #yDexterity this turn when you play an #yAttack."
-	 ]
+    "NAME": "Nikana",
+    "FLAVOR": "A Tenno blade, rich in the old ways.",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yStrength this turn when you play a #ySkill. Gain #b",
+      " #yDexterity this turn when you play an #yAttack."
+    ]
   },
   "DragonNikana_TENNO": {
-	"NAME": "Dragon Nikana",
-	"FLAVOR": "A master's weapon, only wielded by the worthy..",
-	"DESCRIPTIONS": [
-	  "Replaces #rNikana. Gain #b",
-	  " #yStrength this turn when you play a #ySkill. Gain #b",
-	  " #yDexterity this turn when you play an #yAttack."
-	 ]
+    "NAME": "Dragon Nikana",
+    "FLAVOR": "A master's weapon, only wielded by the worthy.",
+    "DESCRIPTIONS": [
+      "Replaces #rNikana. Gain #b",
+      " #yStrength this turn when you play a #ySkill. Gain #b",
+      " #yDexterity this turn when you play an #yAttack."
+    ]
+  },
+  "PaperLotus_TENNO": {
+    "NAME": "Paper Lotus",
+    "FLAVOR": "Dream not of what you are, but of what you want to be.",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to an enemy, deal #b",
+      " damage."
+    ]
+  },
+  "RaktaDarkDagger_TENNO": {
+    "NAME": "Rakta Dark Dagger",
+    "FLAVOR": "Infiltrate undetected, and strike with confidence.",
+    "DESCRIPTIONS": [
+      "After you play your first #yAttack and #ySkill in a turn, gain [E] ."
+    ]
+  },
+  "TwinGrakata_TENNO": {
+    "NAME": "Twin Grakata",
+    "FLAVOR": "Clem Grakata.",
+    "DESCRIPTIONS": [
+      "Your cards that cost #b0 are played twice."
+    ]
+  },
+  "ArgonCrystal_TENNO": {
+    "NAME": "Argon Crystal",
+    "FLAVOR": "An unstable crystal pilfered from the void.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, reduce the cost of a random card in your hand by #b1."
+    ]
+  },
+  "Skiajati_TENNO": {
+    "NAME": "Skiajati",
+    "FLAVOR": "Formed of steel grafted with flesh, a blade of seething purpose.",
+    "DESCRIPTIONS": [
+      "When an enemy dies, gain #b1 #yIntangible."
+    ]
   }
 }

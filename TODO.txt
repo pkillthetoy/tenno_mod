@@ -1,0 +1,9 @@
+TODOS:
+
+Create skill/attack/power card images for Tenno instead of using Marisa's
+
+Create proper outline images for relics.
+
+Create energy orb graphics for Tenno instead of using Marisa's
+
+Create localization files for cards.

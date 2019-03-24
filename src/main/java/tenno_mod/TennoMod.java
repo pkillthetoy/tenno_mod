@@ -5,15 +5,17 @@ import static tenno_mod.patches.AbstractCardEnum.TENNO_GENERATED;
 
 import basemod.BaseMod;
 import basemod.helpers.RelicType;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditCharactersSubscriber;
-import basemod.interfaces.EditRelicsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tenno_mod.cards.BulletJump_TENNO;
@@ -23,14 +25,15 @@ import tenno_mod.cards.Strike_TENNO;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.patches.TennoPlayerClassEnum;
-import tenno_mod.relics.Nikana_TENNO;
+import tenno_mod.relics.*;
 
+import java.awt.print.Paper;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 
 @SpireInitializer
-public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber {
+public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, PostPowerApplySubscriber {
     private static final String MY_CHARACTER_BUTTON = "img/charSelect/TennoButton.png";
     private static final String MARISA_PORTRAIT = "img/charSelect/Excalibur.png";
 
@@ -95,6 +98,12 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, 
     @Override
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new Nikana_TENNO(), TENNO_COLOR);
+        BaseMod.addRelicToCustomPool(new DragonNikana_TENNO(), TENNO_COLOR);
+        BaseMod.addRelicToCustomPool(new PaperLotus_TENNO(), TENNO_COLOR);
+        BaseMod.addRelicToCustomPool(new RaktaDarkDagger_TENNO(), TENNO_COLOR);
+        BaseMod.addRelicToCustomPool(new TwinGrakata_TENNO(), TENNO_COLOR);
+        BaseMod.addRelicToCustomPool(new ArgonCrystal_TENNO(), TENNO_COLOR);
+        BaseMod.addRelicToCustomPool(new Skiajati_TENNO(), TENNO_COLOR);
     }
 
     @Override
@@ -105,5 +114,20 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, 
         );
         logger.info(relicStrings);
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+    }
+
+
+    @Override
+    public void receivePostPowerApplySubscriber(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        AbstractPlayer p = AbstractDungeon.player;
+        if ((power.type == AbstractPower.PowerType.DEBUFF) &&
+            (!power.ID.equals("Shackled")) &&
+            (source == p) && (target != p) &&
+            (!target.hasPower("Artifact"))) {
+            if (p.hasRelic(PaperLotus_TENNO.ID)) {
+                p.getRelic(PaperLotus_TENNO.ID).onTrigger(target);
+            }
+        }
+
     }
 }

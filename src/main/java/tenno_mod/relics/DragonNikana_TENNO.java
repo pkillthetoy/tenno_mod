@@ -23,7 +23,7 @@ public class DragonNikana_TENNO extends CustomRelic {
     public DragonNikana_TENNO() {
         super(ID,
                 ImageMaster.loadImage(IMG),
-                ImageMaster.loadImage(IMG_OTL), RelicTier.STARTER, LandingSound.CLINK);
+                ImageMaster.loadImage(IMG_OTL), RelicTier.BOSS, LandingSound.CLINK);
     }
 
     public String getUpdatedDescription() {
