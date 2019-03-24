@@ -4,30 +4,29 @@ import static tenno_mod.patches.AbstractCardEnum.TENNO_COLOR;
 import static tenno_mod.patches.AbstractCardEnum.TENNO_GENERATED;
 
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import tenno_mod.cards.BulletJump_TENNO;
-import tenno_mod.cards.Defend_TENNO;
-import tenno_mod.cards.MaimingStrike_TENNO;
-import tenno_mod.cards.Strike_TENNO;
+import tenno_mod.cards.basic.BulletJump_TENNO;
+import tenno_mod.cards.basic.Defend_TENNO;
+import tenno_mod.cards.basic.MaimingStrike_TENNO;
+import tenno_mod.cards.basic.Strike_TENNO;
+import tenno_mod.cards.common.Aviator_TENNO;
+import tenno_mod.cards.common.PlannedShot_TENNO;
 import tenno_mod.characters.Tenno;
-import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.patches.TennoPlayerClassEnum;
 import tenno_mod.relics.*;
 
-import java.awt.print.Paper;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
@@ -76,6 +75,9 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, 
         cardsToAdd.add(new Defend_TENNO());
         cardsToAdd.add(new BulletJump_TENNO());
         cardsToAdd.add(new MaimingStrike_TENNO());
+
+        cardsToAdd.add(new Aviator_TENNO());
+        cardsToAdd.add(new PlannedShot_TENNO());
     }
 
     @Override
@@ -112,8 +114,13 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, 
         String relicStrings = Gdx.files.internal("localization/Tenno_relics.json").readString(
                 String.valueOf(StandardCharsets.UTF_8)
         );
-        logger.info(relicStrings);
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+
+
+        String cardStrings = Gdx.files.internal("localization/Tenno_cards.json").readString(
+            String.valueOf(StandardCharsets.UTF_8)
+        );
+        BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
     }
 
 

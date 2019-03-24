@@ -1,59 +1,54 @@
-package tenno_mod.cards;
+package tenno_mod.cards.basic;
 
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class MaimingStrike_TENNO extends CustomCard {
-    public static final String ID = "MaimingStrike_TENNO";
-    //private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String NAME = "Maiming Strike";
-    public static final String DESCRIPTION = "Deal !D! damage. Apply !M! Weak.";
+public class BulletJump_TENNO extends CustomCard {
+    public static final String ID = "BulletJump_TENNO";
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Beta.png";
     private static final int COST = 1;
     private static final int UPG_COST = 0;
-    private static final int ATTACK_DMG = 7;
+    private static final int BLOCK_AMT = 6;
     private static final int MAGIC_NUMBER = 1;
 
-    public MaimingStrike_TENNO() {
+    public BulletJump_TENNO() {
         super(
                 ID,
                 NAME,
                 IMG_PATH,
                 COST,
                 DESCRIPTION,
-                CardType.ATTACK,
+                CardType.SKILL,
                 AbstractCardEnum.TENNO_COLOR,
                 CardRarity.BASIC,
-                CardTarget.ENEMY
+                CardTarget.SELF_AND_ENEMY
         );
-        this.tags.add(CardTags.STRIKE);
         this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
-        this.baseDamage = ATTACK_DMG;
+        this.baseBlock = BLOCK_AMT;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(
-                        m,
-                        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL
-                )
+                new GainBlockAction(p, p, this.block)
         );
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(
                         m,
                         p,
-                        new WeakPower(m, this.magicNumber, false),
+                        new VulnerablePower(m, this.magicNumber, false),
                         this.magicNumber,
                         true,
                         AbstractGameAction.AttackEffect.NONE)
@@ -61,7 +56,7 @@ public class MaimingStrike_TENNO extends CustomCard {
     }
 
     public AbstractCard makeCopy() {
-        return new MaimingStrike_TENNO();
+        return new BulletJump_TENNO();
     }
 
     public void upgrade() {

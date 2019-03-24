@@ -1,0 +1,28 @@
+{
+  "Strike_TENNO": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "BulletJump_TENNO": {
+    "NAME": "Bullet Jump",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Vulnerable."
+  },
+  "Defend_TENNO": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "MaimingStrike_TENNO": {
+    "NAME": "Maiming Strike",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak."
+  },
+  "PlannedShot_TENNO": {
+    "NAME": "Planned Shot",
+    "DESCRIPTION": "Deal !D! damage. Put a random Skill from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Put !M! random Skills from your draw pile into your hand."
+  },
+  "Aviator_TENNO": {
+    "NAME": "Aviator",
+    "DESCRIPTION": "Gain !B! Block. Put a random Attack from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Put !M! random Attacks from your draw pile into your hand."
+  }
+}

@@ -32,7 +32,6 @@ public class ReduceRandomCardInHandAction extends AbstractGameAction {
       if (!groupCopy.isEmpty()) {
         c = groupCopy.get(AbstractDungeon.cardRandomRng.random(0, groupCopy.size() - 1));
         c.setCostForTurn(c.costForTurn - 1);
-        c.upgrade();
         c.superFlash();
         c.applyPowers();
       }

@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import tenno_mod.actions.ArgonCrystalEffectAction;
 import tenno_mod.actions.ReduceRandomCardInHandAction;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class ArgonCrystal_TENNO extends CustomRelic {
   public ArgonCrystal_TENNO() {
     super(ID,
         ImageMaster.loadImage(IMG),
-        ImageMaster.loadImage(IMG_OTL), RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        ImageMaster.loadImage(IMG_OTL), RelicTier.SHOP, LandingSound.MAGICAL);
   }
 
   public String getUpdatedDescription() {
@@ -41,7 +42,7 @@ public class ArgonCrystal_TENNO extends CustomRelic {
   public void atTurnStartPostDraw() {
     flash();
     AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-    AbstractDungeon.actionManager.addToBottom(new ReduceRandomCardInHandAction());
+    AbstractDungeon.actionManager.addToBottom(new ArgonCrystalEffectAction());
   }
 
 

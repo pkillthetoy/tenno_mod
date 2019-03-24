@@ -20,6 +20,11 @@ public class DragonNikana_TENNO extends CustomRelic {
     private static final String IMG = "img/relics/DragonNikana.png";
     private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
 
+    private int skillCount = 0;
+    private int attackCount = 0;
+    boolean skillFirst = false;
+    boolean attackFirst = false;
+
     public DragonNikana_TENNO() {
         super(ID,
                 ImageMaster.loadImage(IMG),
@@ -35,19 +40,66 @@ public class DragonNikana_TENNO extends CustomRelic {
         if (card.type == AbstractCard.CardType.SKILL) {
             flash();
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
-                  p,p, new StrengthPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
-                    p,p, new LoseStrengthPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
+                p,p, new StrengthPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
+            skillCount ++;
+            // Mark the type of the first card.
+            if (!skillFirst && !attackFirst) {
+                skillFirst = true;
+            }
         }
         if (card.type == AbstractCard.CardType.ATTACK) {
             flash();
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
-                    p,p, new DexterityPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
-                    p,p, new LoseDexterityPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
+                p,p, new DexterityPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
+            attackCount ++;
+            // Mark the type of the first card.
+            if (!skillFirst && !attackFirst) {
+                attackFirst = true;
+            }
         }
     }
 
+    public void atTurnStart() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (skillFirst) {
+            removeStrength();
+            removeDex();
+        } else {
+            removeDex();
+            removeStrength();
+        }
+
+        reset();
+    }
+
+    private void removeStrength() {
+        AbstractPlayer p = AbstractDungeon.player;
+        int strengthLoss = -MAGIC_NUMBER * skillCount;
+        if (strengthLoss < 0) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
+                p, p, new StrengthPower(p, strengthLoss), strengthLoss));
+        }
+    }
+
+    private void removeDex() {
+        AbstractPlayer p = AbstractDungeon.player;
+        int dexLoss = -MAGIC_NUMBER * attackCount;
+        if (dexLoss < 0) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
+                p, p, new DexterityPower(p, dexLoss), dexLoss));
+        }
+    }
+
+    public void onVictory() {
+        reset();
+    }
+
+    private void reset() {
+        skillCount = 0;
+        attackCount = 0;
+        skillFirst = false;
+        attackFirst = false;
+    }
     @Override
     public AbstractRelic makeCopy() {
         return new DragonNikana_TENNO();
