@@ -24,5 +24,9 @@
     "NAME": "Aviator",
     "DESCRIPTION": "Gain !B! Block. Put a random Attack from your draw pile into your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. Put !M! random Attacks from your draw pile into your hand."
+  },
+  "VoidStrike_TENNO": {
+    "NAME": "Void Strike",
+    "DESCRIPTION": "Deal !D! damage. Add a Void into your discard pile."
   }
 }

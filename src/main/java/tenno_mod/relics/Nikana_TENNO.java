@@ -30,7 +30,7 @@ public class Nikana_TENNO extends CustomRelic {
   }
 
   public String getUpdatedDescription() {
-    return this.DESCRIPTIONS[0] + MAGIC_NUMBER + this.DESCRIPTIONS[1] + MAGIC_NUMBER + this.DESCRIPTIONS[2];
+    return this.DESCRIPTIONS[0] + MAGIC_NUMBER + this.DESCRIPTIONS[1];// + MAGIC_NUMBER + this.DESCRIPTIONS[2];
   }
 
   public void onUseCard(AbstractCard card, UseCardAction action) {

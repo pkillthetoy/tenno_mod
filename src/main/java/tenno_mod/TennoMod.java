@@ -23,6 +23,7 @@ import tenno_mod.cards.basic.MaimingStrike_TENNO;
 import tenno_mod.cards.basic.Strike_TENNO;
 import tenno_mod.cards.common.Aviator_TENNO;
 import tenno_mod.cards.common.PlannedShot_TENNO;
+import tenno_mod.cards.common.VoidStrike_TENNO;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.TennoPlayerClassEnum;
 import tenno_mod.relics.*;
@@ -78,6 +79,7 @@ public class TennoMod implements EditCharactersSubscriber, EditCardsSubscriber, 
 
         cardsToAdd.add(new Aviator_TENNO());
         cardsToAdd.add(new PlannedShot_TENNO());
+        cardsToAdd.add(new VoidStrike_TENNO());
     }
 
     @Override

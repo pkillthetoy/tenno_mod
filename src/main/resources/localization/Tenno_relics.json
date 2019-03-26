@@ -4,8 +4,7 @@
     "FLAVOR": "A Tenno blade, rich in the old ways.",
     "DESCRIPTIONS": [
       "Gain #b",
-      " #yStrength this turn when you play a #ySkill. Gain #b",
-      " #yDexterity this turn when you play an #yAttack."
+      " temp #yStrength when you play a #ySkill, or #yDexterity when you play an #yAttack."
     ]
   },
   "DragonNikana_TENNO": {
