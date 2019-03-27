@@ -28,5 +28,9 @@
   "VoidStrike_TENNO": {
     "NAME": "Void Strike",
     "DESCRIPTION": "Deal !D! damage. Add a Void into your discard pile."
+  },
+  "HeavySlam_TENNO": {
+    "NAME": "Heavy Slam",
+    "DESCRIPTION": "Deal !D! damage. Costs 1 less [E] if the last card played this turn was a skill."
   }
 }
