@@ -51,7 +51,6 @@ public class ArgonCrystalEffectAction extends AbstractGameAction {
       }
 
       this.isDone = true;
-      return;
     }
     tickDuration();
   }

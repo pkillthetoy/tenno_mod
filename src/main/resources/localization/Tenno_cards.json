@@ -32,5 +32,15 @@
   "HeavySlam_TENNO": {
     "NAME": "Heavy Slam",
     "DESCRIPTION": "Deal !D! damage. Costs 1 less [E] if the last card played this turn was a skill."
+  },
+  "CleansingStrike_TENNO": {
+    "NAME": "Cleansing Strike",
+    "DESCRIPTION": "Deal !D! damage. Exhaust a void from your draw pile or discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust a void from your draw pile and discard pile."
+  },
+  "Meditation_TENNO": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "Gain !B! Block. Exhaust a void from your draw pile or discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust a void from your draw pile and discard pile."
   }
 }

@@ -18,10 +18,7 @@ import tenno_mod.cards.basic.BulletJump_TENNO;
 import tenno_mod.cards.basic.Defend_TENNO;
 import tenno_mod.cards.basic.MaimingStrike_TENNO;
 import tenno_mod.cards.basic.Strike_TENNO;
-import tenno_mod.cards.common.Aviator_TENNO;
-import tenno_mod.cards.common.HeavySlam_TENNO;
-import tenno_mod.cards.common.PlannedShot_TENNO;
-import tenno_mod.cards.common.VoidStrike_TENNO;
+import tenno_mod.cards.common.*;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.TennoPlayerClassEnum;
 import tenno_mod.relics.*;
@@ -88,6 +85,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new PlannedShot_TENNO());
     cardsToAdd.add(new VoidStrike_TENNO());
     cardsToAdd.add(new HeavySlam_TENNO());
+    cardsToAdd.add(new CleansingStrike_TENNO());
+    cardsToAdd.add(new Meditation_TENNO());
   }
 
   @Override
@@ -97,7 +96,7 @@ public class TennoMod implements EditCharactersSubscriber,
 
     loadCardsToAdd();
 
-    logger.info("adding cards for MARISA");
+    logger.info("adding cards for TENNO");
 
     for (AbstractCard card : cardsToAdd) {
       logger.info("Adding card : " + card.name);
