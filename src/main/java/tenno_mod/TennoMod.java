@@ -116,6 +116,9 @@ public class TennoMod implements EditCharactersSubscriber,
     BaseMod.addRelicToCustomPool(new TwinGrakata_TENNO(), TENNO_COLOR);
     BaseMod.addRelicToCustomPool(new ArgonCrystal_TENNO(), TENNO_COLOR);
     BaseMod.addRelicToCustomPool(new Skiajati_TENNO(), TENNO_COLOR);
+    BaseMod.addRelicToCustomPool(new JanusKey_TENNO(), TENNO_COLOR);
+    BaseMod.addRelicToCustomPool(new PolymerBundle_TENNO(), TENNO_COLOR);
+
   }
 
   @Override

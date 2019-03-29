@@ -2,6 +2,7 @@ package tenno_mod.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,12 +36,14 @@ public class Nikana_TENNO extends CustomRelic {
     AbstractPlayer p = AbstractDungeon.player;
     if (card.type == AbstractCard.CardType.SKILL) {
       flash();
+      AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(p, this));
       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
           p, p, new StrengthPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
       skillCount++;
     }
     if (card.type == AbstractCard.CardType.ATTACK) {
       flash();
+      AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(p, this));
       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
           p, p, new DexterityPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
       attackCount++;
