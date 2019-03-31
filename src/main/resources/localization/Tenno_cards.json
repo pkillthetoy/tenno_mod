@@ -31,7 +31,7 @@
   },
   "HeavySlam_TENNO": {
     "NAME": "Heavy Slam",
-    "DESCRIPTION": "Deal !D! damage. Costs 1 less [E] if the last card played this turn was a skill."
+    "DESCRIPTION": "Deal !D! damage. Costs 1 less [E] if the last card played this turn was a Skill."
   },
   "CleansingStrike_TENNO": {
     "NAME": "Cleansing Strike",
@@ -42,5 +42,13 @@
     "NAME": "Meditation",
     "DESCRIPTION": "Gain !B! Block. Exhaust a void from your draw pile or discard pile.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust a void from your draw pile and discard pile."
+  },
+  "TapDodge_TENNO": {
+    "NAME": "Tap Dodge",
+    "DESCRIPTION": "Gain !B! Block. This turn, your next Attack is played twice."
+  },
+  "BurstStrike_TENNO": {
+    "NAME": "Burst Strike",
+    "DESCRIPTION": "Deal !D! damage. This turn, your next Skill is played twice."
   }
 }

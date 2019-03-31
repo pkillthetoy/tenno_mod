@@ -19,6 +19,8 @@ import tenno_mod.cards.basic.Defend_TENNO;
 import tenno_mod.cards.basic.MaimingStrike_TENNO;
 import tenno_mod.cards.basic.Strike_TENNO;
 import tenno_mod.cards.common.*;
+import tenno_mod.cards.uncommon.BurstStrike_TENNO;
+import tenno_mod.cards.uncommon.TapDodge_TENNO;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.TennoPlayerClassEnum;
 import tenno_mod.relics.*;
@@ -87,6 +89,9 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new HeavySlam_TENNO());
     cardsToAdd.add(new CleansingStrike_TENNO());
     cardsToAdd.add(new Meditation_TENNO());
+
+    cardsToAdd.add(new BurstStrike_TENNO());
+    cardsToAdd.add(new TapDodge_TENNO());
   }
 
   @Override
@@ -132,6 +137,11 @@ public class TennoMod implements EditCharactersSubscriber,
         String.valueOf(StandardCharsets.UTF_8)
     );
     BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
+
+    String powerStrings = Gdx.files.internal("localization/Tenno_powers.json").readString(
+        String.valueOf(StandardCharsets.UTF_8)
+    );
+    BaseMod.loadCustomStrings(CardStrings.class, powerStrings);
   }
 
   @Override
