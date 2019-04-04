@@ -50,5 +50,17 @@
   "BurstStrike_TENNO": {
     "NAME": "Burst Strike",
     "DESCRIPTION": "Deal !D! damage. This turn, your next Skill is played twice."
+  },
+  "DailyLogin_TENNO": {
+    "NAME": "Daily Login",
+    "DESCRIPTION": "Add a random Attack and Skill into your hand. They cost 0 this turn. Exhaust."
+  },
+  "RollingGuard_TENNO": {
+    "NAME": "Rolling Guard",
+    "DESCRIPTION": "Gain !B! block. Gain 1 Intangible. Retain. Exhaust."
+  },
+  "CleavingWhirlwind_TENNO": {
+    "NAME": "Cleaving Whirlwind",
+    "DESCRIPTION": "Deal !D! damage to all enemies. If this kills an enemy, return it to your hand."
   }
 }
