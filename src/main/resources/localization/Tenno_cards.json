@@ -62,5 +62,26 @@
   "CleavingWhirlwind_TENNO": {
     "NAME": "Cleaving Whirlwind",
     "DESCRIPTION": "Deal !D! damage to all enemies. If this kills an enemy, return it to your hand."
+  },
+  "ExaltedBlade_TENNO": {
+    "NAME": "Exalted Blade",
+    "DESCRIPTION": "Add 4 special Attacks to your hand.",
+    "UPGRADE_DESCRIPTION": "Add 4 special Attacks to your hand and upgrade them."
+  },
+  "EqualLaceration_TENNO": {
+    "NAME": "Equal Laceration",
+    "DESCRIPTION": "Deal !D! damage to all enemies. Ethereal. Exhaust."
+  },
+  "CuttingPoise_TENNO": {
+    "NAME": "Cutting Poise",
+    "DESCRIPTION": "Deal !D! damage three times. Ethereal. Exhaust."
+  },
+  "LancingJustice_TENNO": {
+    "NAME": "Lancing Justice",
+    "DESCRIPTION": "Deal !D! damage. Apply 1 Weak. Apply 1 Vulnerable. Ethereal. Exhaust."
+  },
+  "VirtuousSlash_TENNO": {
+    "NAME": "Virtuous Slash",
+    "DESCRIPTION": "Deal !D! damage. Ethereal. Exhaust."
   }
 }

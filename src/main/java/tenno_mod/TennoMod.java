@@ -19,6 +19,11 @@ import tenno_mod.cards.basic.Defend_TENNO;
 import tenno_mod.cards.basic.MaimingStrike_TENNO;
 import tenno_mod.cards.basic.Strike_TENNO;
 import tenno_mod.cards.common.*;
+import tenno_mod.cards.generated.CuttingPoise_TENNO;
+import tenno_mod.cards.generated.EqualLaceration_TENNO;
+import tenno_mod.cards.generated.LancingJustice_TENNO;
+import tenno_mod.cards.generated.VirtuousSlash_TENNO;
+import tenno_mod.cards.rare.ExaltedBlade_TENNO;
 import tenno_mod.cards.rare.DailyLogin_TENNO;
 import tenno_mod.cards.rare.RollingGuard_TENNO;
 import tenno_mod.cards.uncommon.BurstStrike_TENNO;
@@ -99,6 +104,16 @@ public class TennoMod implements EditCharactersSubscriber,
 
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
+
+    cardsToAdd.add(new ExaltedBlade_TENNO());
+
+
+    cardsToAdd.add(new ExaltedBlade_TENNO());
+    cardsToAdd.add(new CuttingPoise_TENNO());
+    cardsToAdd.add(new EqualLaceration_TENNO());
+    cardsToAdd.add(new LancingJustice_TENNO());
+    cardsToAdd.add(new VirtuousSlash_TENNO());
+
   }
 
   @Override
