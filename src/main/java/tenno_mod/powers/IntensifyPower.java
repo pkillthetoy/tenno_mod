@@ -19,6 +19,7 @@ public class IntensifyPower extends AbstractPower {
 
 
   public IntensifyPower(AbstractCreature owner, int amount) {
+    this.ID = POWER_ID;
     this.name = NAME;
     this.owner = owner;
     this.amount = amount;
@@ -64,14 +65,14 @@ public class IntensifyPower extends AbstractPower {
 
       this.amount -= 1;
       if (this.amount == 0) {
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Intensify"));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Intensify_TENNO"));
       }
     }
   }
 
   public void atEndOfTurn(boolean isPlayer) {
     if (isPlayer) {
-      AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Intensify"));
+      AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Intensify_TENNO"));
     }
   }
 

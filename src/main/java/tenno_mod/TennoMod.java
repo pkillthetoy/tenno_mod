@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import org.apache.logging.log4j.LogManager;
@@ -19,10 +20,7 @@ import tenno_mod.cards.basic.Defend_TENNO;
 import tenno_mod.cards.basic.MaimingStrike_TENNO;
 import tenno_mod.cards.basic.Strike_TENNO;
 import tenno_mod.cards.common.*;
-import tenno_mod.cards.generated.CuttingPoise_TENNO;
-import tenno_mod.cards.generated.EqualLaceration_TENNO;
-import tenno_mod.cards.generated.LancingJustice_TENNO;
-import tenno_mod.cards.generated.VirtuousSlash_TENNO;
+import tenno_mod.cards.generated.*;
 import tenno_mod.cards.rare.ExaltedBlade_TENNO;
 import tenno_mod.cards.rare.DailyLogin_TENNO;
 import tenno_mod.cards.rare.RollingGuard_TENNO;
@@ -104,15 +102,17 @@ public class TennoMod implements EditCharactersSubscriber,
 
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
-
     cardsToAdd.add(new ExaltedBlade_TENNO());
 
 
-    cardsToAdd.add(new ExaltedBlade_TENNO());
     cardsToAdd.add(new CuttingPoise_TENNO());
     cardsToAdd.add(new EqualLaceration_TENNO());
     cardsToAdd.add(new LancingJustice_TENNO());
     cardsToAdd.add(new VirtuousSlash_TENNO());
+    cardsToAdd.add(new UmbralFiber_TENNO());
+    cardsToAdd.add(new UmbralIntensify_TENNO());
+    cardsToAdd.add(new UmbralHowl_TENNO());
+
 
   }
 
@@ -154,7 +154,6 @@ public class TennoMod implements EditCharactersSubscriber,
     );
     BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
 
-
     String cardStrings = Gdx.files.internal("localization/Tenno_cards.json").readString(
         String.valueOf(StandardCharsets.UTF_8)
     );
@@ -163,7 +162,7 @@ public class TennoMod implements EditCharactersSubscriber,
     String powerStrings = Gdx.files.internal("localization/Tenno_powers.json").readString(
         String.valueOf(StandardCharsets.UTF_8)
     );
-    BaseMod.loadCustomStrings(CardStrings.class, powerStrings);
+    BaseMod.loadCustomStrings(PowerStrings.class, powerStrings);
   }
 
   @Override

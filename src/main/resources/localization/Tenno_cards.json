@@ -57,7 +57,7 @@
   },
   "RollingGuard_TENNO": {
     "NAME": "Rolling Guard",
-    "DESCRIPTION": "Gain !B! block. Gain 1 Intangible. Retain. Exhaust."
+    "DESCRIPTION": "Gain !B! Block. Gain 1 Intangible. Retain. Exhaust."
   },
   "CleavingWhirlwind_TENNO": {
     "NAME": "Cleaving Whirlwind",
@@ -83,5 +83,17 @@
   "VirtuousSlash_TENNO": {
     "NAME": "Virtuous Slash",
     "DESCRIPTION": "Deal !D! damage. Ethereal. Exhaust."
+  },
+  "UmbralFiber_TENNO": {
+    "NAME": "Umbral Fiber",
+    "DESCRIPTION": "At the end of your turn, gain !M! Block. Gain !B! Block."
+  },
+  "UmbralIntensify_TENNO": {
+    "NAME": "Umbral Intensify",
+    "DESCRIPTION": "Gain !M! Strength. Your next card this turn is played twice."
+  },
+  "UmbralHowl_TENNO": {
+    "NAME": "Radial Howl",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Exhaust."
   }
 }
