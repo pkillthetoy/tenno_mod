@@ -76,6 +76,10 @@
     "NAME": "Cutting Poise",
     "DESCRIPTION": "Deal !D! damage three times. Ethereal. Exhaust."
   },
+  "LethalTorrent_TENNO": {
+    "NAME": "Lethal Torrent",
+    "DESCRIPTION": "Deal !D! damage 4 times."
+  },
   "LancingJustice_TENNO": {
     "NAME": "Lancing Justice",
     "DESCRIPTION": "Deal !D! damage. Apply 1 Weak. Apply 1 Vulnerable. Ethereal. Exhaust."
@@ -104,5 +108,13 @@
     "NAME": "Umbral Form",
     "DESCRIPTION": "At the start of your turn, add an Umbral card into your hand.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, add an upgraded Umbral card into your hand."
+  },
+  "GrowingPower_TENNO": {
+    "NAME": "Growing Power",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain 1 Strength"
+  },
+  "WildFrenzy_TENNO": {
+    "NAME": "Wild Frenzy",
+    "DESCRIPTION": "This turn, your Attacks are played twice. Reduce the cost of Attacks in your hand by 1 this turn."
   }
 }

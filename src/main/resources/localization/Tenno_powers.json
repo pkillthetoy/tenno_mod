@@ -3,24 +3,36 @@
     "NAME": "Intensify",
     "DESCRIPTIONS": [
       "Your next card is played twice this turn.",
-      "Your next ",
+      "Your next #b",
       " cards are played twice this turn."
     ]
   },
   "UmbralFormPower_TENNO": {
     "NAME": "Umbral Form",
     "DESCRIPTIONS": [
-      "At the start of your turn, add an Umbral card into your hand.",
-      "At the start of your turn, add ",
-      " Umbral cards into your hand."
+      "At the start of your turn, add an #yUmbral card into your hand.",
+      "At the start of your turn, add #b",
+      " #yUmbral cards into your hand."
     ]
   },
   "UpgradedUmbralFormPower_TENNO": {
     "NAME": "Umbral Form+",
     "DESCRIPTIONS": [
-      "At the start of your turn, add an upgraded Umbral card into your hand.",
-      "At the start of your turn, add ",
-      " upgraded Umbral cards into your hand."
+      "At the start of your turn, add an upgraded #yUmbral card into your hand.",
+      "At the start of your turn, add #b",
+      " upgraded #yUmbral cards into your hand."
     ]
-  }
+  },
+  "GrowingPowerPower_TENNO": {
+    "NAME": "Growing Power",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to an enemy, gain #b",
+      " #yStrength."
+    ]
+  },  "WildFrenzyPower_TENNO": {
+  "NAME": "Wild Frenzy",
+  "DESCRIPTIONS": [
+    "Your #yAttacks are played twice this turn."
+  ]
+}
 }

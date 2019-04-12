@@ -11,10 +11,8 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.IntensifyPower;
 
 public class UmbralHowl_TENNO extends CustomCard {
   public static final String ID = "UmbralHowl_TENNO";

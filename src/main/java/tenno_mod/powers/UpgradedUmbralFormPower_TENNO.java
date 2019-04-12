@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -11,15 +12,15 @@ import tenno_mod.cards.generated.UmbralFiber_TENNO;
 import tenno_mod.cards.generated.UmbralHowl_TENNO;
 import tenno_mod.cards.generated.UmbralIntensify_TENNO;
 
-public class UpgradedUmbralFormPower extends AbstractPower {
+public class UpgradedUmbralFormPower_TENNO extends AbstractPower {
   public static final String POWER_ID = "UpgradedUmbralFormPower_TENNO";
-  private static final PowerStrings powerStrings = com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(
+  private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(
       POWER_ID);
   public static final String NAME = powerStrings.NAME;
   public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
 
-  public UpgradedUmbralFormPower(AbstractCreature owner, int amount) {
+  public UpgradedUmbralFormPower_TENNO(AbstractCreature owner, int amount) {
     this.ID = POWER_ID;
     this.name = NAME;
     this.owner = owner;
