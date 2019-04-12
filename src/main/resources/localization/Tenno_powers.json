@@ -6,5 +6,21 @@
       "Your next ",
       " cards are played twice this turn."
     ]
+  },
+  "UmbralFormPower_TENNO": {
+    "NAME": "Umbral Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add an Umbral card into your hand.",
+      "At the start of your turn, add ",
+      " Umbral cards into your hand."
+    ]
+  },
+  "UpgradedUmbralFormPower_TENNO": {
+    "NAME": "Umbral Form+",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add an upgraded Umbral card into your hand.",
+      "At the start of your turn, add ",
+      " upgraded Umbral cards into your hand."
+    ]
   }
 }

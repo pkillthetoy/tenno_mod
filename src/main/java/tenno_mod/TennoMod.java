@@ -5,14 +5,17 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.sun.org.apache.xpath.internal.compiler.Keywords;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tenno_mod.cards.basic.BulletJump_TENNO;
@@ -24,6 +27,7 @@ import tenno_mod.cards.generated.*;
 import tenno_mod.cards.rare.ExaltedBlade_TENNO;
 import tenno_mod.cards.rare.DailyLogin_TENNO;
 import tenno_mod.cards.rare.RollingGuard_TENNO;
+import tenno_mod.cards.rare.UmbralForm_TENNO;
 import tenno_mod.cards.uncommon.BurstStrike_TENNO;
 import tenno_mod.cards.uncommon.CleavingWhirlwind_TENNO;
 import tenno_mod.cards.uncommon.TapDodge_TENNO;
@@ -44,6 +48,7 @@ public class TennoMod implements EditCharactersSubscriber,
     EditRelicsSubscriber,
     PostEnergyRechargeSubscriber,
     EditStringsSubscriber,
+    EditKeywordsSubscriber,
     PostPowerApplySubscriber,
     OnCardUseSubscriber {
   private static final String MY_CHARACTER_BUTTON = "img/charSelect/TennoButton.png";
@@ -95,6 +100,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new HeavySlam_TENNO());
     cardsToAdd.add(new CleansingStrike_TENNO());
     cardsToAdd.add(new Meditation_TENNO());
+    cardsToAdd.add(new BlindingSlice_TENNO());
 
     cardsToAdd.add(new BurstStrike_TENNO());
     cardsToAdd.add(new TapDodge_TENNO());
@@ -103,6 +109,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
     cardsToAdd.add(new ExaltedBlade_TENNO());
+    cardsToAdd.add(new UmbralForm_TENNO());
 
 
     cardsToAdd.add(new CuttingPoise_TENNO());
@@ -149,19 +156,13 @@ public class TennoMod implements EditCharactersSubscriber,
 
   @Override
   public void receiveEditStrings() {
-    String relicStrings = Gdx.files.internal("localization/Tenno_relics.json").readString(
-        String.valueOf(StandardCharsets.UTF_8)
-    );
+    String relicStrings = loadJson("localization/Tenno_relics.json");
     BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
 
-    String cardStrings = Gdx.files.internal("localization/Tenno_cards.json").readString(
-        String.valueOf(StandardCharsets.UTF_8)
-    );
+    String cardStrings = loadJson("localization/Tenno_cards.json");
     BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
 
-    String powerStrings = Gdx.files.internal("localization/Tenno_powers.json").readString(
-        String.valueOf(StandardCharsets.UTF_8)
-    );
+    String powerStrings = loadJson("localization/Tenno_powers.json");
     BaseMod.loadCustomStrings(PowerStrings.class, powerStrings);
   }
 
@@ -199,5 +200,29 @@ public class TennoMod implements EditCharactersSubscriber,
   public void receivePostEnergyRecharge() {
     lastCardUsedWasAttack = false;
     lastCardUsedWasSkill = false;
+  }
+
+  private static String loadJson(String jsonPath) {
+    return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
+  }
+
+  @Override
+  public void receiveEditKeywords() {
+    logger.info("Setting up custom keywords");
+
+    String keywordsPath = "localization/Tenno_keywords.json";
+    Gson gson = new Gson();
+    Keywords keywords;
+    keywords = gson.fromJson(loadJson(keywordsPath), Keywords.class);
+    for (Keyword key : keywords.keywords) {
+      logger.info("Loading keyword : " + key.NAMES[0]);
+      BaseMod.addKeyword(key.NAMES, key.DESCRIPTION);
+    }
+    logger.info("Keywords setting finished.");
+
+  }
+
+  class Keywords {
+    Keyword[] keywords;
   }
 }

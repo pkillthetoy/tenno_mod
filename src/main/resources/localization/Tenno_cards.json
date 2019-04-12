@@ -84,6 +84,10 @@
     "NAME": "Virtuous Slash",
     "DESCRIPTION": "Deal !D! damage. Ethereal. Exhaust."
   },
+  "BlindingSlice_TENNO": {
+    "NAME": "Blinding Slice",
+    "DESCRIPTION": "Deal !D! damage. The target loses !M! Strength this turn."
+  },
   "UmbralFiber_TENNO": {
     "NAME": "Umbral Fiber",
     "DESCRIPTION": "At the end of your turn, gain !M! Block. Gain !B! Block."
@@ -93,7 +97,12 @@
     "DESCRIPTION": "Gain !M! Strength. Your next card this turn is played twice."
   },
   "UmbralHowl_TENNO": {
-    "NAME": "Radial Howl",
+    "NAME": "Umbral Howl",
     "DESCRIPTION": "ALL enemies lose !M! Strength this turn. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "UmbralForm_TENNO": {
+    "NAME": "Umbral Form",
+    "DESCRIPTION": "At the start of your turn, add an Umbral card into your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add an upgraded Umbral card into your hand."
   }
 }
