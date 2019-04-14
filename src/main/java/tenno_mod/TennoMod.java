@@ -25,10 +25,7 @@ import tenno_mod.cards.basic.Strike_TENNO;
 import tenno_mod.cards.common.*;
 import tenno_mod.cards.generated.*;
 import tenno_mod.cards.rare.*;
-import tenno_mod.cards.uncommon.BurstStrike_TENNO;
-import tenno_mod.cards.uncommon.CleavingWhirlwind_TENNO;
-import tenno_mod.cards.uncommon.LethalTorrent_TENNO;
-import tenno_mod.cards.uncommon.TapDodge_TENNO;
+import tenno_mod.cards.uncommon.*;
 import tenno_mod.characters.Tenno;
 import tenno_mod.patches.TennoPlayerClassEnum;
 import tenno_mod.relics.*;
@@ -104,6 +101,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new TapDodge_TENNO());
     cardsToAdd.add(new CleavingWhirlwind_TENNO());
     cardsToAdd.add(new LethalTorrent_TENNO());
+    cardsToAdd.add(new ConditionOverload_TENNO());
 
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());

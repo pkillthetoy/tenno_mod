@@ -117,12 +117,15 @@
     "NAME": "Wild Frenzy",
     "DESCRIPTION": "This turn, your Attacks are played twice. Reduce the cost of Attacks in your hand by 1 this turn."
   },
-
   "VoidRadiance_TENNO": {
     "NAME": "Void Radiance",
     "DESCRIPTION": "Exhaust all Voids, then deal !D! damage to a random enemy for each Void exhausted this combat.",
     "EXTENDED_DESCRIPTION": [
       " (Hits !M! times)"
     ]
+  },
+  "ConditionOverload_TENNO": {
+    "NAME": "Condition Overload",
+    "DESCRIPTION": "Deal !D! damage. Deals !M! extra damage for each debuff on the enemy."
   }
 }
