@@ -35,13 +35,13 @@
   },
   "CleansingStrike_TENNO": {
     "NAME": "Cleansing Strike",
-    "DESCRIPTION": "Deal !D! damage. Exhaust a void from your draw pile or discard pile.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust a void from your draw pile and discard pile."
+    "DESCRIPTION": "Deal !D! damage. Exhaust a Void from your draw pile or discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust a Void from your draw pile and discard pile."
   },
   "Meditation_TENNO": {
     "NAME": "Meditation",
-    "DESCRIPTION": "Gain !B! Block. Exhaust a void from your draw pile or discard pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust a void from your draw pile and discard pile."
+    "DESCRIPTION": "Gain !B! Block. Exhaust a Void from your draw pile or discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust a Void from your draw pile and discard pile."
   },
   "TapDodge_TENNO": {
     "NAME": "Tap Dodge",
@@ -116,5 +116,13 @@
   "WildFrenzy_TENNO": {
     "NAME": "Wild Frenzy",
     "DESCRIPTION": "This turn, your Attacks are played twice. Reduce the cost of Attacks in your hand by 1 this turn."
+  },
+
+  "VoidRadiance_TENNO": {
+    "NAME": "Void Radiance",
+    "DESCRIPTION": "Exhaust all Voids, then deal !D! damage to a random enemy for each Void exhausted this combat.",
+    "EXTENDED_DESCRIPTION": [
+      " (Hits !M! times)"
+    ]
   }
 }

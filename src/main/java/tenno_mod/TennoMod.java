@@ -111,6 +111,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new UmbralForm_TENNO());
     cardsToAdd.add(new GrowingPower_TENNO());
     cardsToAdd.add(new WildFrenzy_TENNO());
+    cardsToAdd.add(new VoidRadiance_TENNO());
 
 
     cardsToAdd.add(new CuttingPoise_TENNO());
