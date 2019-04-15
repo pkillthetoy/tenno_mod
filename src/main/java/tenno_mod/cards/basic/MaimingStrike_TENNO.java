@@ -56,8 +56,7 @@ public class MaimingStrike_TENNO extends CustomCard {
                         p,
                         new WeakPower(m, this.magicNumber, false),
                         this.magicNumber,
-                        true,
-                        AbstractGameAction.AttackEffect.NONE)
+                        true)
         );
     }
 

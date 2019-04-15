@@ -29,10 +29,18 @@
       "Whenever you apply a debuff to an enemy, gain #b",
       " #yStrength."
     ]
-  },  "WildFrenzyPower_TENNO": {
-  "NAME": "Wild Frenzy",
-  "DESCRIPTIONS": [
-    "Your #yAttacks are played twice this turn."
-  ]
-}
+  },
+  "WildFrenzyPower_TENNO": {
+    "NAME": "Wild Frenzy",
+    "DESCRIPTIONS": [
+      "Your #yAttacks are played twice this turn."
+    ]
+  },
+  "ChromaticBladePower_TENNO": {
+    "NAME": "Chromatic Blade",
+    "DESCRIPTIONS": [
+      "Whenever you deal unblocked attack damage, randomly apply #b",
+      " #yWeak, #yVulnerable, #yPoison, or temporary #Strength loss."
+    ]
+  }
 }

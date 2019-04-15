@@ -50,8 +50,7 @@ public class BulletJump_TENNO extends CustomCard {
                         p,
                         new VulnerablePower(m, this.magicNumber, false),
                         this.magicNumber,
-                        true,
-                        AbstractGameAction.AttackEffect.NONE)
+                        true)
         );
     }
 

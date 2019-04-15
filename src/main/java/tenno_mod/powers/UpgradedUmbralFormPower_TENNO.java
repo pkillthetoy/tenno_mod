@@ -26,7 +26,6 @@ public class UpgradedUmbralFormPower_TENNO extends AbstractPower {
     this.owner = owner;
     this.amount = amount;
     updateDescription();
-    loadRegion("intensify");
     this.type = PowerType.BUFF;
     this.img = new Texture("img/powers/uparrow.png");
   }
@@ -43,7 +42,7 @@ public class UpgradedUmbralFormPower_TENNO extends AbstractPower {
     flash();
     AbstractCard c;
     for (int i = 0; i < this.amount; i++) {
-      int randomNum = AbstractDungeon.miscRng.random(3);
+      int randomNum = AbstractDungeon.miscRng.random(2);
       switch (randomNum) {
         case 0:
           c = new UmbralHowl_TENNO().makeCopy();

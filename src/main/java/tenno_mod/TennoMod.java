@@ -84,11 +84,13 @@ public class TennoMod implements EditCharactersSubscriber,
 
   public void loadCardsToAdd() {
     cardsToAdd.clear();
+    // Starting deck
     cardsToAdd.add(new Strike_TENNO());
     cardsToAdd.add(new Defend_TENNO());
     cardsToAdd.add(new BulletJump_TENNO());
     cardsToAdd.add(new MaimingStrike_TENNO());
 
+    // Commons
     cardsToAdd.add(new Aviator_TENNO());
     cardsToAdd.add(new PlannedShot_TENNO());
     cardsToAdd.add(new VoidStrike_TENNO());
@@ -97,12 +99,14 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Meditation_TENNO());
     cardsToAdd.add(new BlindingSlice_TENNO());
 
+    // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
     cardsToAdd.add(new TapDodge_TENNO());
     cardsToAdd.add(new CleavingWhirlwind_TENNO());
     cardsToAdd.add(new LethalTorrent_TENNO());
     cardsToAdd.add(new ConditionOverload_TENNO());
 
+    // Rares
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
     cardsToAdd.add(new ExaltedBlade_TENNO());
@@ -110,8 +114,10 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new GrowingPower_TENNO());
     cardsToAdd.add(new WildFrenzy_TENNO());
     cardsToAdd.add(new VoidRadiance_TENNO());
+    cardsToAdd.add(new Cataclysm_TENNO());
+    cardsToAdd.add(new ChromaticBlade_TENNO());
 
-
+    // Generated cards
     cardsToAdd.add(new CuttingPoise_TENNO());
     cardsToAdd.add(new EqualLaceration_TENNO());
     cardsToAdd.add(new LancingJustice_TENNO());

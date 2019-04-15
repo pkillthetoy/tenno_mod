@@ -25,7 +25,6 @@ public class IntensifyPower_TENNO extends AbstractPower {
     this.owner = owner;
     this.amount = amount;
     updateDescription();
-    loadRegion("intensify");
     this.type = PowerType.BUFF;
     this.img = new Texture("img/powers/uparrow.png");
   }

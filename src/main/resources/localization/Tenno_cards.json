@@ -127,5 +127,12 @@
   "ConditionOverload_TENNO": {
     "NAME": "Condition Overload",
     "DESCRIPTION": "Deal !D! damage. Deals !M! extra damage for each debuff on the enemy."
-  }
+  },
+  "Cataclysm_TENNO": {
+    "NAME": "Cataclysm",
+    "DESCRIPTION": "Deal !D! damage to all enemies. ALL fighters gain 1 Intangible. Add a Void into your discard pile."
+  },  "ChromaticBlade_TENNO": {
+  "NAME": "Chromatic Blade",
+  "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply a random debuff."
+}
 }
