@@ -131,8 +131,13 @@
   "Cataclysm_TENNO": {
     "NAME": "Cataclysm",
     "DESCRIPTION": "Deal !D! damage to all enemies. ALL fighters gain 1 Intangible. Add a Void into your discard pile."
-  },  "ChromaticBlade_TENNO": {
-  "NAME": "Chromatic Blade",
-  "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply a random debuff."
-}
+  },
+  "ChromaticBlade_TENNO": {
+    "NAME": "Chromatic Blade",
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply a random debuff."
+  },
+  "CovertLethality_TENNO": {
+    "NAME": "Covert Lethality",
+    "DESCRIPTION": "Instantly kill a non-elite, non-boss enemy if it is Vulnerable. Otherwise do !D! damage."
+  }
 }

@@ -116,6 +116,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new VoidRadiance_TENNO());
     cardsToAdd.add(new Cataclysm_TENNO());
     cardsToAdd.add(new ChromaticBlade_TENNO());
+    cardsToAdd.add(new CovertLethality_TENNO());
 
     // Generated cards
     cardsToAdd.add(new CuttingPoise_TENNO());
