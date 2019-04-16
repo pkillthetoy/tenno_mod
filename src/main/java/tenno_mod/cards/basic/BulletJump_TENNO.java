@@ -34,7 +34,7 @@ public class BulletJump_TENNO extends CustomCard {
                 CardType.SKILL,
                 AbstractCardEnum.TENNO_COLOR,
                 CardRarity.BASIC,
-                CardTarget.SELF_AND_ENEMY
+                CardTarget.ENEMY
         );
         this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
         this.baseBlock = BLOCK_AMT;

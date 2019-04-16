@@ -139,5 +139,8 @@
   "CovertLethality_TENNO": {
     "NAME": "Covert Lethality",
     "DESCRIPTION": "Instantly kill a non-elite, non-boss enemy if it is Vulnerable. Otherwise do !D! damage."
-  }
+  },  "VoidDash_TENNO": {
+  "NAME": "Void Dash",
+  "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Add a Void into your discard pile."
+}
 }
