@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 import static tenno_mod.TennoMod.logger;
 
-public class ReduceRandomCardInHandAction extends AbstractGameAction {
-  public ReduceRandomCardInHandAction() {
+public class ReduceRandomAttackInHandAction extends AbstractGameAction {
+  public ReduceRandomAttackInHandAction() {
     this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
     this.duration = Settings.ACTION_DUR_FAST;
   }
@@ -21,10 +21,8 @@ public class ReduceRandomCardInHandAction extends AbstractGameAction {
       ArrayList<AbstractCard> groupCopy = new ArrayList();
       logger.info(AbstractDungeon.player.hand.size());
       for (AbstractCard c : AbstractDungeon.player.hand.group) {
-        if ((c.cost > 0) && (c.costForTurn > 0) && (!c.freeToPlayOnce)) {
+        if ((c.cost > 0) && (c.costForTurn > 0) && (!c.freeToPlayOnce) && c.type == AbstractCard.CardType.ATTACK) {
           groupCopy.add(c);
-        } else {
-          logger.info("COST IS 0: " + c.name);
         }
       }
       AbstractCard c = null;

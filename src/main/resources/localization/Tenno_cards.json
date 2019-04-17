@@ -139,8 +139,22 @@
   "CovertLethality_TENNO": {
     "NAME": "Covert Lethality",
     "DESCRIPTION": "Instantly kill a non-elite, non-boss enemy if it is Vulnerable. Otherwise do !D! damage."
-  },  "VoidDash_TENNO": {
-  "NAME": "Void Dash",
-  "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Add a Void into your discard pile."
-}
+  },
+  "VoidDash_TENNO": {
+    "NAME": "Void Dash",
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Add a Void into your discard pile."
+  },
+  "EnergyOrb_TENNO": {
+    "NAME": "Energy Orb",
+    "DESCRIPTION": "Gain [E].",
+    "UPGRADE_DESCRIPTION": "Gain [E][E]."
+  },
+  "QuickSlash_TENNO": {
+    "NAME": "Quick Slice",
+    "DESCRIPTION": "Deal !D! damage. Draw a card, then discard a card."
+  },
+  "AgileGuard_TENNO": {
+    "NAME": "Agile Guard",
+    "DESCRIPTION": "Gain !B! Block. A random Attack in your hand costs [E] less this turn."
+  }
 }
