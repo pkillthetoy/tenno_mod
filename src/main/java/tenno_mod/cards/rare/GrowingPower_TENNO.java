@@ -8,11 +8,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.powers.GrowingPowerPower_TENNO;
-import tenno_mod.powers.UmbralFormPower_TENNO;
-import tenno_mod.powers.UpgradedUmbralFormPower_TENNO;
 
 public class GrowingPower_TENNO extends CustomCard {
   public static final String ID = "GrowingPower_TENNO";

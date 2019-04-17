@@ -8,9 +8,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import tenno_mod.actions.ExhaustVoidFromDiscardAction;
-import tenno_mod.actions.ExhaustVoidFromDrawAction;
-import tenno_mod.actions.ExhaustVoidFromDrawOrDiscardAction;
 import tenno_mod.actions.ReduceRandomAttackInHandAction;
 import tenno_mod.patches.AbstractCardEnum;
 

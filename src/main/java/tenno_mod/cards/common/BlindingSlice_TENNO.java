@@ -1,7 +1,6 @@
 package tenno_mod.cards.common;
 
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
