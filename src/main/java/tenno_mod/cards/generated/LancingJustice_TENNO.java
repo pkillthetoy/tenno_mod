@@ -59,7 +59,8 @@ public class LancingJustice_TENNO extends CustomCard {
             this.magicNumber,
             true,
             AbstractGameAction.AttackEffect.NONE)
-    );        AbstractDungeon.actionManager.addToBottom(
+    );
+    AbstractDungeon.actionManager.addToBottom(
         new ApplyPowerAction(
             m,
             p,

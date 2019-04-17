@@ -24,7 +24,7 @@ public class VoidDash_TENNO extends CustomCard {
   private static final int COST = 2;
   private static final int ATTACK_DMG = 14;
   private static final int BLOCK = 14;
-  private static final int UPGRADE_PLUS_DMG= 4;
+  private static final int UPGRADE_PLUS_DMG = 4;
   private static final int UPGRADE_PLUS_BLOCK = 4;
 
   public VoidDash_TENNO() {
@@ -54,7 +54,7 @@ public class VoidDash_TENNO extends CustomCard {
     AbstractDungeon.actionManager.addToBottom(
         new GainBlockAction(p, p, this.block)
     );
-    AbstractDungeon.actionManager.addToBottom( new MakeTempCardInDiscardAction(new VoidCard(), 1));
+    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new VoidCard(), 1));
   }
 
   public AbstractCard makeCopy() {

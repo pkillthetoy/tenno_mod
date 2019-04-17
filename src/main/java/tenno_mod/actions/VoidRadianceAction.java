@@ -13,6 +13,7 @@ import tenno_mod.shared.VoidUtils;
 // Exhaust all voids and then do damage. Note addToTop.
 public class VoidRadianceAction extends AbstractGameAction {
   private DamageInfo info;
+
   public VoidRadianceAction(DamageInfo info) {
     this.actionType = ActionType.EXHAUST;
     this.duration = Settings.ACTION_DUR_FAST;

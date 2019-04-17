@@ -36,7 +36,6 @@ public class ArgonCrystal_TENNO extends CustomRelic {
   }
 
 
-
   @Override
   public AbstractRelic makeCopy() {
     return new ArgonCrystal_TENNO();

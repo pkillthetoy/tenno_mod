@@ -73,11 +73,11 @@ public class ConditionOverload_TENNO extends CustomCard {
     AbstractPlayer player = AbstractDungeon.player;
     this.isDamageModified = false;
     if (mo != null) {
-      float tmp = (float)this.baseDamage;
+      float tmp = (float) this.baseDamage;
 
       if (AbstractDungeon.player.hasRelic("WristBlade") && (this.costForTurn == 0 || this.freeToPlayOnce)) {
         tmp += 3.0F;
-        if (this.baseDamage != (int)tmp) {
+        if (this.baseDamage != (int) tmp) {
           this.isDamageModified = true;
         }
       }
@@ -85,35 +85,35 @@ public class ConditionOverload_TENNO extends CustomCard {
       Iterator powers = player.powers.iterator();
 
       AbstractPower p;
-      while(powers.hasNext()) {
-        p = (AbstractPower)powers.next();
+      while (powers.hasNext()) {
+        p = (AbstractPower) powers.next();
 
         tmp = p.atDamageGive(tmp, this.damageTypeForTurn);
-        if (this.baseDamage != (int)tmp) {
+        if (this.baseDamage != (int) tmp) {
           this.isDamageModified = true;
         }
       }
 
       if (mo != null) {
-        for(powers = mo.powers.iterator(); powers.hasNext(); tmp = p.atDamageReceive(tmp, this.damageTypeForTurn)) {
-          p = (AbstractPower)powers.next();
+        for (powers = mo.powers.iterator(); powers.hasNext(); tmp = p.atDamageReceive(tmp, this.damageTypeForTurn)) {
+          p = (AbstractPower) powers.next();
         }
       }
 
       powers = player.powers.iterator();
 
-      while(powers.hasNext()) {
-        p = (AbstractPower)powers.next();
+      while (powers.hasNext()) {
+        p = (AbstractPower) powers.next();
         tmp = p.atDamageFinalGive(tmp, this.damageTypeForTurn);
-        if (this.baseDamage != (int)tmp) {
+        if (this.baseDamage != (int) tmp) {
           this.isDamageModified = true;
         }
       }
 
       if (mo != null) {
         powers = mo.powers.iterator();
-        while(powers.hasNext()) {
-          p = (AbstractPower)powers.next();
+        while (powers.hasNext()) {
+          p = (AbstractPower) powers.next();
           if (p.type == AbstractPower.PowerType.DEBUFF) {
             tmp += this.magicNumber;
             this.isDamageModified = true;
@@ -121,10 +121,10 @@ public class ConditionOverload_TENNO extends CustomCard {
         }
         powers = mo.powers.iterator();
 
-        while(powers.hasNext()) {
-          p = (AbstractPower)powers.next();
+        while (powers.hasNext()) {
+          p = (AbstractPower) powers.next();
           tmp = p.atDamageFinalReceive(tmp, this.damageTypeForTurn);
-          if (this.baseDamage != (int)tmp) {
+          if (this.baseDamage != (int) tmp) {
             this.isDamageModified = true;
           }
         }

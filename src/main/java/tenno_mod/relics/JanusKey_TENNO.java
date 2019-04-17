@@ -39,7 +39,7 @@ public class JanusKey_TENNO extends CustomRelic {
         p, p, new StrengthPower(p, GAIN_NUMBER), GAIN_NUMBER));
     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
         p, p, new DexterityPower(p, GAIN_NUMBER), GAIN_NUMBER));
-    AbstractDungeon.actionManager.addToBottom( new MakeTempCardInDiscardAction(new VoidCard(), 3));
+    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new VoidCard(), 3));
   }
 
   @Override

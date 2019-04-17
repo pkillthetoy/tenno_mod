@@ -18,7 +18,7 @@ public class GrowingPower_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 3;
-  private static final int UPG_COST =2;
+  private static final int UPG_COST = 2;
 
   public GrowingPower_TENNO() {
     super(

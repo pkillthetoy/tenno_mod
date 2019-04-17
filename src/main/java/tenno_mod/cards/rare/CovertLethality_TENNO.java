@@ -67,6 +67,7 @@ public class CovertLethality_TENNO extends CustomCard {
     return m.type != AbstractMonster.EnemyType.BOSS && m.type != AbstractMonster.EnemyType.ELITE &&
         m.hasPower("Vulnerable");
   }
+
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();

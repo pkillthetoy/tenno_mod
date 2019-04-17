@@ -11,46 +11,45 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class TwinGrakata_TENNO extends CustomRelic {
-    public static final String ID = "TwinGrakata_TENNO";
+  public static final String ID = "TwinGrakata_TENNO";
 
-    private static final String IMG = "img/relics/Beta.png";
-    private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/Beta.png";
+  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
 
-    public TwinGrakata_TENNO() {
-        super(ID,
-                ImageMaster.loadImage(IMG),
-                ImageMaster.loadImage(IMG_OTL), RelicTier.RARE, LandingSound.CLINK);
+  public TwinGrakata_TENNO() {
+    super(ID,
+        ImageMaster.loadImage(IMG),
+        ImageMaster.loadImage(IMG_OTL), RelicTier.RARE, LandingSound.CLINK);
+  }
+
+  public String getUpdatedDescription() {
+    return this.DESCRIPTIONS[0];
+  }
+
+
+  public void onUseCard(AbstractCard card, UseCardAction action) {
+    if (!card.purgeOnUse && card.costForTurn == 0) {
+      flash();
+      AbstractMonster m = null;
+
+      if (action.target != null) {
+        m = (AbstractMonster) action.target;
+      }
+      AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+      AbstractCard tmp = card.makeSameInstanceOf();
+      tmp.current_x = card.current_x;
+      tmp.current_y = card.current_y;
+      tmp.target_x = (Settings.WIDTH / 2.0F - 300.0F * Settings.scale);
+      tmp.target_y = (Settings.HEIGHT / 2.0F);
+      tmp.freeToPlayOnce = true;
+      tmp.applyPowers();
+      tmp.purgeOnUse = true;
+      AbstractDungeon.actionManager.cardQueue.add(new com.megacrit.cardcrawl.cards.CardQueueItem(tmp, m));
     }
+  }
 
-    public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0];
-    }
-
-
-
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && card.costForTurn == 0) {
-            flash();
-            AbstractMonster m = null;
-
-            if (action.target != null) {
-                m = (AbstractMonster)action.target;
-            }
-            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            AbstractCard tmp = card.makeSameInstanceOf();
-            tmp.current_x = card.current_x;
-            tmp.current_y = card.current_y;
-            tmp.target_x = (Settings.WIDTH / 2.0F - 300.0F * Settings.scale);
-            tmp.target_y = (Settings.HEIGHT / 2.0F);
-            tmp.freeToPlayOnce = true;
-            tmp.applyPowers();
-            tmp.purgeOnUse = true;
-            AbstractDungeon.actionManager.cardQueue.add(new com.megacrit.cardcrawl.cards.CardQueueItem(tmp, m));
-        }
-    }
-
-    @Override
-    public AbstractRelic makeCopy() {
-        return new TwinGrakata_TENNO();
-    }
+  @Override
+  public AbstractRelic makeCopy() {
+    return new TwinGrakata_TENNO();
+  }
 }

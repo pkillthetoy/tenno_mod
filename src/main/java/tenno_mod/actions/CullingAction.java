@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class CullingAction extends AbstractGameAction {
 
   private AbstractMonster target;
+
   public CullingAction(AbstractMonster target) {
     this.target = target;
   }

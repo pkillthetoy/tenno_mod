@@ -40,7 +40,8 @@ public class AgileGuard_TENNO extends CustomCard {
   public void use(AbstractPlayer p, AbstractMonster m) {
     AbstractDungeon.actionManager.addToBottom(
         new GainBlockAction(p, p, this.block)
-    );  AbstractDungeon.actionManager.addToBottom(
+    );
+    AbstractDungeon.actionManager.addToBottom(
         new ReduceRandomAttackInHandAction()
     );
   }
