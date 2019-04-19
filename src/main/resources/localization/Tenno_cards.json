@@ -165,5 +165,13 @@
   "FatalTeleport_TENNO": {
     "NAME": "Fatal Teleport",
     "DESCRIPTION": "An enemy loses !M! Strength this turn. Apply 2 Vulnerable. Exhaust."
+  },
+  "RadiantJavelins_TENNO": {
+    "NAME": "Radiant Javelin",
+    "DESCRIPTION": "Deal !D! damage. Deals !M! additional damage for each Void exhausted this combat."
+  },
+  "HunterAdrenaline_TENNO": {
+    "NAME": "Hunter Adrenaline",
+    "DESCRIPTION": "Whenever you receive attack damage, reduce the cost of a random card in your hand by 1 at the start of your next turn."
   }
 }

@@ -49,5 +49,21 @@
       "At the start of your turn, apply #b",
       " #yVulnerable to all enemies."
     ]
+  },
+  "HunterAdrenalinePower_TENNO": {
+    "NAME": "Hunter Adrenaline",
+    "DESCRIPTIONS": [
+      "Whenever you receive attack damage, reduce the cost of a random card in your hand by 1 at the start of your next turn.",
+      "Whenever you receive attack damage, reduce the cost of #b",
+      "random cards in your hand by 1 at the start of your next turn."
+    ]
+  },
+  "HunterAdrenalineChargePower_TENNO": {
+    "NAME": "Adrenaline Burst",
+    "DESCRIPTIONS": [
+      "At the start of your turn, reduce the cost of a random card in your hand by 1.",
+      "At the start of your turn, reduce the cost of a random card in your hand by 1, #b",
+      "times."
+    ]
   }
 }
