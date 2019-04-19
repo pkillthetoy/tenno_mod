@@ -156,5 +156,14 @@
   "AgileGuard_TENNO": {
     "NAME": "Agile Guard",
     "DESCRIPTION": "Gain !B! Block. A random Attack in your hand costs [E] less this turn."
+  },
+  "CorrosiveProjection_TENNO": {
+    "NAME": "Corrosive Projection",
+    "DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to all enemies.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to all enemies. Innate."
+  },
+  "FatalTeleport_TENNO": {
+    "NAME": "Fatal Teleport",
+    "DESCRIPTION": "An enemy loses !M! Strength this turn. Apply 2 Vulnerable. Exhaust."
   }
 }

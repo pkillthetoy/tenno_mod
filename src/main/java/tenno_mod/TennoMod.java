@@ -107,7 +107,9 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new LethalTorrent_TENNO());
     cardsToAdd.add(new ConditionOverload_TENNO());
     cardsToAdd.add(new VoidDash_TENNO());
+    cardsToAdd.add(new CorrosiveProjection_TENNO());
     cardsToAdd.add(new EnergyOrb_TENNO());
+    cardsToAdd.add(new FatalTeleport_TENNO());
 
     // Rares
     cardsToAdd.add(new DailyLogin_TENNO());

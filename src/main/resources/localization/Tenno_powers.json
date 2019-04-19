@@ -42,5 +42,12 @@
       "Whenever you deal unblocked attack damage, randomly apply #b",
       " #yWeak, #yVulnerable, #yPoison, or temporary #Strength loss."
     ]
+  },
+  "CorrosiveProjectionPower_TENNO": {
+    "NAME": "Corrosive Projection",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yVulnerable to all enemies."
+    ]
   }
 }
