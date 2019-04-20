@@ -28,6 +28,9 @@ public class CleavingWhirlwindAction extends AbstractGameAction {
     boolean monsterDied = false;
     for (int i = 0; i < monsters.size(); i++) {
       AbstractMonster target = monsters.get(i);
+      if ((target.isDying || target.currentHealth <= 0) && (!target.halfDead)) {
+        continue;
+      }
       target.damage(this.info);
       if ((target.isDying || target.currentHealth <= 0) && (!target.halfDead)) {
         monsterDied = true;

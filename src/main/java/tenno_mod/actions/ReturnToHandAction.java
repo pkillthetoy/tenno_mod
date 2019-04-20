@@ -15,6 +15,10 @@ public class ReturnToHandAction extends AbstractGameAction {
 
   // Thank you servant mod for this chunk of code.
   public void update() {
+    if (itself.purgeOnUse) {
+      this.isDone = true;
+      return;
+    }
     for (AbstractCard c : AbstractDungeon.player.discardPile.group)
       if (c == this.itself)
         this.where = 0;

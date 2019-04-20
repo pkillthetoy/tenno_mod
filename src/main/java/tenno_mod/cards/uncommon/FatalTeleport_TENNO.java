@@ -54,7 +54,7 @@ public class FatalTeleport_TENNO extends CustomCard {
         new ApplyPowerAction(
             m,
             p,
-            new VulnerablePower(m, this.magicNumber, false),
+            new VulnerablePower(m, 2, false),
             2,
             true)
     );

@@ -5,7 +5,7 @@
     "pktt"
   ],
   "description": "Tenno Character Mod",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "sts_version": "03-16-2019",
   "mts_version": "2.8.0",
   "dependencies": [

@@ -27,6 +27,7 @@ public class ExhaustVoidFromDiscardAction extends AbstractGameAction {
         }
       }
       if (voids.isEmpty()) {
+        this.isDone = true;
         return;
       }
       voids.shuffle();
