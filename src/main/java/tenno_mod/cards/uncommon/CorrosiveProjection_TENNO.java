@@ -32,7 +32,7 @@ public class CorrosiveProjection_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.POWER,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.RARE,
+        CardRarity.UNCOMMON,
         CardTarget.SELF
     );
   }
