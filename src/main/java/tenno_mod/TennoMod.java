@@ -112,6 +112,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new FatalTeleport_TENNO());
     cardsToAdd.add(new RadiantJavelins_TENNO());
     cardsToAdd.add(new HunterAdrenaline_TENNO());
+    cardsToAdd.add(new Reposition_TENNO());
+    cardsToAdd.add(new Flurry_TENNO());
 
     // Rares
     cardsToAdd.add(new DailyLogin_TENNO());
@@ -124,6 +126,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Cataclysm_TENNO());
     cardsToAdd.add(new ChromaticBlade_TENNO());
     cardsToAdd.add(new CovertLethality_TENNO());
+    cardsToAdd.add(new SplitChamber_TENNO());
 
     // Generated cards
     cardsToAdd.add(new CuttingPoise_TENNO());

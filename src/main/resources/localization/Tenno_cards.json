@@ -173,5 +173,17 @@
   "HunterAdrenaline_TENNO": {
     "NAME": "Hunter Adrenaline",
     "DESCRIPTION": "Whenever you receive attack damage, reduce the cost of a random card in your hand by 1 at the start of your next turn."
+  },
+  "Flurry_TENNO": {
+    "NAME": "Flurry",
+    "DESCRIPTION": "Deal !D! damage. Draw a card. If you draw a skill, reduce its cost by 1."
+  },
+  "Reposition_TENNO": {
+    "NAME": "Reposition",
+    "DESCRIPTION": "Gain !B! Block. Draw a card. If you draw a skill, reduce its cost by 1."
+  },
+  "SplitChamber_TENNO": {
+    "NAME": "Split Chamber",
+    "DESCRIPTION": "Copy each card in your hand that costs 0."
   }
 }
