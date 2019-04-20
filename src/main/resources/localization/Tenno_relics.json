@@ -3,18 +3,18 @@
     "NAME": "Nikana",
     "FLAVOR": "A Tenno blade, rich in the old ways.",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yStrength this turn when you play a #ySkill. Gain #b",
-      " #yDexterity this turn when you play an #yAttack."
+      "#ySkills give #b",
+      " temporary #yStrength. #yAttacks give #b",
+      " temporary #yDexterity."
     ]
   },
   "DragonNikana_TENNO": {
     "NAME": "Dragon Nikana",
     "FLAVOR": "A master's weapon, only wielded by the worthy.",
     "DESCRIPTIONS": [
-      "Replaces #rNikana. Gain #b",
-      " #yStrength this turn when you play a #ySkill. Gain #b",
-      " #yDexterity this turn when you play an #yAttack."
+      "Replaces #rNikana. #ySkills give #b",
+      " temporary #yStrength. #yAttacks give #b",
+      " temporary #yDexterity."
     ]
   },
   "PaperLotus_TENNO": {
