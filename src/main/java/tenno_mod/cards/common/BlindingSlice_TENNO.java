@@ -49,18 +49,16 @@ public class BlindingSlice_TENNO extends CustomCard {
             AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
         )
     );
-    for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+    AbstractDungeon.actionManager.addToBottom(
+        new ApplyPowerAction(m, p, new com.megacrit.cardcrawl.powers.StrengthPower(m, -this.magicNumber),
+            -this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+  
+    if (!m.hasPower("Artifact")) {
       AbstractDungeon.actionManager.addToBottom(
-          new ApplyPowerAction(mo, p, new com.megacrit.cardcrawl.powers.StrengthPower(mo, -this.magicNumber),
-              -this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+          new ApplyPowerAction(m, p, new com.megacrit.cardcrawl.powers.GainStrengthPower(m, this.magicNumber),
+              this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
-    for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-      if (!mo.hasPower("Artifact")) {
-        AbstractDungeon.actionManager.addToBottom(
-            new ApplyPowerAction(mo, p, new com.megacrit.cardcrawl.powers.GainStrengthPower(mo, this.magicNumber),
-                this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-      }
-    }
+
 
   }
 
