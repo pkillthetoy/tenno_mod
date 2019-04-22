@@ -31,7 +31,7 @@ public class HunterAdrenaline_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.POWER,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.RARE,
+        CardRarity.UNCOMMON,
         CardTarget.SELF
     );
   }

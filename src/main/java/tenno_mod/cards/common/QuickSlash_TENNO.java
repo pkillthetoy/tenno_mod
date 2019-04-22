@@ -17,7 +17,7 @@ public class QuickSlash_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 0;
-  private static final int ATTACK_DMG = 3;
+  private static final int ATTACK_DMG = 2;
 
   private static final int UPGRADE_PLUS_DMG = 2;
 
@@ -41,7 +41,6 @@ public class QuickSlash_TENNO extends CustomCard {
         new com.megacrit.cardcrawl.cards.DamageInfo(p, this.damage, this.damageTypeForTurn),
         AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DrawCardAction(p, 1));
-    AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DiscardAction(p, p, 1, false));
   }
 
   public AbstractCard makeCopy() {

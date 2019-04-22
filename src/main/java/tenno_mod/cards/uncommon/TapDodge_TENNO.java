@@ -18,9 +18,9 @@ public class TapDodge_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
-  private static final int COST = 2;
-  private static final int BLOCK_AMT = 10;
-  private static final int UPG_BLOCK_AMT = 3;
+  private static final int COST = 1;
+  private static final int BLOCK_AMT = 4;
+  private static final int UPG_BLOCK_AMT = 2;
 
   public TapDodge_TENNO() {
     super(

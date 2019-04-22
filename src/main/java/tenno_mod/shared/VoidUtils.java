@@ -33,6 +33,22 @@ public class VoidUtils {
     return count;
   }
 
+
+  public static int countVoidsInDrawAndDiscard() {
+    int count = 0;
+    AbstractPlayer p = AbstractDungeon.player;
+    for (AbstractCard c : p.drawPile.group) {
+      if (isVoid(c)) {
+        count++;
+      }
+    }
+    for (AbstractCard c : p.discardPile.group) {
+      if (isVoid(c)) {
+        count++;
+      }
+    }
+    return count;
+  }
   public static boolean isVoid(AbstractCard c) {
     return c.type == AbstractCard.CardType.STATUS && c.name.equals(VoidCard.NAME);
   }

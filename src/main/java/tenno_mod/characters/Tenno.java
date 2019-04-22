@@ -30,8 +30,8 @@ public class Tenno extends CustomPlayer {
   private static final int ENERGY_PER_TURN = 3;
 
   private static final String TENNO_MAIN = "img/char/Marisa/tennoMain.png"; // main image
-  private static final String TENNO_SHOULDER_2 = "img/char/Marisa/tennoMain.png"; // shoulder2 / shoulder_1
-  private static final String TENNO_SHOULDER_1 = "img/char/Marisa/tennoMain.png"; // shoulder1 / shoulder_2
+  private static final String TENNO_SHOULDER_2 = "img/char/Marisa/shoulder.png"; // shoulder2 / shoulder_1
+  private static final String TENNO_SHOULDER_1 = "img/char/Marisa/shoulder.png"; // shoulder1 / shoulder_2
   private static final String TENNO_CORPSE = "img/char/Marisa/tennoMain.png"; // dead corpse
   public static final Logger logger = LogManager.getLogger(TennoMod.class.getName());
   //private static final float[] layerSpeeds = { 20.0F, 0.0F, -40.0F, 0.0F, 0.0F, 5.0F, 0.0F, -8.0F, 0.0F, 8.0F };

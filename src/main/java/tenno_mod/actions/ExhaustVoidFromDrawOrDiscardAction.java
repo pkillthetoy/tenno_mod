@@ -38,7 +38,7 @@ public class ExhaustVoidFromDrawOrDiscardAction extends AbstractGameAction {
       voids.shuffle();
       AbstractCard selected = voids.getTopCard();
       CardGroup parentGroup = p.drawPile.group.contains(selected) ? p.drawPile : p.discardPile;
-      AbstractDungeon.actionManager.addToBottom(new ExhaustSpecificCardAction(voids.getTopCard(), parentGroup, true));
+      AbstractDungeon.actionManager.addToTop(new ExhaustSpecificCardAction(voids.getTopCard(), parentGroup, true));
       this.isDone = true;
     }
     tickDuration();

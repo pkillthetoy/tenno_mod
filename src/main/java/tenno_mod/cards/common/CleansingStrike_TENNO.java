@@ -24,6 +24,7 @@ public class CleansingStrike_TENNO extends CustomCard {
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 1;
   private static final int ATTACK_DMG = 10;
+  private static final int UPGRADE_PLUS_DMG = 3;
 
   public CleansingStrike_TENNO() {
     super(
@@ -50,13 +51,11 @@ public class CleansingStrike_TENNO extends CustomCard {
     );
     if (this.upgraded) {
       AbstractDungeon.actionManager.addToBottom(
-          new ExhaustVoidFromDiscardAction());
-      AbstractDungeon.actionManager.addToBottom(
-          new ExhaustVoidFromDrawAction());
-    } else {
-      AbstractDungeon.actionManager.addToBottom(
           new ExhaustVoidFromDrawOrDiscardAction());
     }
+    AbstractDungeon.actionManager.addToBottom(
+        new ExhaustVoidFromDrawOrDiscardAction());
+
   }
 
   public AbstractCard makeCopy() {
@@ -67,6 +66,7 @@ public class CleansingStrike_TENNO extends CustomCard {
     if (!this.upgraded) {
       upgradeName();
       this.rawDescription = DESCRIPTION_UPG;
+      upgradeDamage(UPGRADE_PLUS_DMG);
       initializeDescription();
     }
   }

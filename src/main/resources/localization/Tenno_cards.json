@@ -16,7 +16,7 @@
     "DESCRIPTION": "Deal !D! damage. Apply !M! Weak."
   },
   "PlannedShot_TENNO": {
-    "NAME": "Planned Shot",
+    "NAME": "Spray and Pray",
     "DESCRIPTION": "Deal !D! damage. Put a random Skill from your draw pile into your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Put !M! random Skills from your draw pile into your hand."
   },
@@ -36,12 +36,12 @@
   "CleansingStrike_TENNO": {
     "NAME": "Cleansing Strike",
     "DESCRIPTION": "Deal !D! damage. Exhaust a Void from your draw pile or discard pile.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust a Void from your draw pile and discard pile."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust two Voids from your draw pile or discard pile."
   },
   "Meditation_TENNO": {
     "NAME": "Meditation",
     "DESCRIPTION": "Gain !B! Block. Exhaust a Void from your draw pile or discard pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust a Void from your draw pile and discard pile."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust two Voids from your draw pile or discard pile."
   },
   "TapDodge_TENNO": {
     "NAME": "Tap Dodge",
@@ -78,11 +78,11 @@
   },
   "LethalTorrent_TENNO": {
     "NAME": "Lethal Torrent",
-    "DESCRIPTION": "Deal !D! damage 4 times."
+    "DESCRIPTION": "Deal !D! damage !M! times."
   },
   "LancingJustice_TENNO": {
     "NAME": "Lancing Justice",
-    "DESCRIPTION": "Deal !D! damage. Apply 1 Weak. Apply 1 Vulnerable. Ethereal. Exhaust."
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak. Apply !M! Vulnerable. Ethereal. Exhaust."
   },
   "VirtuousSlash_TENNO": {
     "NAME": "Virtuous Slash",
@@ -126,7 +126,7 @@
   },
   "ConditionOverload_TENNO": {
     "NAME": "Condition Overload",
-    "DESCRIPTION": "Deal !D! damage. Deals !M! extra damage for each debuff on the enemy."
+    "DESCRIPTION": "Deal !D! damage. Deals !M! extra damage for each unique debuff on the enemy."
   },
   "Cataclysm_TENNO": {
     "NAME": "Cataclysm",
@@ -134,7 +134,7 @@
   },
   "ChromaticBlade_TENNO": {
     "NAME": "Chromatic Blade",
-    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply a random debuff."
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, randomly apply 1 Weak, Vulnerable, or temporary Strength loss."
   },
   "CovertLethality_TENNO": {
     "NAME": "Covert Lethality",
@@ -147,11 +147,11 @@
   "EnergyOrb_TENNO": {
     "NAME": "Energy Orb",
     "DESCRIPTION": "Gain [E].",
-    "UPGRADE_DESCRIPTION": "Gain [E][E]."
+    "UPGRADE_DESCRIPTION": "Gain [E] [E]."
   },
   "QuickSlash_TENNO": {
     "NAME": "Quick Slice",
-    "DESCRIPTION": "Deal !D! damage. Draw a card, then discard a card."
+    "DESCRIPTION": "Deal !D! damage. Draw a card."
   },
   "AgileGuard_TENNO": {
     "NAME": "Agile Guard",
@@ -164,11 +164,12 @@
   },
   "FatalTeleport_TENNO": {
     "NAME": "Fatal Teleport",
-    "DESCRIPTION": "An enemy loses !M! Strength this turn. Apply 2 Vulnerable. Exhaust."
+    "DESCRIPTION": "An enemy loses !M! Strength this turn. Apply 2 Vulnerable. Exhaust.",
+    "UPGRADE_DESCRIPTION": "An enemy loses !M! Strength this turn. Apply 3 Vulnerable. Exhaust."
   },
   "RadiantJavelins_TENNO": {
     "NAME": "Radiant Javelin",
-    "DESCRIPTION": "Deal !D! damage. Deals !M! additional damage for each Void exhausted this combat."
+    "DESCRIPTION": "Exhaust a Void from your draw pile or discard pile. Deal !D! damage. Deals !M! additional damage for each Void exhausted this combat."
   },
   "HunterAdrenaline_TENNO": {
     "NAME": "Hunter Adrenaline",
@@ -185,5 +186,17 @@
   "SplitChamber_TENNO": {
     "NAME": "Split Chamber",
     "DESCRIPTION": "Copy each card in your hand that costs 0."
+  },
+  "DualChop_TENNO": {
+    "NAME": "Dual Chop",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+  "TransferenceBeam_TENNO": {
+    "NAME": "Transference Beam",
+    "DESCRIPTION": "Deal !D! damage X times. Apply X Weak and Vulnerable."
+  },
+  "DefensiveThrow_TENNO": {
+    "NAME": "Defensive Throw",
+    "DESCRIPTION": "Deal !D! damage to all enemies. Gain !B! Block for each enemy."
   }
 }

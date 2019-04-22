@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BurstPower;
+import tenno_mod.actions.ExhaustVoidFromDrawOrDiscardAction;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.shared.VoidUtils;
 
@@ -26,9 +27,9 @@ public class RadiantJavelins_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 2;
-  private static final int BASE_DMG = 8;
-  private static final int MAGIC_NUMBER = 2;
-  private static final int UPG_MAGIC_NUMBER= 1;
+  private static final int BASE_DMG = 14;
+  private static final int MAGIC_NUMBER = 6;
+  private static final int UPG_MAGIC_NUMBER= 3;
 
   public RadiantJavelins_TENNO() {
     super(
@@ -47,6 +48,8 @@ public class RadiantJavelins_TENNO extends CustomCard {
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
+    AbstractDungeon.actionManager.addToBottom(
+        new ExhaustVoidFromDrawOrDiscardAction());
     AbstractDungeon.actionManager.addToBottom(
         new DamageAction(
             m,
@@ -88,6 +91,10 @@ public class RadiantJavelins_TENNO extends CustomCard {
       int voidCount = countVoidsInExhaust();
       if (voidCount > 0) {
         tmp += this.magicNumber * voidCount;
+        this.isDamageModified = true;
+      }
+      if (VoidUtils.countVoidsInDrawAndDiscard() > 0) {
+        tmp += this.magicNumber;
         this.isDamageModified = true;
       }
 
@@ -148,9 +155,14 @@ public class RadiantJavelins_TENNO extends CustomCard {
 
   @Override
   public void applyPowers() {
+    super.applyPowers();
     int count = countVoidsInExhaust();
-    this.damage = this.baseDamage + this.magicNumber * count;
+    this.damage += this.magicNumber * count;
     if (count > 0) {
+      this.isDamageModified = true;
+    }
+    if (VoidUtils.countVoidsInDrawAndDiscard() > 0) {
+      this.damage += this.magicNumber;
       this.isDamageModified = true;
     }
   }

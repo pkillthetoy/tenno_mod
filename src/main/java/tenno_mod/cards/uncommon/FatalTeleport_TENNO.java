@@ -18,6 +18,7 @@ public class FatalTeleport_TENNO extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+  public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 1;
   private static final int MAGIC_NUMBER = 6;
@@ -49,13 +50,16 @@ public class FatalTeleport_TENNO extends CustomCard {
           new ApplyPowerAction(m, p, new com.megacrit.cardcrawl.powers.GainStrengthPower(m, this.magicNumber),
               this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
-
+    int vulnAmount = 2;
+    if (this.upgraded) {
+      vulnAmount = 3;
+    }
     AbstractDungeon.actionManager.addToBottom(
         new ApplyPowerAction(
             m,
             p,
-            new VulnerablePower(m, 2, false),
-            2,
+            new VulnerablePower(m, vulnAmount, false),
+            vulnAmount,
             true)
     );
   }
@@ -68,6 +72,8 @@ public class FatalTeleport_TENNO extends CustomCard {
     if (!this.upgraded) {
       upgradeName();
       upgradeMagicNumber(UPG_MAGIC_NUMBER);
+      this.rawDescription = DESCRIPTION_UPG;
+      initializeDescription();
     }
   }
 }

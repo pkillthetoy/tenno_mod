@@ -19,7 +19,7 @@ public class Aviator_TENNO extends CustomCard {
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 1;
-  private static final int BLOCK_AMT = 8;
+  private static final int BLOCK_AMT = 10;
   private static final int MAGIC_NUMBER = 1;
   private static final int UPG_MAGIC_NUMBER = 1;
 

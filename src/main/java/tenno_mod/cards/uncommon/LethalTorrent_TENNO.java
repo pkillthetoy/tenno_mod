@@ -18,9 +18,10 @@ public class LethalTorrent_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
-  private static final int COST = 2;
-  private static final int ATTACK_DMG = 3;
-  private static final int UPGRADE_PLUS_DMG = 1;
+  private static final int COST = 1;
+  private static final int ATTACK_DMG = 1;
+  private static final int MAGIC_NUMBER = 4;
+  private static final int UPGRADE_MAGIC_NUMBER = 1;
 
   public LethalTorrent_TENNO() {
     super(
@@ -35,10 +36,11 @@ public class LethalTorrent_TENNO extends CustomCard {
         CardTarget.ENEMY
     );
     this.baseDamage = ATTACK_DMG;
+    this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < this.magicNumber; i++) {
       AbstractDungeon.actionManager.addToBottom(
           new DamageAction(
               m,
@@ -56,7 +58,7 @@ public class LethalTorrent_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      upgradeDamage(UPGRADE_PLUS_DMG);
+      upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
     }
   }
 }

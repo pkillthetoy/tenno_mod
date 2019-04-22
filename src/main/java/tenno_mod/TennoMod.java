@@ -99,6 +99,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new BlindingSlice_TENNO());
     cardsToAdd.add(new QuickSlash_TENNO());
     cardsToAdd.add(new AgileGuard_TENNO());
+    cardsToAdd.add(new DefensiveThrow_TENNO());
 
     // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
@@ -114,11 +115,13 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new HunterAdrenaline_TENNO());
     cardsToAdd.add(new Reposition_TENNO());
     cardsToAdd.add(new Flurry_TENNO());
+    cardsToAdd.add(new DualChop_TENNO());
+    cardsToAdd.add(new TransferenceBeam_TENNO());
 
     // Rares
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
-    cardsToAdd.add(new ExaltedBlade_TENNO());
+    //ardsToAdd.add(new ExaltedBlade_TENNO());
     cardsToAdd.add(new UmbralForm_TENNO());
     cardsToAdd.add(new GrowingPower_TENNO());
     cardsToAdd.add(new WildFrenzy_TENNO());
@@ -126,7 +129,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Cataclysm_TENNO());
     cardsToAdd.add(new ChromaticBlade_TENNO());
     cardsToAdd.add(new CovertLethality_TENNO());
-    cardsToAdd.add(new SplitChamber_TENNO());
+    //Temporarliy removed
+    //cardsToAdd.add(new SplitChamber_TENNO());
 
     // Generated cards
     cardsToAdd.add(new CuttingPoise_TENNO());

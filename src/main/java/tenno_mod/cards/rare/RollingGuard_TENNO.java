@@ -58,4 +58,10 @@ public class RollingGuard_TENNO extends CustomCard {
       upgradeBaseCost(UPG_COST);
     }
   }
+
+  @Override
+  public void applyPowers() {
+    super.applyPowers();
+    this.retain = true;
+  }
 }

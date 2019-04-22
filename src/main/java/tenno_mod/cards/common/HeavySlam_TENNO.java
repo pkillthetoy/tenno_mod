@@ -21,7 +21,7 @@ public class HeavySlam_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 2;
-  private static final int ATTACK_DMG = 12;
+  private static final int ATTACK_DMG = 14;
   private static final int ENERGY_COST_REDUCTION = 1;
   private static final int UPGRADE_PLUS_DMG = 4;
 

@@ -38,12 +38,10 @@ public class ChromaticBladePower_TENNO extends AbstractPower {
   }
 
   public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-    TennoMod.logger.info("AAAA");
     if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
-      TennoMod.logger.info("BBBB");
       flash();
 
-      int randomNum = AbstractDungeon.miscRng.random(3);
+      int randomNum = AbstractDungeon.miscRng.random(2);
       TennoMod.logger.info(randomNum);
       switch (randomNum) {
         case 0:
@@ -65,15 +63,6 @@ public class ChromaticBladePower_TENNO extends AbstractPower {
                   true));
           break;
         case 2:
-          AbstractDungeon.actionManager.addToBottom(
-              new ApplyPowerAction(
-                  target,
-                  owner,
-                  new PoisonPower(target, owner, this.amount),
-                  this.amount,
-                  true));
-          break;
-        case 3:
           AbstractDungeon.actionManager.addToBottom(
               new ApplyPowerAction(target, owner, new com.megacrit.cardcrawl.powers.StrengthPower(target, -this.amount),
                   -this.amount, true, AbstractGameAction.AttackEffect.NONE));

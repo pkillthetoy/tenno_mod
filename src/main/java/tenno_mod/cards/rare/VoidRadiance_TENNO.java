@@ -20,8 +20,8 @@ public class VoidRadiance_TENNO extends CustomCard {
   public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 3;
-  private static final int DAMAGE = 7;
-  private static final int UPG_DMG = 2;
+  private static final int DAMAGE = 16;
+  private static final int UPG_DMG = 5;
 
   public VoidRadiance_TENNO() {
     super(

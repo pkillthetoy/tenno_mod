@@ -57,7 +57,7 @@
     "NAME": "Polymer Bundle",
     "FLAVOR": "Hard thermoplastic casing with many applications.",
     "DESCRIPTIONS": [
-      "Gain #b1 $yBlock for every #b2 cards drawn in a turn."
+      "Gain #b1 #yBlock for every #b2 cards drawn in a turn."
     ]
   },
   "JanusKey_TENNO": {

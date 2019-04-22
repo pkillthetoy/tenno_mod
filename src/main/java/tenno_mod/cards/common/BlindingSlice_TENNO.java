@@ -20,7 +20,7 @@ public class BlindingSlice_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Strike.png";
   private static final int COST = 1;
-  private static final int ATTACK_DMG = 7;
+  private static final int ATTACK_DMG = 9;
   private static final int UPGRADE_PLUS_DMG = 3;
   private static final int MAGIC_NUMBER = 2;
   private static final int UPGRADE_MAGIC_NUMBER = 1;
@@ -52,7 +52,7 @@ public class BlindingSlice_TENNO extends CustomCard {
     AbstractDungeon.actionManager.addToBottom(
         new ApplyPowerAction(m, p, new com.megacrit.cardcrawl.powers.StrengthPower(m, -this.magicNumber),
             -this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-  
+
     if (!m.hasPower("Artifact")) {
       AbstractDungeon.actionManager.addToBottom(
           new ApplyPowerAction(m, p, new com.megacrit.cardcrawl.powers.GainStrengthPower(m, this.magicNumber),

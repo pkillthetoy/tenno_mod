@@ -40,7 +40,7 @@
     "NAME": "Chromatic Blade",
     "DESCRIPTIONS": [
       "Whenever you deal unblocked attack damage, randomly apply #b",
-      " #yWeak, #yVulnerable, #yPoison, or temporary #Strength loss."
+      " #yWeak, #yVulnerable, or temporary #Strength loss."
     ]
   },
   "CorrosiveProjectionPower_TENNO": {
