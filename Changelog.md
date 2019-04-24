@@ -1,3 +1,7 @@
+### 4/23/2019 - 0.1.4
+
+Added art to differentiate the three card types. 
+
 ### 4/20/2019 - 0.1.3
 
 This changelog exists now.

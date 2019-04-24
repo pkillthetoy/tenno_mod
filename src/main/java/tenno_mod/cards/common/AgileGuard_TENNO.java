@@ -17,7 +17,7 @@ public class AgileGuard_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Beta.png";
+  public static final String IMG_PATH = "img/cards/Skill.png";
   private static final int COST = 1;
   private static final int BLOCK_AMT = 9;
   private static final int UPGRADE_PLUS_BLOCK = 3;
