@@ -153,6 +153,10 @@
     "NAME": "Quick Slice",
     "DESCRIPTION": "Deal !D! damage. Draw a card."
   },
+  "QuickGuard_TENNO": {
+    "NAME": "Quick Guard",
+    "DESCRIPTION": "Gain !B! Block. Draw a card."
+  },
   "AgileGuard_TENNO": {
     "NAME": "Agile Guard",
     "DESCRIPTION": "Gain !B! Block. A random Attack in your hand costs [E] less this turn."

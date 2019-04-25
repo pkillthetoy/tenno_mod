@@ -11,6 +11,8 @@ Cleaned up some actions to use addToTop whenever applicable. This should clean u
 ordering of effects (e.g. Nikana could gain stats before a card's effects completed) but shouldn't have
 any gameplay effects.
 
+Fixed Quick Guard not appearing.
+
 ### 4/23/2019 - 0.1.4
 
 Added art to differentiate the three card types. 

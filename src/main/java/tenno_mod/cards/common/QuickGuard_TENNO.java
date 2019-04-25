@@ -32,7 +32,7 @@ public class QuickGuard_TENNO extends CustomCard {
         CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
         CardRarity.COMMON,
-        CardTarget.ENEMY
+        CardTarget.SELF
     );
     this.baseBlock = BLOCK_AMT;
   }
