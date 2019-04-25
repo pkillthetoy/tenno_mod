@@ -45,8 +45,7 @@ public class Flurry_TENNO extends CustomCard {
     if (AbstractDungeon.player.drawPile.isEmpty()) {
       AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
     }
-    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(CardType.SKILL));
-    AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
+    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(p, CardType.SKILL));
     AbstractDungeon.actionManager.addToBottom(
         new DamageAction(
             m,

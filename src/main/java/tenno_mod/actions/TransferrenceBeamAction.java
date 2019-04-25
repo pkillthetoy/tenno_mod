@@ -46,12 +46,7 @@ public class TransferrenceBeamAction extends com.megacrit.cardcrawl.actions.Abst
     }
 
     if (effect > 0) {
-      for (int i = 0; i < effect; i++) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(this.m,
-            new DamageInfo(this.p, this.damage, this.damageTypeForTurn),
-            AttackEffect.FIRE));
-      }
-      AbstractDungeon.actionManager.addToBottom(
+      AbstractDungeon.actionManager.addToTop(
           new ApplyPowerAction(
               m,
               p,
@@ -59,7 +54,7 @@ public class TransferrenceBeamAction extends com.megacrit.cardcrawl.actions.Abst
               effect,
               true)
       );
-      AbstractDungeon.actionManager.addToBottom(
+      AbstractDungeon.actionManager.addToTop(
           new ApplyPowerAction(
               m,
               p,
@@ -67,6 +62,12 @@ public class TransferrenceBeamAction extends com.megacrit.cardcrawl.actions.Abst
               effect,
               true)
       );
+      for (int i = 0; i < effect; i++) {
+        AbstractDungeon.actionManager.addToTop(new DamageAction(this.m,
+            new DamageInfo(this.p, this.damage, this.damageTypeForTurn),
+            AttackEffect.FIRE));
+      }
+
       if (!this.freeToPlayOnce) {
         this.p.energy.use(EnergyPanel.totalCount);
       }

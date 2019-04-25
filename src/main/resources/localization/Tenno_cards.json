@@ -198,5 +198,19 @@
   "DefensiveThrow_TENNO": {
     "NAME": "Defensive Throw",
     "DESCRIPTION": "Deal !D! damage to all enemies. Gain !B! Block for each enemy."
+  },
+  "SelfImprovement_TENNO": {
+    "NAME": "Self Improvement",
+    "DESCRIPTION": "Draw a card. It costs [E] less this combat.",
+    "UPGRADE_DESCRIPTION": "Draw two cards. They cost [E] less this combat."
+  },
+  "Versatility_TENNO": {
+    "NAME": "Versatility ",
+    "DESCRIPTION": "Gain 1 Strength. Gain 1 Dexterity. Draw a card.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Strength. Gain 1 Dexterity. Draw two cards."
+  },
+  "FallingKick_TENNO": {
+    "NAME": "Falling Kick",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! cards."
   }
 }

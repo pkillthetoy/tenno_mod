@@ -38,7 +38,7 @@ public class CleavingWhirlwindAction extends AbstractGameAction {
     }
     if (monsterDied) {
       // Return to hand.
-      AbstractDungeon.actionManager.addToBottom(new ReturnToHandAction(itself));
+      AbstractDungeon.actionManager.addToTop(new ReturnToHandAction(itself, p));
     }
     this.isDone = true;
   }

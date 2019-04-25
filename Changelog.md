@@ -1,3 +1,16 @@
+### 4/24/2019 - 0.1.4.1
+
+Going nuts with the numbers now.
+
+Added new cards:
+* Self Improvement: Uncommon, 1 cost, Draw a card, it costs 1 less this combat. Upgrades to 2 cards. 
+* Versatility: Uncommon, 1 cost power, Gain 1 Str, Gain 1 Dex, Draw 1(2) card(s).
+* Falling Kick: Common, 1 cost attack, Deal 6(9) damage, draw 2 cards. Yes, this upgrades into Pommel Strike.
+
+Cleaned up some actions to use addToTop whenever applicable. This should clean up some awkward pauses or strange
+ordering of effects (e.g. Nikana could gain stats before a card's effects completed) but shouldn't have
+any gameplay effects.
+
 ### 4/23/2019 - 0.1.4
 
 Added art to differentiate the three card types. 

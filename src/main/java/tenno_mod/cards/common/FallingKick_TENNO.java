@@ -3,6 +3,8 @@ package tenno_mod.cards.common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.DrawPileToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,21 +12,20 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import tenno_mod.actions.ExhaustVoidFromDrawOrDiscardAction;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class CleansingStrike_TENNO extends CustomCard {
-  public static final String ID = "CleansingStrike_TENNO";
+public class FallingKick_TENNO extends CustomCard {
+  public static final String ID = "FallingKick_TENNO";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 1;
-  private static final int ATTACK_DMG = 10;
+  private static final int ATTACK_DMG = 6;
   private static final int UPGRADE_PLUS_DMG = 3;
+  private static final int MAGIC_NUMBER = 2;
 
-  public CleansingStrike_TENNO() {
+  public FallingKick_TENNO() {
     super(
         ID,
         NAME,
@@ -36,6 +37,7 @@ public class CleansingStrike_TENNO extends CustomCard {
         CardRarity.COMMON,
         CardTarget.ENEMY
     );
+    this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
     this.baseDamage = ATTACK_DMG;
   }
 
@@ -47,23 +49,17 @@ public class CleansingStrike_TENNO extends CustomCard {
             AbstractGameAction.AttackEffect.BLUNT_LIGHT
         )
     );
-    if (this.upgraded) {
-      AbstractDungeon.actionManager.addToBottom(
-          new ExhaustVoidFromDrawOrDiscardAction());
-    }
     AbstractDungeon.actionManager.addToBottom(
-        new ExhaustVoidFromDrawOrDiscardAction());
-
+        new DrawCardAction(p, this.magicNumber));
   }
 
   public AbstractCard makeCopy() {
-    return new CleansingStrike_TENNO();
+    return new FallingKick_TENNO();
   }
 
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      this.rawDescription = DESCRIPTION_UPG;
       upgradeDamage(UPGRADE_PLUS_DMG);
       initializeDescription();
     }

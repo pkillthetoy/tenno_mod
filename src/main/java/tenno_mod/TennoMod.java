@@ -100,6 +100,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new QuickSlash_TENNO());
     cardsToAdd.add(new AgileGuard_TENNO());
     cardsToAdd.add(new DefensiveThrow_TENNO());
+    cardsToAdd.add(new FallingKick_TENNO());
 
     // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
@@ -117,6 +118,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Flurry_TENNO());
     cardsToAdd.add(new DualChop_TENNO());
     cardsToAdd.add(new TransferenceBeam_TENNO());
+    cardsToAdd.add(new SelfImprovement_TENNO());
+    cardsToAdd.add(new Versatility_TENNO());
 
     // Rares
     cardsToAdd.add(new DailyLogin_TENNO());
