@@ -102,6 +102,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new AgileGuard_TENNO());
     cardsToAdd.add(new DefensiveThrow_TENNO());
     cardsToAdd.add(new FallingKick_TENNO());
+    cardsToAdd.add(new FlyingShot_TENNO());
+    cardsToAdd.add(new CombatKnowledge_TENNO());
 
     // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
@@ -133,6 +135,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Cataclysm_TENNO());
     cardsToAdd.add(new ChromaticBlade_TENNO());
     cardsToAdd.add(new CovertLethality_TENNO());
+    cardsToAdd.add(new LinkedNarta_TENNO());
+    cardsToAdd.add(new MasterfulCombination_TENNO());
     //Temporarliy removed
     //cardsToAdd.add(new SplitChamber_TENNO());
 

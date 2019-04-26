@@ -23,6 +23,14 @@
       " upgraded #yUmbral cards into your hand."
     ]
   },
+  "LinkedNartaPower_TENNO": {
+    "NAME": "Linked Narta",
+    "DESCRIPTIONS": [
+      "After you play a card, draw a card.",
+      "After you play a card, draw #b",
+      " cards."
+    ]
+  },
   "GrowingPowerPower_TENNO": {
     "NAME": "Growing Power",
     "DESCRIPTIONS": [

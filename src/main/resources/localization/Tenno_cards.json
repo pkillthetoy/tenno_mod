@@ -161,6 +161,10 @@
     "NAME": "Agile Guard",
     "DESCRIPTION": "Gain !B! Block. A random Attack in your hand costs [E] less this turn."
   },
+  "FlyingShot_TENNO": {
+    "NAME": "Flying Shot",
+    "DESCRIPTION": "Deal !D! Damage. A random Skill in your hand costs [E] less this turn."
+  },
   "CorrosiveProjection_TENNO": {
     "NAME": "Corrosive Projection",
     "DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to all enemies.",
@@ -216,5 +220,21 @@
   "FallingKick_TENNO": {
     "NAME": "Falling Kick",
     "DESCRIPTION": "Deal !D! damage. Draw !M! cards."
+  },
+  "CombatKnowledge_TENNO": {
+    "NAME": "Combat Knowledge",
+    "DESCRIPTION": "Draw !M! cards. Gain Block equal to the number of cards in your hand.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Gain Block equal to the number of cards in your hand +3.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gains !B! Block.)"
+    ]
+  },
+  "LinkedNarta_TENNO": {
+    "NAME": "Linked Narta",
+    "DESCRIPTION": "Whenever you play a card this turn, draw a card."
+  },
+  "MasterfulCombination_TENNO": {
+    "NAME": "Masterful Combination",
+    "DESCRIPTION": "Put an Attack and a Skill from your draw pile into your hand. Exhaust."
   }
 }

@@ -1,3 +1,12 @@
+### 4/25/2019 - 0.1.4.2
+
+Added new cards:
+
+* Flying Shot: Common, 1 cost, do 8(11) damage, reduce the cost of a random skill by 1.
+* Combat Knowledge: Common, 1 cost, Draw 2 cards, gain block equal to the number of cards in your hand (+3).
+* Linked Narta: Rare, 1(0) cost, whenever you play a card this turn, draw a card.
+* Masterful Combination: Rare, 1(0) cost, Tutor an attack and a skill into your hand. Exhaust.
+
 ### 4/24/2019 - 0.1.4.1
 
 Going nuts with the numbers now.
