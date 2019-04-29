@@ -2,8 +2,6 @@ package tenno_mod.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -26,20 +24,11 @@ public class PolymerBundle_TENNO extends CustomRelic {
   }
 
   @Override
-  public void atTurnStart() {
-    this.counter = 0;
-  }
-
-  @Override
-  public void onCardDraw(AbstractCard drawnCard) {
+  public void onPlayerEndTurn() {
     AbstractPlayer p = AbstractDungeon.player;
-    this.counter++;
-    if (this.counter % 2 == 0) {
-      flash();
-      AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(p, this));
-      this.counter = 0;
-      AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, 1));
-    }
+    flash();
+    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, p.hand.size()));
+
   }
 
   @Override

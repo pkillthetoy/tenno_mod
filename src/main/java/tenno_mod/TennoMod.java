@@ -104,6 +104,10 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new FallingKick_TENNO());
     cardsToAdd.add(new FlyingShot_TENNO());
     cardsToAdd.add(new CombatKnowledge_TENNO());
+    cardsToAdd.add(new DoubleGuard_TENNO());
+    cardsToAdd.add(new BlindRage_TENNO());
+    cardsToAdd.add(new ReturnStroke_TENNO());
+    cardsToAdd.add(new Cripple_TENNO());
 
     // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
@@ -123,6 +127,8 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new TransferenceBeam_TENNO());
     cardsToAdd.add(new SelfImprovement_TENNO());
     cardsToAdd.add(new Versatility_TENNO());
+    cardsToAdd.add(new HallowedGround_TENNO());
+    cardsToAdd.add(new Duplication_TENNO());
 
     // Rares
     cardsToAdd.add(new DailyLogin_TENNO());
@@ -180,6 +186,7 @@ public class TennoMod implements EditCharactersSubscriber,
     BaseMod.addRelicToCustomPool(new Skiajati_TENNO(), TENNO_COLOR);
     BaseMod.addRelicToCustomPool(new JanusKey_TENNO(), TENNO_COLOR);
     BaseMod.addRelicToCustomPool(new PolymerBundle_TENNO(), TENNO_COLOR);
+    BaseMod.addRelicToCustomPool(new MasteryBadge_TENNO(), TENNO_COLOR);
 
   }
 

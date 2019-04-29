@@ -236,5 +236,31 @@
   "MasterfulCombination_TENNO": {
     "NAME": "Masterful Combination",
     "DESCRIPTION": "Put an Attack and a Skill from your draw pile into your hand. Exhaust."
+  },
+  "DoubleGuard_TENNO": {
+    "NAME": "Double Guard",
+    "DESCRIPTION": "Gain !B! Block twice."
+  },
+  "BlindRage_TENNO": {
+    "NAME": "Blind Rage",
+    "DESCRIPTION": "Play a random Attack from your draw pile."
+  },
+  "Cripple_TENNO": {
+    "NAME": "Cripple",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable to an enemy."
+  },
+  "ReturnStroke_TENNO": {
+    "NAME": "Return Stroke",
+    "DESCRIPTION": "Deal !D! damage. Put a card from your discard pile into your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Put a card from your discard pile into your hand. ."
+  },
+  "HallowedGround_TENNO": {
+    "NAME": "Hallowed Ground",
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Artifact. Exhaust."
+  },
+  "Duplication_TENNO": {
+    "NAME": "Duplication",
+    "DESCRIPTION": "Choose a card in your hand. Make a copy that costs [E] less.",
+    "UPGRADE_DESCRIPTION": "Choose a card in your hand. Make a copy that costs 0."
   }
 }

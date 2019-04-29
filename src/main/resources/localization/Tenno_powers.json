@@ -61,17 +61,25 @@
   "HunterAdrenalinePower_TENNO": {
     "NAME": "Hunter Adrenaline",
     "DESCRIPTIONS": [
-      "Whenever you receive attack damage, reduce the cost of a random card in your hand by 1 at the start of your next turn.",
-      "Whenever you receive attack damage, reduce the cost of #b",
-      "random cards in your hand by 1 at the start of your next turn."
+      "Whenever you receive attack damage, reduce the cost of a random card in your hand by [E] at the start of your next turn.",
+      "Whenever you receive attack damage, reduce the cost of a random card in your hand by [E] at the start of your next turn, #b",
+      " times."
     ]
   },
   "HunterAdrenalineChargePower_TENNO": {
     "NAME": "Adrenaline Burst",
     "DESCRIPTIONS": [
-      "At the start of your turn, reduce the cost of a random card in your hand by 1.",
-      "At the start of your turn, reduce the cost of a random card in your hand by 1, #b",
-      "times."
+      "At the start of your turn, reduce the cost of a random card in your hand by [E].",
+      "At the start of your turn, reduce the cost of a random card in your hand by [E], #b",
+      " times."
+    ]
+  },
+  "RetainAndReducePower_TENNO": {
+    "NAME": "Retain and Reduce Cards",
+    "DESCRIPTIONS": [
+      "Retain up to #b1 card each turn. Reduce its cost by [E] next turn.",
+      "Retain up to #b",
+      "cards each turn. Reduce their costs by [E] next turn."
     ]
   }
 }

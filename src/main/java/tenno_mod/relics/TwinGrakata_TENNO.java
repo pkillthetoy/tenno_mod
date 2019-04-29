@@ -16,18 +16,28 @@ public class TwinGrakata_TENNO extends CustomRelic {
   private static final String IMG = "img/relics/Beta.png";
   private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
 
+  private boolean activated;
+
   public TwinGrakata_TENNO() {
     super(ID,
         ImageMaster.loadImage(IMG),
-        ImageMaster.loadImage(IMG_OTL), RelicTier.RARE, LandingSound.CLINK);
+        ImageMaster.loadImage(IMG_OTL), RelicTier.UNCOMMON, LandingSound.CLINK);
+    this.activated = true;
   }
 
   public String getUpdatedDescription() {
     return this.DESCRIPTIONS[0];
   }
 
+  public void atTurnStart() {
+    this.activated = true;
+    beginPulse();
+  }
 
   public void onUseCard(AbstractCard card, UseCardAction action) {
+    if (!this.activated) {
+      return;
+    }
     if (!card.purgeOnUse && card.costForTurn == 0) {
       flash();
       AbstractMonster m = null;
@@ -45,6 +55,9 @@ public class TwinGrakata_TENNO extends CustomRelic {
       tmp.applyPowers();
       tmp.purgeOnUse = true;
       AbstractDungeon.actionManager.cardQueue.add(new com.megacrit.cardcrawl.cards.CardQueueItem(tmp, m));
+
+      this.stopPulse();
+      this.activated = false;
     }
   }
 

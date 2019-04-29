@@ -3,8 +3,6 @@ package tenno_mod.cards.uncommon;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -42,10 +40,6 @@ public class Flurry_TENNO extends CustomCard {
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
-    if (AbstractDungeon.player.drawPile.isEmpty()) {
-      AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
-    }
-    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(p, CardType.SKILL));
     AbstractDungeon.actionManager.addToBottom(
         new DamageAction(
             m,
@@ -53,7 +47,7 @@ public class Flurry_TENNO extends CustomCard {
             AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
         )
     );
-
+    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(p, CardType.SKILL));
   }
 
   public AbstractCard makeCopy() {

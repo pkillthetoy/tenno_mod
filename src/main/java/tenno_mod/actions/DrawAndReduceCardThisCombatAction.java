@@ -2,10 +2,10 @@ package tenno_mod.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import tenno_mod.TennoMod;
 
 public class DrawAndReduceCardThisCombatAction extends AbstractGameAction {
 
@@ -18,8 +18,15 @@ public class DrawAndReduceCardThisCombatAction extends AbstractGameAction {
   }
 
   public void update() {
-    TennoMod.logger.info(p.drawPile.size());
-    if (p.drawPile.isEmpty()) {
+
+    if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
+      this.isDone = true;
+      return;
+    }
+
+    if (AbstractDungeon.player.drawPile.isEmpty()) {
+      AbstractDungeon.actionManager.addToTop(new DrawAndReduceCardThisCombatAction(p));
+      AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
       this.isDone = true;
       return;
     }

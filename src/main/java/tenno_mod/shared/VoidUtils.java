@@ -49,6 +49,7 @@ public class VoidUtils {
     }
     return count;
   }
+
   public static boolean isVoid(AbstractCard c) {
     return c.type == AbstractCard.CardType.STATUS && c.name.equals(VoidCard.NAME);
   }

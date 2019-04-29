@@ -3,7 +3,6 @@ package tenno_mod.cards.uncommon;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,7 +12,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.BurstPower;
 import tenno_mod.actions.ExhaustVoidFromDrawOrDiscardAction;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.shared.VoidUtils;
@@ -29,7 +27,7 @@ public class RadiantJavelins_TENNO extends CustomCard {
   private static final int COST = 2;
   private static final int BASE_DMG = 14;
   private static final int MAGIC_NUMBER = 6;
-  private static final int UPG_MAGIC_NUMBER= 3;
+  private static final int UPG_MAGIC_NUMBER = 3;
 
   public RadiantJavelins_TENNO() {
     super(

@@ -1,3 +1,31 @@
+### 4/28/2019 - 0.1.5.0
+
+Made enough changes that I consider this another increment.
+
+This version has 18 commons (same as defect) and all necessary relics. 
+
+Added new cards:
+
+* Blind Rage: Common, 1(0) cost, play a random attack from your deck.
+* Cripple: Common, 1 cost, apply 2(3) weak and vulnerable.
+* Double Guard: Common, 1 cost, gain 4(6) block twice.
+* Return Stroke: Common, 1 cost, deal 3 damage, return a card from discard to hand, exhaust (upgrade does not exhaust).
+* Duplication: Uncommon, 1 cost, make a copy of a card in your hand. It costs 1 less.
+* Hallowed Ground: Uncommon, 2 cost, gain 13(17) block and 1(2) Artifact. Exhaust. 
+
+Added/changed relics:
+
+* Added Mastery badge: rare, retain a card each turn, and any retained cards cost 1 less next turn. (E.g. if you get Runic
+  pyramid or get retain effects from another class)
+* Changed Polymer Bundle: gain block equal to your hand size at the end of your turn.
+* Changed Twin Grakata: reduced to uncommon, only copies the first 0-cost card you play each turn.
+  
+Other:
+
+* Cleaned up draw-and-reduce actions like those on Flurry, Self Improvement, and Reposition.
+* Clarified description for Hunter Adrenaline.
+* Shortened the flavor of Janus Key. 
+
 ### 4/25/2019 - 0.1.4.2
 
 Added new cards:

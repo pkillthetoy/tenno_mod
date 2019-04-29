@@ -2,7 +2,6 @@ package tenno_mod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -10,9 +9,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import tenno_mod.cards.generated.UmbralFiber_TENNO;
-import tenno_mod.cards.generated.UmbralHowl_TENNO;
-import tenno_mod.cards.generated.UmbralIntensify_TENNO;
 
 public class LinkedNartaPower_TENNO extends AbstractPower {
   public static final String POWER_ID = "LinkedNartaPower_TENNO";

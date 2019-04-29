@@ -1,8 +1,6 @@
 package tenno_mod.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -39,13 +37,10 @@ public class Reposition_TENNO extends CustomCard {
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
-    if (AbstractDungeon.player.drawPile.isEmpty()) {
-      AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
-    }
-    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(p, CardType.ATTACK));
     AbstractDungeon.actionManager.addToBottom(
         new GainBlockAction(p, p, this.block)
     );
+    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(p, CardType.ATTACK));
   }
 
   public AbstractCard makeCopy() {
