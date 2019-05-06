@@ -1,32 +1,30 @@
-package tenno_mod.cards.basic;
+package tenno_mod.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class MaimingStrike_TENNO extends CustomCard {
-  public static final String ID = "MaimingStrike_TENNO";
+public class VoidBlast_TENNO extends CustomCard {
+  public static final String ID = "VoidBlast_TENNO";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
-  private static final int COST = 1;
-  private static final int ATTACK_DMG = 7;
+  private static final int COST = 0;
+  private static final int ATTACK_DMG = 9;
   private static final int UPGRADE_PLUS_DMG = 3;
-  private static final int MAGIC_NUMBER = 1;
-  private static final int UPG_MAGIC_NUMBER = 1;
 
-  public MaimingStrike_TENNO() {
+  public VoidBlast_TENNO() {
     super(
         ID,
         NAME,
@@ -35,12 +33,11 @@ public class MaimingStrike_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.BASIC,
+        CardRarity.COMMON,
         CardTarget.ENEMY
     );
-    this.tags.add(CardTags.STRIKE);
-    this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
     this.baseDamage = ATTACK_DMG;
+    this.tags.add(CardTags.STRIKE);
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
@@ -51,25 +48,17 @@ public class MaimingStrike_TENNO extends CustomCard {
             AbstractGameAction.AttackEffect.SLASH_DIAGONAL
         )
     );
-    AbstractDungeon.actionManager.addToBottom(
-        new ApplyPowerAction(
-            m,
-            p,
-            new WeakPower(m, this.magicNumber, false),
-            this.magicNumber,
-            true)
-    );
+    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new VoidCard(), 1));
   }
 
   public AbstractCard makeCopy() {
-    return new MaimingStrike_TENNO();
+    return new VoidBlast_TENNO();
   }
 
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
       upgradeDamage(UPGRADE_PLUS_DMG);
-      upgradeMagicNumber(UPG_MAGIC_NUMBER);
     }
   }
 }

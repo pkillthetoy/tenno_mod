@@ -1,3 +1,38 @@
+### 5/5/2019 - 0.1.6
+
+Major changes. All cards have been designed but not yet implemented. All relics are present.  
+
+Added new cards:
+
+* Exploit options. 0 cost common attack, deals damage equal to cards in hand (+3)
+* Concealed Weapons. 2 cost rare attack, Gain 4(6) block for each other attack in hand, Deal 4(6) damage for each skill in hand.
+* Embrace the Void. 1 cost rare power, whenever you exhaust a void gain 1 Strength, add 3(4) voids to discard.
+* Void Blast. 0 cost uncommon attack. Deal 9(12) damage, add a void to discard.
+* Scattershot. 1 cost uncommon power. At end of turn, deal 1(2) damage to a random enemy for each card in hand.
+*  
+
+Added relic:
+ 
+* Kuva. When you exhaust a Void, heal for 2. 
+
+Changed Relic:
+
+* Mastery Badge no longer reduces all retained cards, just the one you picked.
+
+Changed cards:
+
+* Cleaving Whirlwind. Adds a copy of itself that costs 0, instead of returning itself to hand.
+* Exalted blade. Re-enabled. Deals 5(7) damage 3 times. 
+* Split Chamber. Re-enabled. Changed to duplicate all cards with reduced cost instead of 0 cost.
+* Corrosive Protection. Nerfed to apply vulnerable to a random enemy instead of all enemies.
+* Combat Knowledge: Applies block first. In practice this is a nerf of 1 block for clarity.
+* Maiming Strike and Bullet Jump upgrade to apply 2 weak/vulnerable and +3 damage. Energy cost no longer changes. 
+
+Tweaks;
+
+* Flurry and Reposition now use the hand size constant instead of 
+
+
 ### 4/28/2019 - 0.1.5.0
 
 Made enough changes that I consider this another increment.

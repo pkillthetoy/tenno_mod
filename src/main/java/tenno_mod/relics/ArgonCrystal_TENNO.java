@@ -8,11 +8,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import tenno_mod.actions.ArgonCrystalEffectAction;
 
 public class ArgonCrystal_TENNO extends CustomRelic {
-  public ArgonCrystal_TENNO(String id, String imgName, RelicTier tier, LandingSound sfx) {
-    super(id, imgName, tier, sfx);
-  }
-
-
   public static final String ID = "ArgonCrystal_TENNO";
   private static final int DAMAGE = 3;
 

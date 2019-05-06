@@ -61,12 +61,11 @@
   },
   "CleavingWhirlwind_TENNO": {
     "NAME": "Cleaving Whirlwind",
-    "DESCRIPTION": "Deal !D! damage to all enemies. If this kills an enemy, return it to your hand."
+    "DESCRIPTION": "Deal !D! damage to all enemies. If this kills an enemy, put a copy of this into your hand that costs 0."
   },
   "ExaltedBlade_TENNO": {
     "NAME": "Exalted Blade",
-    "DESCRIPTION": "Add 4 special Attacks to your hand.",
-    "UPGRADE_DESCRIPTION": "Add 4 special Attacks to your hand and upgrade them."
+    "DESCRIPTION": "Deal !D! damage 3 times."
   },
   "EqualLaceration_TENNO": {
     "NAME": "Equal Laceration",
@@ -167,8 +166,8 @@
   },
   "CorrosiveProjection_TENNO": {
     "NAME": "Corrosive Projection",
-    "DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to all enemies.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to all enemies. Innate."
+    "DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to a random enemy.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, apply 1 Vulnerable to a random enemy. Innate."
   },
   "FatalTeleport_TENNO": {
     "NAME": "Fatal Teleport",
@@ -223,10 +222,18 @@
   },
   "CombatKnowledge_TENNO": {
     "NAME": "Combat Knowledge",
-    "DESCRIPTION": "Draw !M! cards. Gain Block equal to the number of cards in your hand.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. Gain Block equal to the number of cards in your hand +3.",
+    "DESCRIPTION": "Gain Block equal to the number of cards in your hand. Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)"
+    ]
+  },
+  "ExploitOptions_TENNO": {
+    "NAME": "Exploit Options",
+    "DESCRIPTION": "Deal damage equal to the number of cards in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your hand +3.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! Damage.)"
     ]
   },
   "LinkedNarta_TENNO": {
@@ -262,5 +269,35 @@
     "NAME": "Duplication",
     "DESCRIPTION": "Choose a card in your hand. Make a copy that costs [E] less.",
     "UPGRADE_DESCRIPTION": "Choose a card in your hand. Make a copy that costs 0."
-  }
+  },
+  "QuickThinking_TENNO": {
+    "NAME": "Quick Thinking",
+    "DESCRIPTION": "Draw cards until your hand is full. Exhaust."
+  },
+  "Scattershot_TENNO": {
+    "NAME": "Scattershot",
+    "DESCRIPTION": "At the end of your turn, deal !M! damage to a random enemy for each card in your hand."
+  },
+  "VoidBlast_TENNO": {
+    "NAME": "Void Blast",
+    "DESCRIPTION": "Deal !D! damage. Add a Void into your discard pile."
+  },
+  "Snipe_TENNO": {
+    "NAME": "Snipe",
+    "DESCRIPTION": "Deal !D! damage. Dexterity affects this card."
+  },
+  "EmbraceTheVoid_TENNO": {
+    "NAME": "Embrace the Void",
+    "DESCRIPTION": "Whenever you exhaust a Void, gain 1 Strength. Add !M! Voids to your discard pile."
+  },  "ConcealedWeapons_TENNO": {
+  "NAME": "Concealed Weapons",
+  "DESCRIPTION": "Gain !B! Block for each other Attack in your hand. NL Deal !D! damage for each Skill in your hand.",
+  "EXTENDED_DESCRIPTION": [
+    " NL (You have ",
+    " Skill and ",
+    " Skills and ",
+    " Attack).",
+    " Attacks)."
+  ]
+}
 }

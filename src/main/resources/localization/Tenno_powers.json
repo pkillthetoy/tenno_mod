@@ -48,14 +48,21 @@
     "NAME": "Chromatic Blade",
     "DESCRIPTIONS": [
       "Whenever you deal unblocked attack damage, randomly apply #b",
-      " #yWeak, #yVulnerable, or temporary #Strength loss."
+      " #yWeak, #yVulnerable, or temporary #yStrength loss."
     ]
   },
   "CorrosiveProjectionPower_TENNO": {
     "NAME": "Corrosive Projection",
     "DESCRIPTIONS": [
       "At the start of your turn, apply #b",
-      " #yVulnerable to all enemies."
+      " #yVulnerable to a random enemy."
+    ]
+  },
+  "ScattershotPower_TENNO": {
+    "NAME": "Scattershot",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal #b",
+      " damage to a random enemy for each card in your hand."
     ]
   },
   "HunterAdrenalinePower_TENNO": {
@@ -75,11 +82,18 @@
     ]
   },
   "RetainAndReducePower_TENNO": {
-    "NAME": "Retain and Reduce Cards",
+    "NAME": "Mastery Badge",
     "DESCRIPTIONS": [
       "Retain up to #b1 card each turn. Reduce its cost by [E] next turn.",
       "Retain up to #b",
       "cards each turn. Reduce their costs by [E] next turn."
+    ]
+  },
+  "EmbraceTheVoidPower_TENNO": {
+    "NAME": "Embrace the Void",
+    "DESCRIPTIONS": [
+      "Whenever you exhaust a Void, gain #b",
+      " #yStrength."
     ]
   }
 }

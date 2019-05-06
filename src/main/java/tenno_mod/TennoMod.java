@@ -108,6 +108,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new BlindRage_TENNO());
     cardsToAdd.add(new ReturnStroke_TENNO());
     cardsToAdd.add(new Cripple_TENNO());
+    cardsToAdd.add(new ExploitOptions_TENNO());
 
     // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
@@ -129,11 +130,13 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Versatility_TENNO());
     cardsToAdd.add(new HallowedGround_TENNO());
     cardsToAdd.add(new Duplication_TENNO());
+    cardsToAdd.add(new Snipe_TENNO());
+    cardsToAdd.add(new Scattershot_TENNO());
 
     // Rares
     cardsToAdd.add(new DailyLogin_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
-    //ardsToAdd.add(new ExaltedBlade_TENNO());
+    cardsToAdd.add(new ExaltedBlade_TENNO());
     cardsToAdd.add(new UmbralForm_TENNO());
     cardsToAdd.add(new GrowingPower_TENNO());
     cardsToAdd.add(new WildFrenzy_TENNO());
@@ -143,8 +146,10 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new CovertLethality_TENNO());
     cardsToAdd.add(new LinkedNarta_TENNO());
     cardsToAdd.add(new MasterfulCombination_TENNO());
-    //Temporarliy removed
-    //cardsToAdd.add(new SplitChamber_TENNO());
+    cardsToAdd.add(new SplitChamber_TENNO());
+    cardsToAdd.add(new QuickThinking_TENNO());
+    cardsToAdd.add(new EmbraceTheVoid_TENNO());
+    cardsToAdd.add(new ConcealedWeapons_TENNO());
 
     // Generated cards
     cardsToAdd.add(new CuttingPoise_TENNO());
@@ -187,6 +192,7 @@ public class TennoMod implements EditCharactersSubscriber,
     BaseMod.addRelicToCustomPool(new JanusKey_TENNO(), TENNO_COLOR);
     BaseMod.addRelicToCustomPool(new PolymerBundle_TENNO(), TENNO_COLOR);
     BaseMod.addRelicToCustomPool(new MasteryBadge_TENNO(), TENNO_COLOR);
+    BaseMod.addRelicToCustomPool(new Kuva_TENNO(), TENNO_COLOR);
 
   }
 

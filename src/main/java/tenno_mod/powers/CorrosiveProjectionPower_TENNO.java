@@ -33,12 +33,11 @@ public class CorrosiveProjectionPower_TENNO extends AbstractPower {
   public void atStartOfTurnPostDraw() {
     if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
       flash();
-      for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-        if ((!m.isDead) && (!m.isDying)) {
-          AbstractDungeon.actionManager.addToBottom(
-              new com.megacrit.cardcrawl.actions.common.ApplyPowerAction(m, this.owner,
-                  new VulnerablePower(m, this.amount, false), this.amount));
-        }
+      AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+      if ((!m.isDead) && (!m.isDying)) {
+        AbstractDungeon.actionManager.addToBottom(
+            new com.megacrit.cardcrawl.actions.common.ApplyPowerAction(m, this.owner,
+                new VulnerablePower(m, this.amount, false), this.amount));
       }
     }
   }

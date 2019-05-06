@@ -1,6 +1,7 @@
 package tenno_mod.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -38,7 +39,9 @@ public class CleavingWhirlwindAction extends AbstractGameAction {
     }
     if (monsterDied) {
       // Return to hand.
-      AbstractDungeon.actionManager.addToTop(new ReturnToHandAction(itself, p));
+      AbstractCard copy = itself.makeStatEquivalentCopy();
+      copy.freeToPlayOnce = true;
+      AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(copy));
     }
     this.isDone = true;
   }

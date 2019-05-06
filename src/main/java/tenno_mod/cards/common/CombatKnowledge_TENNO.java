@@ -1,5 +1,6 @@
 package tenno_mod.cards.common;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -40,10 +41,10 @@ public class CombatKnowledge_TENNO extends CustomCard {
 
   public void use(AbstractPlayer p, AbstractMonster m) {
     AbstractDungeon.actionManager.addToBottom(
-        new DrawCardAction(p, this.magicNumber));
-    AbstractDungeon.actionManager.addToBottom(
         new GainBlockAction(p, p, this.block)
     );
+    AbstractDungeon.actionManager.addToBottom(
+        new DrawCardAction(p, this.magicNumber));
   }
 
   public AbstractCard makeCopy() {
@@ -53,12 +54,7 @@ public class CombatKnowledge_TENNO extends CustomCard {
   public void applyPowers() {
     AbstractPlayer p = AbstractDungeon.player;
     this.baseBlock = p.hand.size();
-    int drawableCards = p.drawPile.size() + p.discardPile.size();
-    if (drawableCards > 2) {
-      this.baseBlock += 2;
-    } else {
-      this.baseBlock += drawableCards;
-    }
+
     if (this.upgraded) {
       this.baseBlock += 3;
     }

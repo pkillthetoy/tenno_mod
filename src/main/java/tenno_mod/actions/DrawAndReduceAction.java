@@ -1,6 +1,7 @@
 
 package tenno_mod.actions;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -31,7 +32,7 @@ public class DrawAndReduceAction extends com.megacrit.cardcrawl.actions.Abstract
       return;
     }
 
-    if (AbstractDungeon.player.hand.size() == 10) {
+    if (AbstractDungeon.player.hand.size() == BaseMod.MAX_HAND_SIZE) {
       AbstractDungeon.player.createHandIsFullDialog();
       this.isDone = true;
     }

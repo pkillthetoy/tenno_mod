@@ -74,7 +74,15 @@
     "NAME": "Mastery Badge",
     "FLAVOR": "Proof of a Tenno's experience and skill.",
     "DESCRIPTIONS": [
-      "#yRetain up to one card each turn. At the start of your turn, reduce the cost of all retained cards by [E] ."
+      "#yRetain up to one card each turn. Reduce its cost by [E] next turn."
+    ]
+  },
+  "Kuva_TENNO": {
+    "NAME": "Kuva",
+    "FLAVOR": "Rumored to be the blood of Orokin ancestors.",
+    "DESCRIPTIONS": [
+      "Whenever you #yExhaust a #yVoid, heal #b",
+      " HP."
     ]
   }
 }

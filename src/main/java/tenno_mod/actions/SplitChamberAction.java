@@ -24,7 +24,7 @@ public class SplitChamberAction extends com.megacrit.cardcrawl.actions.AbstractG
   public void update() {
     if (this.duration == Settings.ACTION_DUR_FAST) {
       for (AbstractCard c : this.p.hand.group) {
-        if (c.costForTurn == 0 || c.freeToPlayOnce) {
+        if (c.costForTurn < c.cost || c.freeToPlayOnce) {
 
           AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(c
               .makeStatEquivalentCopy()));
