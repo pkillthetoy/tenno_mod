@@ -1,56 +1,57 @@
-package tenno_mod.cards.common;
+package tenno_mod.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawPower;
 import tenno_mod.patches.AbstractCardEnum;
+import tenno_mod.powers.CorrosiveProjectionPower_TENNO;
 
-public class QuickGuard_TENNO extends CustomCard {
-  public static final String ID = "QuickGuard_TENNO";
+public class NotMachineLearning_TENNO extends CustomCard {
+  public static final String ID = "NotMachineLearning_TENNO";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Skill.png";
-  private static final int COST = 0;
-  private static final int BLOCK_AMT = 1;
+  public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
+  public static final String IMG_PATH = "img/cards/Power.png";
+  private static final int COST = 1;
+  private static final int UPG_COST = 0;
 
-  private static final int UPGRADE_PLUS_BLOCK = 2;
-
-  public QuickGuard_TENNO() {
+  public NotMachineLearning_TENNO() {
     super(
         ID,
         NAME,
         IMG_PATH,
         COST,
         DESCRIPTION,
-        CardType.SKILL,
+        CardType.POWER,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.COMMON,
+        CardRarity.UNCOMMON,
         CardTarget.SELF
     );
-    this.baseBlock = BLOCK_AMT;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
     AbstractDungeon.actionManager.addToBottom(
-        new GainBlockAction(p, p, this.block)
-    );
-    AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DrawCardAction(p, 1));
+        new ApplyPowerAction(
+            p,
+            p,
+            new DrawPower(p, 1), 1));
   }
 
   public AbstractCard makeCopy() {
-    return new QuickGuard_TENNO();
+    return new NotMachineLearning_TENNO();
   }
 
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      upgradeBlock(UPGRADE_PLUS_BLOCK);
+      upgradeBaseCost(UPG_COST);
     }
   }
 }

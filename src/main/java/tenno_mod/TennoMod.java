@@ -90,66 +90,81 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new MaimingStrike_TENNO());
 
     // Commons
-    cardsToAdd.add(new Aviator_TENNO());
-    cardsToAdd.add(new PlannedShot_TENNO());
-    cardsToAdd.add(new VoidStrike_TENNO());
-    cardsToAdd.add(new HeavySlam_TENNO());
-    cardsToAdd.add(new CleansingStrike_TENNO());
-    cardsToAdd.add(new Meditation_TENNO());
-    cardsToAdd.add(new BlindingSlice_TENNO());
-    cardsToAdd.add(new QuickSlash_TENNO());
-    cardsToAdd.add(new QuickGuard_TENNO());
     cardsToAdd.add(new AgileGuard_TENNO());
+    cardsToAdd.add(new Aviator_TENNO());
+    cardsToAdd.add(new BlindingSlice_TENNO());
+    cardsToAdd.add(new BlindRage_TENNO());
+    cardsToAdd.add(new CleansingStrike_TENNO());
+    cardsToAdd.add(new CombatKnowledge_TENNO());
+    cardsToAdd.add(new Cripple_TENNO());
     cardsToAdd.add(new DefensiveThrow_TENNO());
+    cardsToAdd.add(new DoubleGuard_TENNO());
+    cardsToAdd.add(new ExploitOptions_TENNO());
     cardsToAdd.add(new FallingKick_TENNO());
     cardsToAdd.add(new FlyingShot_TENNO());
-    cardsToAdd.add(new CombatKnowledge_TENNO());
-    cardsToAdd.add(new DoubleGuard_TENNO());
-    cardsToAdd.add(new BlindRage_TENNO());
+    cardsToAdd.add(new HeavySlam_TENNO());
+    cardsToAdd.add(new Meditation_TENNO());
+    cardsToAdd.add(new PlannedShot_TENNO());
+    cardsToAdd.add(new QuickGuard_TENNO());
+    cardsToAdd.add(new QuickSlash_TENNO());
     cardsToAdd.add(new ReturnStroke_TENNO());
-    cardsToAdd.add(new Cripple_TENNO());
-    cardsToAdd.add(new ExploitOptions_TENNO());
+    cardsToAdd.add(new VoidStrike_TENNO());
 
     // Uncommons
     cardsToAdd.add(new BurstStrike_TENNO());
-    cardsToAdd.add(new TapDodge_TENNO());
     cardsToAdd.add(new CleavingWhirlwind_TENNO());
-    cardsToAdd.add(new LethalTorrent_TENNO());
     cardsToAdd.add(new ConditionOverload_TENNO());
-    cardsToAdd.add(new VoidDash_TENNO());
     cardsToAdd.add(new CorrosiveProjection_TENNO());
-    cardsToAdd.add(new EnergyOrb_TENNO());
-    cardsToAdd.add(new FatalTeleport_TENNO());
-    cardsToAdd.add(new RadiantJavelins_TENNO());
-    cardsToAdd.add(new HunterAdrenaline_TENNO());
-    cardsToAdd.add(new Reposition_TENNO());
-    cardsToAdd.add(new Flurry_TENNO());
+    cardsToAdd.add(new DriftingContact_TENNO());
+    cardsToAdd.add(new DrinkTheKuva_TENNO());
     cardsToAdd.add(new DualChop_TENNO());
-    cardsToAdd.add(new TransferenceBeam_TENNO());
-    cardsToAdd.add(new SelfImprovement_TENNO());
-    cardsToAdd.add(new Versatility_TENNO());
-    cardsToAdd.add(new HallowedGround_TENNO());
     cardsToAdd.add(new Duplication_TENNO());
-    cardsToAdd.add(new Snipe_TENNO());
+    cardsToAdd.add(new EnergyOrb_TENNO());
+    cardsToAdd.add(new ExpertTechnique_TENNO());
+    cardsToAdd.add(new FatalTeleport_TENNO());
+    cardsToAdd.add(new FinishingTouch_TENNO());
+    cardsToAdd.add(new Flurry_TENNO());
+    cardsToAdd.add(new HallowedGround_TENNO());
+    cardsToAdd.add(new HunterAdrenaline_TENNO());
+    cardsToAdd.add(new LashOut_TENNO());
+    cardsToAdd.add(new LethalTorrent_TENNO());
+    cardsToAdd.add(new NotMachineLearning_TENNO());
+    cardsToAdd.add(new PlanAhead_TENNO());
+    cardsToAdd.add(new PurgeCorruption_TENNO());
+    cardsToAdd.add(new RadiantJavelins_TENNO());
+    cardsToAdd.add(new Reposition_TENNO());
     cardsToAdd.add(new Scattershot_TENNO());
+    cardsToAdd.add(new SelfImprovement_TENNO());
+    cardsToAdd.add(new Snipe_TENNO());
+    cardsToAdd.add(new TapDodge_TENNO());
+    cardsToAdd.add(new TransferenceBeam_TENNO());
+    cardsToAdd.add(new Versatility_TENNO());
+    cardsToAdd.add(new VoidAttunement_TENNO());
+    cardsToAdd.add(new VoidBlast_TENNO());
+    cardsToAdd.add(new VoidDash_TENNO());
+    cardsToAdd.add(new VoidGuard_TENNO());
+    cardsToAdd.add(new VoidIgnition_TENNO());
+    cardsToAdd.add(new VoidKnowledge_TENNO());
 
     // Rares
-    cardsToAdd.add(new DailyLogin_TENNO());
-    cardsToAdd.add(new RollingGuard_TENNO());
-    cardsToAdd.add(new ExaltedBlade_TENNO());
-    cardsToAdd.add(new UmbralForm_TENNO());
-    cardsToAdd.add(new GrowingPower_TENNO());
-    cardsToAdd.add(new WildFrenzy_TENNO());
-    cardsToAdd.add(new VoidRadiance_TENNO());
     cardsToAdd.add(new Cataclysm_TENNO());
     cardsToAdd.add(new ChromaticBlade_TENNO());
+    cardsToAdd.add(new ConcealedWeapons_TENNO());
     cardsToAdd.add(new CovertLethality_TENNO());
+    cardsToAdd.add(new DailyLogin_TENNO());
+    cardsToAdd.add(new EmbraceTheVoid_TENNO());
+    cardsToAdd.add(new ExaltedBlade_TENNO());
+    cardsToAdd.add(new GrowingPower_TENNO());
     cardsToAdd.add(new LinkedNarta_TENNO());
     cardsToAdd.add(new MasterfulCombination_TENNO());
-    cardsToAdd.add(new SplitChamber_TENNO());
     cardsToAdd.add(new QuickThinking_TENNO());
-    cardsToAdd.add(new EmbraceTheVoid_TENNO());
-    cardsToAdd.add(new ConcealedWeapons_TENNO());
+    cardsToAdd.add(new Resourcefulness_TENNO());
+    cardsToAdd.add(new RollingGuard_TENNO());
+    cardsToAdd.add(new SplitChamber_TENNO());
+    cardsToAdd.add(new UmbralForm_TENNO());
+    cardsToAdd.add(new VoidCorruption_TENNO());
+    cardsToAdd.add(new VoidRadiance_TENNO());
+    cardsToAdd.add(new WildFrenzy_TENNO());
 
     // Generated cards
     cardsToAdd.add(new CuttingPoise_TENNO());
@@ -221,26 +236,22 @@ public class TennoMod implements EditCharactersSubscriber,
     }
   }
 
-  public static boolean lastCardUsedWasAttack = false;
   public static boolean lastCardUsedWasSkill = false;
+  public static int skillsThisTurn = 0;
 
   @Override
   public void receiveCardUsed(AbstractCard abstractCard) {
     if (abstractCard.type == AbstractCard.CardType.SKILL) {
-      lastCardUsedWasAttack = false;
+      skillsThisTurn++;
       lastCardUsedWasSkill = true;
-    } else if (abstractCard.type == AbstractCard.CardType.ATTACK) {
-      lastCardUsedWasAttack = true;
-      lastCardUsedWasSkill = false;
     } else {
-      lastCardUsedWasAttack = false;
       lastCardUsedWasSkill = false;
     }
   }
 
   @Override
   public void receivePostEnergyRecharge() {
-    lastCardUsedWasAttack = false;
+    skillsThisTurn = 0;
     lastCardUsedWasSkill = false;
   }
 

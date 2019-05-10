@@ -208,8 +208,8 @@
   },
   "SelfImprovement_TENNO": {
     "NAME": "Self Improvement",
-    "DESCRIPTION": "Draw a card. It costs [E] less this combat.",
-    "UPGRADE_DESCRIPTION": "Draw two cards. They cost [E] less this combat."
+    "DESCRIPTION": "Draw a card. It costs [E] less this combat. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw two cards. They cost [E] less this combat. Exhaust."
   },
   "Versatility_TENNO": {
     "NAME": "Versatility ",
@@ -259,7 +259,7 @@
   "ReturnStroke_TENNO": {
     "NAME": "Return Stroke",
     "DESCRIPTION": "Deal !D! damage. Put a card from your discard pile into your hand. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Put a card from your discard pile into your hand. ."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Put a card from your discard pile into your hand."
   },
   "HallowedGround_TENNO": {
     "NAME": "Hallowed Ground",
@@ -289,15 +289,76 @@
   "EmbraceTheVoid_TENNO": {
     "NAME": "Embrace the Void",
     "DESCRIPTION": "Whenever you exhaust a Void, gain 1 Strength. Add !M! Voids to your discard pile."
-  },  "ConcealedWeapons_TENNO": {
-  "NAME": "Concealed Weapons",
-  "DESCRIPTION": "Gain !B! Block for each other Attack in your hand. NL Deal !D! damage for each Skill in your hand.",
-  "EXTENDED_DESCRIPTION": [
-    " NL (You have ",
-    " Skill and ",
-    " Skills and ",
-    " Attack).",
-    " Attacks)."
-  ]
+  },
+  "ConcealedWeapons_TENNO": {
+    "NAME": "Concealed Weapons",
+    "DESCRIPTION": "Gain !B! Block for each other Attack in your hand. NL Deal !D! damage for each Skill in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have ",
+      " Skill and ",
+      " Skills and ",
+      " Attack).",
+      " Attacks)."
+    ]
+  },
+  "Resourcefulness_TENNO": {
+    "NAME": "Resourcefulness",
+    "DESCRIPTION": "At the start of your turn, add a random Attack and Skill to your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add a random Attack and Skill to your hand, and upgrade them."
+  },
+  "VoidCorruption_TENNO": {
+    "NAME": "Void Corruption",
+    "DESCRIPTION": "At the start of your turn, gain [E] and add a Void to your discard pile.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain [E] and add a Void to your discard pile. Innate."
+  },
+  "VoidKnowledge_TENNO": {
+    "NAME": "Void Knowledge",
+    "DESCRIPTION": "Draw !M! cards. Add a Void into your discard pile. Exhaust."
+  },
+  "VoidAttunement_TENNO": {
+    "NAME": "Void Attunement",
+    "DESCRIPTION": "Whenever you draw a Void, gain [E] and draw a card.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a Void, gain [E] [E] and draw 2 cards."
+  },
+  "LashOut_TENNO": {
+    "NAME": "Lash Out",
+    "DESCRIPTION": "Deal !D! damage and apply 1 Weak to a random enemy !M! times."
+  },
+  "FinishingTouch_TENNO": {
+    "NAME": "Finishing Touch",
+    "DESCRIPTION": "Deal !D! damage. Costs [E] less for each Skill played this turn."
+  },
+  "ExpertTechnique_TENNO": {
+    "NAME": "Expert Technique",
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. If you have at least 5 other cards in your hand, do it twice."
+  },
+  "VoidGuard_TENNO": {
+    "NAME": "Void Guard",
+    "DESCRIPTION": "Gain !B! Block. Add a Void to your discard pile."
+  },
+  "NotMachineLearning_TENNO": {
+    "NAME": "Breadth of Knowledge",
+    "DESCRIPTION": "At the start of your turn, draw 1 additional card."
+  },
+  "VoidIgnition_TENNO": {
+    "NAME": "Void Ignition",
+    "DESCRIPTION": "Whenever you exhaust a Void, deal !M! damage to all enemies."
+  },
+  "DriftingContact_TENNO": {
+    "NAME": "Drifting Contact",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain !M! Block."
+  },
+  "PurgeCorruption_TENNO": {
+    "NAME": "Purge Corruption",
+    "DESCRIPTION": "Exhaust all Voids. Gain !B! Block for each Void exhausted this way."
+  },
+  "DrinkTheKuva_TENNO": {
+    "NAME": "Drink the Kuva",
+    "DESCRIPTION": "Fill your hand with Voids. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Fill your hand with Voids. Exhaust."
+  },  "PlanAhead_TENNO": {
+  "NAME": "Plan Ahead",
+  "DESCRIPTION": "Gain !B! Block. Draw a card. Put a card from your hand onto the top of your draw pile.",
+  "UPGRADE_DESCRIPTION":  "Gain !B! Block. Draw !M! cards. Put a card from your hand onto the top of your draw pile."
 }
 }

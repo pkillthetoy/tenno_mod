@@ -48,8 +48,6 @@ public class HeavySlam_TENNO extends CustomCard {
             AbstractGameAction.AttackEffect.BLUNT_LIGHT
         )
     );
-    AbstractDungeon.actionManager.addToBottom(
-        new DrawPileToHandAction(this.magicNumber, CardType.SKILL));
   }
 
   public AbstractCard makeCopy() {

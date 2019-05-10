@@ -81,6 +81,24 @@
       " times."
     ]
   },
+  "ResourcefulnessPower_TENNO": {
+    "NAME": "Resourcefulness",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add a random #yAttack and a random #ySkill into your hand.",
+      "At the start of your turn, add #b",
+      " random #yAttacks and #b",
+      " random #ySkills into your hand."
+    ]
+  },
+  "UpgResourcefulnessPower_TENNO": {
+    "NAME": "Resourcefulness+",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add a random #yAttack and a random #ySkill into your hand, and upgrade them.",
+      "At the start of your turn, add #b",
+      " random #yAttacks and #b",
+      " random #ySkills into your hand, and upgrade them."
+    ]
+  },
   "RetainAndReducePower_TENNO": {
     "NAME": "Mastery Badge",
     "DESCRIPTIONS": [
@@ -92,8 +110,40 @@
   "EmbraceTheVoidPower_TENNO": {
     "NAME": "Embrace the Void",
     "DESCRIPTIONS": [
-      "Whenever you exhaust a Void, gain #b",
+      "Whenever you #yExhaust a #yVoid, gain #b",
       " #yStrength."
+    ]
+  },
+  "VoidCorruptionPower_TENNO": {
+    "NAME": "Void Corruption",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] and add a #yVoid to your discard pile.",
+      "At the start of your turn, gain ",
+      " and add #b",
+      " #yVoids to your discard pile."
+    ]
+  },
+  "VoidAttunementPower_TENNO": {
+    "NAME": "Void Attunement",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yVoid, gain [E] and draw a card.",
+      "Whenever you draw a #yVoid, gain ",
+      " and draw ",
+      " cards."
+    ]
+  },
+  "VoidIgnitionPower_TENNO": {
+    "NAME": "Void Ignition",
+    "DESCRIPTIONS": [
+      "Whenever you #yExhaust a #yVoid, deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "DriftingContactPower_TENNO": {
+    "NAME": "Drifting Contact",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to an enemy, gain #b",
+      " Block."
     ]
   }
 }

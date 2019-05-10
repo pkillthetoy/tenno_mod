@@ -28,7 +28,7 @@ public class BlindRage_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.SKILL,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.BASIC,
+        CardRarity.COMMON,
         CardTarget.NONE
     );
   }

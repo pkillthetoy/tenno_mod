@@ -29,7 +29,7 @@ public class DoubleGuard_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.SKILL,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.BASIC,
+        CardRarity.COMMON,
         CardTarget.SELF
     );
     this.baseBlock = BLOCK_AMT;

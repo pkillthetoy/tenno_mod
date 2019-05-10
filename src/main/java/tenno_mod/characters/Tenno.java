@@ -60,7 +60,7 @@ public class Tenno extends CustomPlayer {
     this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
     this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
 
-    logger.info("init Marisa");
+    logger.info("init Tenno");
 
 
     // TODO: Use non-marisa images and animations.

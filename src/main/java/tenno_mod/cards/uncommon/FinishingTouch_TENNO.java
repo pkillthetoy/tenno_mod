@@ -1,9 +1,9 @@
-package tenno_mod.cards.common;
+package tenno_mod.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.DiscardPileToHandAction;
+import com.megacrit.cardcrawl.actions.utility.DrawPileToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,20 +11,20 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import tenno_mod.TennoMod;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class ReturnStroke_TENNO extends CustomCard {
-  public static final String ID = "ReturnStroke_TENNO";
+public class FinishingTouch_TENNO extends CustomCard {
+  public static final String ID = "FinishingTouch_TENNO";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
-  private static final int COST = 1;
-  private static final int ATTACK_DMG = 3;
-  private static final int UPGRADE_PLUS_DMG = 2;
+  private static final int COST = 4;
+  private static final int ATTACK_DMG = 18;
+  private static final int UPGRADE_PLUS_DMG = 6;
 
-  public ReturnStroke_TENNO() {
+  public FinishingTouch_TENNO() {
     super(
         ID,
         NAME,
@@ -37,7 +37,6 @@ public class ReturnStroke_TENNO extends CustomCard {
         CardTarget.ENEMY
     );
     this.baseDamage = ATTACK_DMG;
-    this.exhaust = true;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
@@ -45,25 +44,32 @@ public class ReturnStroke_TENNO extends CustomCard {
         new DamageAction(
             m,
             new DamageInfo(p, this.damage, this.damageTypeForTurn),
-            AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
+            AbstractGameAction.AttackEffect.SLASH_HEAVY
         )
     );
-    if (AbstractDungeon.player.discardPile.size() > 0) {
-      AbstractDungeon.actionManager.addToBottom(new DiscardPileToHandAction(1));
-    }
-
   }
 
   public AbstractCard makeCopy() {
-    return new ReturnStroke_TENNO();
+    return new FinishingTouch_TENNO();
   }
+
+
+  public void triggerWhenDrawn() {
+    super.triggerWhenDrawn();
+    setCostForTurn(this.cost - TennoMod.skillsThisTurn);
+  }
+
+  public void triggerOnOtherCardPlayed(AbstractCard c) {
+    if (c.type == CardType.SKILL) {
+      setCostForTurn(this.costForTurn - 1);
+    }
+  }
+
 
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
       upgradeDamage(UPGRADE_PLUS_DMG);
-      this.exhaust = false;
-      this.rawDescription = DESCRIPTION_UPG;
       initializeDescription();
     }
   }

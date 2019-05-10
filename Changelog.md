@@ -1,3 +1,36 @@
+### 5/9/2019 - 0.2.0
+
+All cards are now finished! This makes the mod complete from a gameplay perspective - what's left is
+visual polish: card/relic/power images, and picking the right VFX for cards.
+
+New cards:
+
+* Drink the Kuva. 1 cost uncommon skill. Fill your hand with Voids Exhaust (doesn't exhaust)
+* Lash Out. 1 cost uncommon attack. Deal 5 damage to a random enemy and apply 1 Weak twice (3 times)
+* Purge Corruption. 1 cost uncommon skill. Exhaust all voids and gain 4(5) block for each.
+* Resourcefulness. 1 cost rare power. Put a random (upgraded) attack and skill in your hand each turn.
+* Void Corruption. 1 cost rare power. At the start of your turn, gain 1 energy and put a void in discard.
+* Drifting Contact. 1 cost uncommon power. Applying a debuff gains 3(4) block.
+* Expert Technique. 1 cost uncommon attack. Do 3(4) damage and 3(4) block. If you have 5 other cards in hand, do it again.
+* Finishing Touch. 4 cost uncommon attack. Do 18(24) damage. Costs 1 less for each skill played this turn.
+* Breadth of knowledge. 1(0) cost uncommon power. Draw an extra card each turn.
+* Plan Ahead. 1 cost uncommon skill. Gain 8(11) block. Draw 1(2) card(s) and put a card from hand on top of deck.
+* Purge Corruption. 1 cost uncommon skill. Exhaust all Voids and gain 4(5) block for each.
+* Void Attunement. 1 cost uncommon power. When you draw a void, gain 1(2) energy and draw 1(2) cards.
+* Void Guard. 1 cost uncommon skill. Gain 16(20) block and add a void to discard.
+* Void Knowledge. 0 cost uncommon skill. Draw 3(4) cards and add a void to discard. Exhaust.
+* Void Knowledge. 1 cost uncommon power. Whenever you exhaust a void, deal 3(4) to all enemies. 
+
+Bug fixes:
+
+* Fixed a bunch of cards being improperly marked as basic - Blind Rage, Cripple, Double Guard
+* Unupgraded Return Stroke now exhausts properly.
+
+Card changes:
+
+* Self Improvement now exhausts.
+
+
 ### 5/5/2019 - 0.1.6
 
 Major changes. All cards have been designed but not yet implemented. All relics are present.  
