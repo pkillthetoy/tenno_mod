@@ -33,7 +33,7 @@ public class VoidBlast_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.COMMON,
+        CardRarity.UNCOMMON,
         CardTarget.ENEMY
     );
     this.baseDamage = ATTACK_DMG;

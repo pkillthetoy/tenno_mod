@@ -4,6 +4,12 @@ Fixed Cataclysm making enemies permanently intangible.
 
 Fixed Exalted Blade being at uncommon instead of rare.
 
+Fixed Split Chamber's description.
+
+Fixed Condition Overload, Void Blast, and Finishing Touch being at common instead of uncommon.
+
+Balance change - made Hallowed Ground uncommon. See if this is any good.
+
 ### 5/9/2019 - 0.2.0
 
 All cards are now finished! This makes the mod complete from a gameplay perspective - what's left is

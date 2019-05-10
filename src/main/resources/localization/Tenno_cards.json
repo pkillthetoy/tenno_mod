@@ -192,7 +192,7 @@
   },
   "SplitChamber_TENNO": {
     "NAME": "Split Chamber",
-    "DESCRIPTION": "Copy each card in your hand that costs 0."
+    "DESCRIPTION": "Copy each card in your hand with reduced cost."
   },
   "DualChop_TENNO": {
     "NAME": "Dual Chop",
@@ -263,7 +263,7 @@
   },
   "HallowedGround_TENNO": {
     "NAME": "Hallowed Ground",
-    "DESCRIPTION": "Gain !B! Block. Gain !M! Artifact. Exhaust."
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Artifact."
   },
   "Duplication_TENNO": {
     "NAME": "Duplication",

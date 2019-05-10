@@ -36,7 +36,7 @@ public class ConditionOverload_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.COMMON,
+        CardRarity.UNCOMMON,
         CardTarget.ENEMY
     );
     this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;

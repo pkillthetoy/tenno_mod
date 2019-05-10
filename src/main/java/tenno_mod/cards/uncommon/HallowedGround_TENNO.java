@@ -38,7 +38,6 @@ public class HallowedGround_TENNO extends CustomCard {
     );
     this.baseBlock = BLOCK_AMT;
     this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
-    this.exhaust = true;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
