@@ -31,7 +31,7 @@ public class ExaltedBlade_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.UNCOMMON,
+        CardRarity.RARE,
         CardTarget.ENEMY
     );
     this.baseDamage = ATTACK_DMG;

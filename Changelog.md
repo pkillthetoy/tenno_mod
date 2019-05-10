@@ -1,3 +1,9 @@
+### 5/9/2019 - 0.2.0.1
+
+Fixed Cataclysm making enemies permanently intangible.
+
+Fixed Exalted Blade being at uncommon instead of rare.
+
 ### 5/9/2019 - 0.2.0
 
 All cards are now finished! This makes the mod complete from a gameplay perspective - what's left is
