@@ -20,6 +20,7 @@ public class DrinkTheKuva_TENNO extends CustomCard {
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Skill.png";
   private static final int COST = 1;
+  private static final int MAGIC_NUMBER = 7;
 
   public DrinkTheKuva_TENNO() {
     super(
@@ -37,9 +38,15 @@ public class DrinkTheKuva_TENNO extends CustomCard {
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
-    AbstractDungeon.actionManager.addToBottom(
-        new DrinkKuvaAction(p, BaseMod.MAX_HAND_SIZE)
-    );
+    if(this.upgraded) {
+      AbstractDungeon.actionManager.addToBottom(
+          new DrinkKuvaAction(p, BaseMod.MAX_HAND_SIZE)
+      );
+    } else {
+      AbstractDungeon.actionManager.addToBottom(
+          new DrinkKuvaAction(p, MAGIC_NUMBER)
+      );
+    }
   }
 
   public AbstractCard makeCopy() {
@@ -49,7 +56,6 @@ public class DrinkTheKuva_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      this.exhaust = false;
       this.rawDescription = DESCRIPTION_UPG;
       initializeDescription();
     }

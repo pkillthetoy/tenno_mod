@@ -1,14 +1,20 @@
 ### 5/9/2019 - 0.2.0.1
 
-Fixed Cataclysm making enemies permanently intangible.
+Bugfixes: 
 
-Fixed Exalted Blade being at uncommon instead of rare.
+* Fixed Cataclysm making enemies permanently intangible.
+* Fixed Exalted Blade being at uncommon instead of rare.
+* Fixed Split Chamber's description.
+* Fixed Condition Overload, Void Blast, and Finishing Touch being at common instead of uncommon.
+* Fixed Linked Narta's draw staying forever. Also Fixed Linked Narta not drawing the correct number of cards in multiples.
+* Fixed Versatility not granting dexterity.
 
-Fixed Split Chamber's description.
+Balance changes: 
 
-Fixed Condition Overload, Void Blast, and Finishing Touch being at common instead of uncommon.
-
-Balance change - made Hallowed Ground uncommon. See if this is any good.
+* Made Hallowed Ground no longer exhaust. See if this is any good.
+* Made Heavy Slam reduce if there was any skill this turn. Tracking the last card played was too buggy.
+* Made Drink the Kuva only go up to 7 in hand if unupgraded. Upgraded now exhausts but goes up to full hand.
+* Increased Void Ignition damage from 3(4) to 4(6).
 
 ### 5/9/2019 - 0.2.0
 

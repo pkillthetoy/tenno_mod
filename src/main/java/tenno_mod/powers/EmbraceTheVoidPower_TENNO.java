@@ -36,7 +36,7 @@ public class EmbraceTheVoidPower_TENNO extends AbstractPower
    {
      if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead() && card.name.equals(VoidCard.NAME)) {
        flash();
-       AbstractDungeon.actionManager.addToBottom( new ApplyPowerAction(
+       AbstractDungeon.actionManager.addToTop( new ApplyPowerAction(
            owner,
            owner,
            new StrengthPower(owner, this.amount), this.amount));

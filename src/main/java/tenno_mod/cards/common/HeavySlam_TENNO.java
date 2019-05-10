@@ -63,22 +63,12 @@ public class HeavySlam_TENNO extends CustomCard {
 
   @Override
   public void applyPowers() {
-    if (this.freeToPlayOnce || this.cost == 0) {
-      // Cost should stay 0. It is 0 from another source.
-      return;
-    }
-    if (this.costForTurn == 0 && !hadReducedCost) {
-      // This is reduced to 0 from a different effect.
+    if (this.freeToPlayOnce || this.costForTurn == 0) {
       return;
     }
     if (TennoMod.lastCardUsedWasSkill && !hadReducedCost) {
       setCostForTurn(this.costForTurn - ENERGY_COST_REDUCTION);
       hadReducedCost = true;
-    }
-    if (!TennoMod.lastCardUsedWasSkill && hadReducedCost) {
-      // Undo the cost reduction
-      setCostForTurn(this.costForTurn + ENERGY_COST_REDUCTION);
-      hadReducedCost = false;
     }
     super.applyPowers();
   }

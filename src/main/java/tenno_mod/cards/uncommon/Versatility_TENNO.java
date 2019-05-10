@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import tenno_mod.patches.AbstractCardEnum;
 
@@ -48,7 +49,7 @@ public class Versatility_TENNO extends CustomCard {
         new ApplyPowerAction(
             p,
             p,
-            new StrengthPower(p, 1), 1));
+            new DexterityPower(p, 1), 1));
     AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
   }
 

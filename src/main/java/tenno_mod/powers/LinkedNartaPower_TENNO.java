@@ -2,6 +2,7 @@ package tenno_mod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -37,6 +38,12 @@ public class LinkedNartaPower_TENNO extends AbstractPower {
   }
 
   public void onUseCard(AbstractCard card, UseCardAction action) {
-    AbstractDungeon.actionManager.addToBottom(new DrawCardAction(this.owner, 1));
+    AbstractDungeon.actionManager.addToBottom(new DrawCardAction(this.owner, this.amount));
+  }
+  public void atEndOfTurn(boolean isPlayer) {
+    if (isPlayer) {
+      AbstractDungeon.actionManager.addToBottom(
+          new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+    }
   }
 }

@@ -31,7 +31,7 @@
   },
   "HeavySlam_TENNO": {
     "NAME": "Heavy Slam",
-    "DESCRIPTION": "Deal !D! damage. Costs 1 less [E] if the last card played this turn was a Skill."
+    "DESCRIPTION": "Deal !D! damage. Costs [E] less if you played a Skill this turn."
   },
   "CleansingStrike_TENNO": {
     "NAME": "Cleansing Strike",
@@ -354,7 +354,7 @@
   },
   "DrinkTheKuva_TENNO": {
     "NAME": "Drink the Kuva",
-    "DESCRIPTION": "Fill your hand with Voids. Exhaust.",
+    "DESCRIPTION": "Put Voids in your hand until you have !M! cards in hand. Exhaust.",
     "UPGRADE_DESCRIPTION": "Fill your hand with Voids. Exhaust."
   },  "PlanAhead_TENNO": {
   "NAME": "Plan Ahead",
