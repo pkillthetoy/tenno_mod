@@ -125,6 +125,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Gut_TENNO());
     cardsToAdd.add(new LashOut_TENNO());
     cardsToAdd.add(new NotMachineLearning_TENNO());
+    cardsToAdd.add(new Parkour_TENNO());
     cardsToAdd.add(new PlanAhead_TENNO());
     cardsToAdd.add(new PurgeCorruption_TENNO());
     cardsToAdd.add(new RadiantJavelins_TENNO());

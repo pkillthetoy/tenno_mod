@@ -40,16 +40,19 @@ public class DefensiveThrow_TENNO extends CustomCard {
     );
     this.baseDamage = ATTACK_DMG;
     this.baseBlock = BLOCK_AMT;
+    this.isMultiDamage = true;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
     AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn,
         AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     List<AbstractMonster> monsters = AbstractDungeon.getCurrRoom().monsters.monsters;
-    for (int i = 0; i < monsters.size(); i++) {
-      AbstractDungeon.actionManager.addToBottom(
-          new GainBlockAction(p, p, this.block)
-      );
+    for (AbstractMonster monster  : monsters) {
+      if ((!monster.isDead) && (!monster.isDying)) {
+        AbstractDungeon.actionManager.addToBottom(
+            new GainBlockAction(p, p, this.block)
+        );
+      }
     }
   }
 

@@ -131,7 +131,7 @@ public class Tenno extends CustomPlayer {
 
   @Override
   public Color getCardRenderColor() {
-    return Color.GOLD;
+    return Color.YELLOW;
   }
 
   @Override
@@ -144,7 +144,7 @@ public class Tenno extends CustomPlayer {
   }
 
   public Color getCardTrailColor() {
-    return Color.GOLD;
+    return Color.YELLOW;
   }
 
   public int getAscensionMaxHPLoss() {
@@ -182,7 +182,7 @@ public class Tenno extends CustomPlayer {
   }
 
   public Color getSlashAttackColor() {
-    return Color.GOLD;
+    return Color.YELLOW;
   }
 
   @Override

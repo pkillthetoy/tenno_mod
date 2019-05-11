@@ -1,3 +1,13 @@
+### 5/11/2019 - 0.2.1.1
+
+Oops.
+
+* Added Parkour, for real.
+* Fixed Drifting Contact using the wrong image.
+* Tenno's color is now Yellow instead of Gold to avoid this weird issue with potions turning gray.
+* Tweaked Defensive Throw so it doesn't count dead enemies.
+* Defensive Throw now properly has the multidamage tag set.
+
 ### 5/11/2019 - 0.2.1
 
 Lots of changes.
