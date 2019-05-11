@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
+import tenno_mod.TennoMod;
 import tenno_mod.patches.AbstractCardEnum;
 
 public class Cataclysm_TENNO extends CustomCard {
@@ -54,7 +55,7 @@ public class Cataclysm_TENNO extends CustomCard {
     for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
       AbstractDungeon.actionManager.addToBottom(
           new ApplyPowerAction(mo, p,
-              new IntangiblePlayerPower(mo, 1)));
+              new IntangiblePlayerPower(mo, 1), 1));
     }
     AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new VoidCard(), 1));
   }

@@ -184,11 +184,11 @@
   },
   "Flurry_TENNO": {
     "NAME": "Flurry",
-    "DESCRIPTION": "Deal !D! damage. Draw a card. If you draw a skill, reduce its cost by 1."
+    "DESCRIPTION": "Deal !D! damage. Draw a card. If you draw a skill, reduce its cost by 1 this turn."
   },
   "Reposition_TENNO": {
     "NAME": "Reposition",
-    "DESCRIPTION": "Gain !B! Block. Draw a card. If you draw a skill, reduce its cost by 1."
+    "DESCRIPTION": "Gain !B! Block. Draw a card. If you draw a skill, reduce its cost by 1 this turn."
   },
   "SplitChamber_TENNO": {
     "NAME": "Split Chamber",
@@ -360,5 +360,9 @@
   "NAME": "Plan Ahead",
   "DESCRIPTION": "Gain !B! Block. Draw a card. Put a card from your hand onto the top of your draw pile.",
   "UPGRADE_DESCRIPTION":  "Gain !B! Block. Draw !M! cards. Put a card from your hand onto the top of your draw pile."
+},  "NinjaSkills_TENNO": {
+  "NAME": "Tenno Mastery",
+  "DESCRIPTION": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity. NL Every time you play 3 Skills in a single turn, gain 1 Strength.",
+  "UPGRADE_DESCRIPTION": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity. NL Every time you play 3 Skills in a single turn, gain 1 Strength. NL Innate."
 }
 }

@@ -1,3 +1,31 @@
+### 5/10/2019 - 0.2.0.2
+
+Bugfixes: 
+
+Fixed Cataclysm's Intangible not stacking properly on enemies.
+
+Removed Split chamber. Added Tenno Mastery. 2 cost rare power. 3 attacks gives +1 dex, 3 skills gives +1 strength. 
+Upgrades to innate.
+
+Reduced Growing Power cost from 3(2) to 2(1). Tenno has some temporary stat boosts built in, but currently he struggles
+to even match an Inflame in terms of more permanent scaling. 
+
+Potential upcoming changes:
+
+* Hallowed Ground is clunky and likely to be replaced.
+* Void Blast is filler and likely to be replaced. 
+* Finishing Touch will become Finisher (like Silent), but for skills.
+* Add a Void payoff card that reduces its cost (similar to current Finishing Touch)
+* Add more card draw to support the cost reduction subtheme.
+* Add payoffs for having lots of card draw.
+
+Balance notes:
+
+* Linked Narta is a dream to play. Very happy with it.
+* Scaling is overall very slow. The fastest scaling methods available are Embrace the Void + Drink the Kuva,
+and Growing Power + Chromatic blade. But these take a lot of effort and still don't match the scaling available to
+other classes. Might just double the stat gain on these rare powers.  
+
 ### 5/9/2019 - 0.2.0.1
 
 Bugfixes: 

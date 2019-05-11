@@ -145,5 +145,13 @@
       "Whenever you apply a debuff to an enemy, gain #b",
       " Block."
     ]
+  },
+  "NinjaSkillsPower_TENNO": {
+    "NAME": "Tenno Mastery",
+    "DESCRIPTIONS": [
+      "Every time you play 3 #yAttacks in a single turn, gain #b",
+      " Dexterity. Every time you play 3 #ySkills in a single turn, gain #b",
+      " Strength."
+    ]
   }
 }

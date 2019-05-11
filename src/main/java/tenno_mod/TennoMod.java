@@ -102,6 +102,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new ExploitOptions_TENNO());
     cardsToAdd.add(new FallingKick_TENNO());
     cardsToAdd.add(new FlyingShot_TENNO());
+    // Add the skill counterpart to Heavy Slam
     cardsToAdd.add(new HeavySlam_TENNO());
     cardsToAdd.add(new Meditation_TENNO());
     cardsToAdd.add(new PlannedShot_TENNO());
@@ -122,8 +123,10 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new EnergyOrb_TENNO());
     cardsToAdd.add(new ExpertTechnique_TENNO());
     cardsToAdd.add(new FatalTeleport_TENNO());
+    // Replace with finisher-but-for-skills.
     cardsToAdd.add(new FinishingTouch_TENNO());
     cardsToAdd.add(new Flurry_TENNO());
+    // Replace with some other scaling.
     cardsToAdd.add(new HallowedGround_TENNO());
     cardsToAdd.add(new HunterAdrenaline_TENNO());
     cardsToAdd.add(new LashOut_TENNO());
@@ -140,6 +143,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new TransferenceBeam_TENNO());
     cardsToAdd.add(new Versatility_TENNO());
     cardsToAdd.add(new VoidAttunement_TENNO());
+    // Uninteresting. Feels like filler.
     cardsToAdd.add(new VoidBlast_TENNO());
     cardsToAdd.add(new VoidDash_TENNO());
     cardsToAdd.add(new VoidGuard_TENNO());
@@ -160,7 +164,9 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new QuickThinking_TENNO());
     cardsToAdd.add(new Resourcefulness_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
-    cardsToAdd.add(new SplitChamber_TENNO());
+    cardsToAdd.add(new NinjaSkills_TENNO());
+    // Disabled for being too hard to draft for.
+    //cardsToAdd.add(new SplitChamber_TENNO());
     cardsToAdd.add(new UmbralForm_TENNO());
     cardsToAdd.add(new VoidCorruption_TENNO());
     cardsToAdd.add(new VoidRadiance_TENNO());
