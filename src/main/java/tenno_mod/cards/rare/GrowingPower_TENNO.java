@@ -18,7 +18,8 @@ public class GrowingPower_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Power.png";
   private static final int COST = 2;
-  private static final int UPG_COST = 1;
+  private static final int MAGIC_NUMBER = 1;
+  private static final int UPG_MAGIC_NUMBER = 1;
 
   public GrowingPower_TENNO() {
     super(
@@ -32,6 +33,7 @@ public class GrowingPower_TENNO extends CustomCard {
         CardRarity.RARE,
         CardTarget.SELF
     );
+    this.baseMagicNumber = this.magicNumber = MAGIC_NUMBER;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
@@ -39,7 +41,7 @@ public class GrowingPower_TENNO extends CustomCard {
         new ApplyPowerAction(
             p,
             p,
-            new GrowingPowerPower_TENNO(p, 1), 1));
+            new GrowingPowerPower_TENNO(p, this.magicNumber), this.magicNumber));
   }
 
   public AbstractCard makeCopy() {
@@ -49,7 +51,7 @@ public class GrowingPower_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      upgradeBaseCost(UPG_COST);
+      upgradeMagicNumber(UPG_MAGIC_NUMBER);
     }
   }
 }

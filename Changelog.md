@@ -1,3 +1,32 @@
+### 5/11/2019 - 0.2.1
+
+Lots of changes.
+
+New cards:
+
+* New card: Gut. 1 cost uncommon attack. 5(7) damage, draw a card for each debuff on the target.
+* New card: Parkour. 1 cost uncommon power. Draw 1(2) cards when you play a card with reduced cost.
+* New card: Reserves. Unplayable uncommon Skill. Draw 1(2) cards when drawn.
+
+Reworked cards:
+ 
+* Falling Kick now deals damage equal to cards in hand (+3). Internally it's still Exploit options.
+Surely this will not cause any sort of confusion.
+* Finishing Touch now deals 4(6) damage per skill played this turn.
+* Void Blast now deals 18(24) damage and costs 1 less per void exhausted this combat. 
+
+Other card changes: 
+* Embrace the Void now always adds 3 voids but gives 1(2) strength.
+* Growing Power always has 2 cost but gives 1(2) strength.
+* Tenno Mastery no longer upgrades to innate but gives 1(2) strength/dex.
+* Drink the Kuva nerfed to only fill up to 6(8) hand size.
+* Scattershot buffed to 2(3) damage.
+* Void Ignition buffed to 5(8) damage.
+* Umbral Fiber/Howl/Intensify changed to rare rarity just to make them look nicer.
+* Standardized the "debuff matters" cards to not count the Shackled power, similar to how the base game does it.
+This does mean Condition Overload and Gut will effectively lose 1 from their count if you use a strength reduction
+card on something that too much strength, but it's kind of an edge case?
+
 ### 5/10/2019 - 0.2.0.2
 
 Bugfixes: 

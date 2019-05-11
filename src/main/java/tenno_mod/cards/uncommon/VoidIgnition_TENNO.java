@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.VoidAttunementPower_TENNO;
 import tenno_mod.powers.VoidIgnitionPower_TENNO;
 
 public class VoidIgnition_TENNO extends CustomCard {
@@ -20,8 +19,8 @@ public class VoidIgnition_TENNO extends CustomCard {
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Power.png";
   private static final int COST = 1;
-  private static final int MAGIC_NUMBER = 4;
-  private static final int UPG_MAGIC_NUMBER = 6;
+  private static final int MAGIC_NUMBER = 5;
+  private static final int UPG_MAGIC_NUMBER = 3;
 
 
   public VoidIgnition_TENNO() {

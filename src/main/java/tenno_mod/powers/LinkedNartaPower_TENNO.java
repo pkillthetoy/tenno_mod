@@ -40,6 +40,7 @@ public class LinkedNartaPower_TENNO extends AbstractPower {
   public void onUseCard(AbstractCard card, UseCardAction action) {
     AbstractDungeon.actionManager.addToBottom(new DrawCardAction(this.owner, this.amount));
   }
+
   public void atEndOfTurn(boolean isPlayer) {
     if (isPlayer) {
       AbstractDungeon.actionManager.addToBottom(

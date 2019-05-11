@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import tenno_mod.TennoMod;
-import tenno_mod.actions.ArgonCrystalEffectAction;
 
 public class Kuva_TENNO extends CustomRelic {
   public static final String ID = "Kuva_TENNO";

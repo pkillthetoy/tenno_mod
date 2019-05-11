@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.CorrosiveProjectionPower_TENNO;
 import tenno_mod.powers.ResourcefulnessPower_TENNO;
 import tenno_mod.powers.UpgResourcefulnessPower_TENNO;
 

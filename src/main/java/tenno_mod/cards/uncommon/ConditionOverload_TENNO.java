@@ -114,7 +114,8 @@ public class ConditionOverload_TENNO extends CustomCard {
         powers = mo.powers.iterator();
         while (powers.hasNext()) {
           p = (AbstractPower) powers.next();
-          if (p.type == AbstractPower.PowerType.DEBUFF) {
+          if (p.type == AbstractPower.PowerType.DEBUFF && !p.ID.equals(
+              "Shackled")) {
             tmp += this.magicNumber;
             this.isDamageModified = true;
           }

@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.powers.DriftingContactPower_TENNO;
-import tenno_mod.powers.VoidIgnitionPower_TENNO;
 
 public class DriftingContact_TENNO extends CustomCard {
   public static final String ID = "DriftingContact_TENNO";

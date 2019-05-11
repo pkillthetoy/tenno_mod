@@ -12,10 +12,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import tenno_mod.actions.ExhaustVoidFromDrawOrDiscardAction;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.shared.VoidUtils;
 
 import java.util.Iterator;
 

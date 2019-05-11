@@ -1,6 +1,5 @@
 package tenno_mod.cards.common;
 
-import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;

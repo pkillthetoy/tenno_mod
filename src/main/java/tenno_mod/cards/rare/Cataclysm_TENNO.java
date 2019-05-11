@@ -13,8 +13,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
-import com.megacrit.cardcrawl.powers.IntangiblePower;
-import tenno_mod.TennoMod;
 import tenno_mod.patches.AbstractCardEnum;
 
 public class Cataclysm_TENNO extends CustomCard {

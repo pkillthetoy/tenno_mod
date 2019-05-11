@@ -110,7 +110,7 @@
   },
   "GrowingPower_TENNO": {
     "NAME": "Growing Power",
-    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain 1 Strength"
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain !M! Strength"
   },
   "WildFrenzy_TENNO": {
     "NAME": "Wild Frenzy",
@@ -229,9 +229,9 @@
     ]
   },
   "ExploitOptions_TENNO": {
-    "NAME": "Exploit Options",
-    "DESCRIPTION": "Deal damage equal to the number of cards in your hand.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your hand +3.",
+    "NAME": "Falling Kick",
+    "DESCRIPTION": "Deal damage equal to the number of cards in your hand. Draw !M! cards",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! Damage.)"
     ]
@@ -280,7 +280,7 @@
   },
   "VoidBlast_TENNO": {
     "NAME": "Void Blast",
-    "DESCRIPTION": "Deal !D! damage. Add a Void into your discard pile."
+    "DESCRIPTION": "Deal !D! damage. Costs [E] less for each Void exhausted this combat."
   },
   "Snipe_TENNO": {
     "NAME": "Snipe",
@@ -288,7 +288,7 @@
   },
   "EmbraceTheVoid_TENNO": {
     "NAME": "Embrace the Void",
-    "DESCRIPTION": "Whenever you exhaust a Void, gain 1 Strength. Add !M! Voids to your discard pile."
+    "DESCRIPTION": "Whenever you exhaust a Void, gain !M! Strength. Add 3 Voids to your discard pile."
   },
   "ConcealedWeapons_TENNO": {
     "NAME": "Concealed Weapons",
@@ -326,7 +326,12 @@
   },
   "FinishingTouch_TENNO": {
     "NAME": "Finishing Touch",
-    "DESCRIPTION": "Deal !D! damage. Costs [E] less for each Skill played this turn."
+    "DESCRIPTION": "Deal !D! damage for each Skill played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " Skill played.)",
+      " Skills played.)"
+    ]
   },
   "ExpertTechnique_TENNO": {
     "NAME": "Expert Technique",
@@ -354,15 +359,32 @@
   },
   "DrinkTheKuva_TENNO": {
     "NAME": "Drink the Kuva",
-    "DESCRIPTION": "Put Voids in your hand until you have !M! cards in hand. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Fill your hand with Voids. Exhaust."
-  },  "PlanAhead_TENNO": {
-  "NAME": "Plan Ahead",
-  "DESCRIPTION": "Gain !B! Block. Draw a card. Put a card from your hand onto the top of your draw pile.",
-  "UPGRADE_DESCRIPTION":  "Gain !B! Block. Draw !M! cards. Put a card from your hand onto the top of your draw pile."
-},  "NinjaSkills_TENNO": {
-  "NAME": "Tenno Mastery",
-  "DESCRIPTION": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity. NL Every time you play 3 Skills in a single turn, gain 1 Strength.",
-  "UPGRADE_DESCRIPTION": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity. NL Every time you play 3 Skills in a single turn, gain 1 Strength. NL Innate."
-}
+    "DESCRIPTION": "Put Voids in your hand until you have !M! cards in hand. Exhaust."
+  },
+  "PlanAhead_TENNO": {
+    "NAME": "Plan Ahead",
+    "DESCRIPTION": "Gain !B! Block. Draw a card. Put a card from your hand onto the top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Draw !M! cards. Put a card from your hand onto the top of your draw pile."
+  },
+  "NinjaSkills_TENNO": {
+    "NAME": "Tenno Mastery",
+    "DESCRIPTION": "Every time you play 3 Attacks in a single turn, gain !M! Dexterity. NL Every time you play 3 Skills in a single turn, gain !M! Strength."
+  },
+  "Gut_TENNO": {
+    "NAME": "Gut",
+    "DESCRIPTION": "Deal !D! damage. Draw a card for each unique debuff the enemy has."
+  },
+  "Parkour_TENNO": {
+    "NAME": "Parkour",
+    "DESCRIPTION": "Whenever you play a card with reduced cost, draw a card.",
+    "UPG_DESCRIPTION": "Whenever you play a card with reduced cost, draw !M! cards."
+  },
+  "Reserves_TENNO": {
+    "NAME": "Reserves",
+    "DESCRIPTION": "Unplayable. NL When you draw this, draw a card.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you draw this, draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
+  }
 }

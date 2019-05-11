@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawPower;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.CorrosiveProjectionPower_TENNO;
 
 public class NotMachineLearning_TENNO extends CustomCard {
   public static final String ID = "NotMachineLearning_TENNO";

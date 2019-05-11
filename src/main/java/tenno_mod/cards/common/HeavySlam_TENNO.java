@@ -3,7 +3,6 @@ package tenno_mod.cards.common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.utility.DrawPileToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,8 +10,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import tenno_mod.TennoMod;
 import tenno_mod.patches.AbstractCardEnum;
+import tenno_mod.shared.SkillUtils;
 
 public class HeavySlam_TENNO extends CustomCard {
   public static final String ID = "HeavySlam_TENNO";
@@ -59,14 +58,15 @@ public class HeavySlam_TENNO extends CustomCard {
   public void triggerWhenDrawn() {
     super.triggerWhenDrawn();
     hadReducedCost = false;
+    if (SkillUtils.countSkills() > 0) {
+      setCostForTurn(this.costForTurn - ENERGY_COST_REDUCTION);
+      hadReducedCost = true;
+    }
   }
 
   @Override
   public void applyPowers() {
-    if (this.freeToPlayOnce || this.costForTurn == 0) {
-      return;
-    }
-    if (TennoMod.lastCardUsedWasSkill && !hadReducedCost) {
+    if (SkillUtils.countSkills() > 0 && !hadReducedCost) {
       setCostForTurn(this.costForTurn - ENERGY_COST_REDUCTION);
       hadReducedCost = true;
     }

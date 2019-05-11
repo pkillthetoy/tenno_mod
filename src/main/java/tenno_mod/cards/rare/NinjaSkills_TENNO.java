@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.CorrosiveProjectionPower_TENNO;
 import tenno_mod.powers.NinjaSkillsPower_TENNO;
 
 public class NinjaSkills_TENNO extends CustomCard {
@@ -20,6 +19,8 @@ public class NinjaSkills_TENNO extends CustomCard {
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Power.png";
   private static final int COST = 2;
+  private static final int MAGIC_NUMBER = 1;
+  private static final int UPG_MAGIC_NUMBER = 1;
 
   public NinjaSkills_TENNO() {
     super(
@@ -33,6 +34,7 @@ public class NinjaSkills_TENNO extends CustomCard {
         CardRarity.RARE,
         CardTarget.SELF
     );
+    this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
@@ -40,7 +42,7 @@ public class NinjaSkills_TENNO extends CustomCard {
         new ApplyPowerAction(
             p,
             p,
-            new NinjaSkillsPower_TENNO(p, 1), 1));
+            new NinjaSkillsPower_TENNO(p, this.magicNumber), this.magicNumber));
   }
 
   public AbstractCard makeCopy() {
@@ -50,9 +52,7 @@ public class NinjaSkills_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      this.isInnate = true;
-      this.rawDescription = DESCRIPTION_UPG;
-      initializeDescription();
+      upgradeMagicNumber(UPG_MAGIC_NUMBER);
     }
   }
 }

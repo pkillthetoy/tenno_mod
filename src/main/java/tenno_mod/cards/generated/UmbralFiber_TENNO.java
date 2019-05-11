@@ -33,7 +33,7 @@ public class UmbralFiber_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.POWER,
         AbstractCardEnum.TENNO_GENERATED,
-        CardRarity.SPECIAL,
+        CardRarity.RARE,
         CardTarget.SELF
     );
     this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;

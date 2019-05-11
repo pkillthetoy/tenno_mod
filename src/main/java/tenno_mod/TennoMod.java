@@ -40,11 +40,9 @@ import static tenno_mod.patches.AbstractCardEnum.TENNO_GENERATED;
 public class TennoMod implements EditCharactersSubscriber,
     EditCardsSubscriber,
     EditRelicsSubscriber,
-    PostEnergyRechargeSubscriber,
     EditStringsSubscriber,
     EditKeywordsSubscriber,
-    PostPowerApplySubscriber,
-    OnCardUseSubscriber {
+    PostPowerApplySubscriber {
   private static final String MY_CHARACTER_BUTTON = "img/charSelect/TennoButton.png";
   private static final String MARISA_PORTRAIT = "img/charSelect/Excalibur.png";
 
@@ -100,9 +98,7 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new DefensiveThrow_TENNO());
     cardsToAdd.add(new DoubleGuard_TENNO());
     cardsToAdd.add(new ExploitOptions_TENNO());
-    cardsToAdd.add(new FallingKick_TENNO());
     cardsToAdd.add(new FlyingShot_TENNO());
-    // Add the skill counterpart to Heavy Slam
     cardsToAdd.add(new HeavySlam_TENNO());
     cardsToAdd.add(new Meditation_TENNO());
     cardsToAdd.add(new PlannedShot_TENNO());
@@ -123,18 +119,16 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new EnergyOrb_TENNO());
     cardsToAdd.add(new ExpertTechnique_TENNO());
     cardsToAdd.add(new FatalTeleport_TENNO());
-    // Replace with finisher-but-for-skills.
     cardsToAdd.add(new FinishingTouch_TENNO());
     cardsToAdd.add(new Flurry_TENNO());
-    // Replace with some other scaling.
-    cardsToAdd.add(new HallowedGround_TENNO());
     cardsToAdd.add(new HunterAdrenaline_TENNO());
+    cardsToAdd.add(new Gut_TENNO());
     cardsToAdd.add(new LashOut_TENNO());
-    cardsToAdd.add(new LethalTorrent_TENNO());
     cardsToAdd.add(new NotMachineLearning_TENNO());
     cardsToAdd.add(new PlanAhead_TENNO());
     cardsToAdd.add(new PurgeCorruption_TENNO());
     cardsToAdd.add(new RadiantJavelins_TENNO());
+    cardsToAdd.add(new Reserves_TENNO());
     cardsToAdd.add(new Reposition_TENNO());
     cardsToAdd.add(new Scattershot_TENNO());
     cardsToAdd.add(new SelfImprovement_TENNO());
@@ -143,7 +137,6 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new TransferenceBeam_TENNO());
     cardsToAdd.add(new Versatility_TENNO());
     cardsToAdd.add(new VoidAttunement_TENNO());
-    // Uninteresting. Feels like filler.
     cardsToAdd.add(new VoidBlast_TENNO());
     cardsToAdd.add(new VoidDash_TENNO());
     cardsToAdd.add(new VoidGuard_TENNO());
@@ -165,8 +158,6 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new Resourcefulness_TENNO());
     cardsToAdd.add(new RollingGuard_TENNO());
     cardsToAdd.add(new NinjaSkills_TENNO());
-    // Disabled for being too hard to draft for.
-    //cardsToAdd.add(new SplitChamber_TENNO());
     cardsToAdd.add(new UmbralForm_TENNO());
     cardsToAdd.add(new VoidCorruption_TENNO());
     cardsToAdd.add(new VoidRadiance_TENNO());
@@ -232,33 +223,14 @@ public class TennoMod implements EditCharactersSubscriber,
   @Override
   public void receivePostPowerApplySubscriber(AbstractPower power, AbstractCreature target, AbstractCreature source) {
     AbstractPlayer p = AbstractDungeon.player;
-    if ((power.type == AbstractPower.PowerType.DEBUFF) &&
-        (!power.ID.equals("Shackled")) &&
-        (source == p) && (target != p) &&
-        (!target.hasPower("Artifact"))) {
+    if (power.type == AbstractPower.PowerType.DEBUFF &&
+        !power.ID.equals("Shackled") &&
+        source == p && target != p &&
+        !target.hasPower("Artifact")) {
       if (p.hasRelic(PaperLotus_TENNO.ID)) {
         p.getRelic(PaperLotus_TENNO.ID).onTrigger(target);
       }
     }
-  }
-
-  public static boolean lastCardUsedWasSkill = false;
-  public static int skillsThisTurn = 0;
-
-  @Override
-  public void receiveCardUsed(AbstractCard abstractCard) {
-    if (abstractCard.type == AbstractCard.CardType.SKILL) {
-      skillsThisTurn++;
-      lastCardUsedWasSkill = true;
-    } else {
-      lastCardUsedWasSkill = false;
-    }
-  }
-
-  @Override
-  public void receivePostEnergyRecharge() {
-    skillsThisTurn = 0;
-    lastCardUsedWasSkill = false;
   }
 
   private static String loadJson(String jsonPath) {

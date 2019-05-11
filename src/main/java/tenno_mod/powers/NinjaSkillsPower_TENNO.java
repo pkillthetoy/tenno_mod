@@ -38,20 +38,20 @@ public class NinjaSkillsPower_TENNO extends AbstractPower {
 
   public void onAfterCardPlayed(AbstractCard c) {
     if (c.type == AbstractCard.CardType.ATTACK) {
-      attackCount ++;
+      attackCount++;
     }
     if (c.type == AbstractCard.CardType.SKILL) {
-      skillCount ++;
+      skillCount++;
     }
     if (attackCount >= 3) {
-      AbstractDungeon.actionManager.addToTop( new ApplyPowerAction(
+      AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(
           owner,
           owner,
           new DexterityPower(owner, this.amount), this.amount));
       attackCount = 0;
     }
-    if (skillCount>= 3) {
-      AbstractDungeon.actionManager.addToTop( new ApplyPowerAction(
+    if (skillCount >= 3) {
+      AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(
           owner,
           owner,
           new StrengthPower(owner, this.amount), this.amount));
@@ -61,7 +61,7 @@ public class NinjaSkillsPower_TENNO extends AbstractPower {
   }
 
   public void updateDescription() {
-      this.description = (DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2]);
+    this.description = (DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2]);
   }
 }
 

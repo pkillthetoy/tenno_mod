@@ -1,8 +1,6 @@
 package tenno_mod.cards.uncommon;
 
-import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -20,7 +18,8 @@ public class DrinkTheKuva_TENNO extends CustomCard {
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Skill.png";
   private static final int COST = 1;
-  private static final int MAGIC_NUMBER = 7;
+  private static final int MAGIC_NUMBER = 6;
+  private static final int UPG_MAGIC_NUMBER = 2;
 
   public DrinkTheKuva_TENNO() {
     super(
@@ -35,18 +34,12 @@ public class DrinkTheKuva_TENNO extends CustomCard {
         CardTarget.SELF
     );
     this.exhaust = true;
+    this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
-    if(this.upgraded) {
-      AbstractDungeon.actionManager.addToBottom(
-          new DrinkKuvaAction(p, BaseMod.MAX_HAND_SIZE)
-      );
-    } else {
-      AbstractDungeon.actionManager.addToBottom(
-          new DrinkKuvaAction(p, MAGIC_NUMBER)
-      );
-    }
+    AbstractDungeon.actionManager.addToBottom(
+        new DrinkKuvaAction(p, this.magicNumber));
   }
 
   public AbstractCard makeCopy() {
@@ -56,8 +49,7 @@ public class DrinkTheKuva_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      this.rawDescription = DESCRIPTION_UPG;
-      initializeDescription();
+      upgradeMagicNumber(UPG_MAGIC_NUMBER);
     }
   }
 }

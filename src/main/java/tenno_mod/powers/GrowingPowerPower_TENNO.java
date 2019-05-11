@@ -33,9 +33,9 @@ public class GrowingPowerPower_TENNO extends AbstractPower {
   }
 
   public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-    if ((power.type == AbstractPower.PowerType.DEBUFF) && (!power.ID.equals(
-        "Shackled")) && (source == this.owner) && (target != this.owner) &&
-        (!target.hasPower("Artifact"))) {
+    if (power.type == AbstractPower.PowerType.DEBUFF && !power.ID.equals(
+        "Shackled") && source == this.owner && target != this.owner &&
+        !target.hasPower("Artifact")) {
       flash();
       AbstractDungeon.actionManager.addToBottom(
           new ApplyPowerAction(

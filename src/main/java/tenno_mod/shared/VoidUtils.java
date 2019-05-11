@@ -55,6 +55,17 @@ public class VoidUtils {
     return count;
   }
 
+  public static int countExhaustedVoids() {
+    int count = 0;
+    AbstractPlayer p = AbstractDungeon.player;
+
+    for (AbstractCard c : p.exhaustPile.group) {
+      if (isVoid(c)) {
+        count++;
+      }
+    }
+    return count;
+  }
 
   public static int countVoidsInDrawAndDiscard() {
     int count = 0;

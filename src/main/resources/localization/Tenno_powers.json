@@ -153,5 +153,13 @@
       " Dexterity. Every time you play 3 #ySkills in a single turn, gain #b",
       " Strength."
     ]
+  },
+  "ParkourPower_TENNO":
+  {
+    "NAME": "Parkour",
+    "DESCRIPTIONS": [
+      "Whenever you play a card with reduced cost, draw a card.",
+      "Whenever you play a card with reduced cost, draw #b", " cards."
+    ]
   }
 }

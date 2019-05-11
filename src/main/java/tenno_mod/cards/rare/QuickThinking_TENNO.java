@@ -2,8 +2,6 @@ package tenno_mod.cards.rare;
 
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.ExpertiseAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,9 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import tenno_mod.actions.WildFrenzyReduceAction;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.WildFrenzyPower_TENNO;
 
 public class QuickThinking_TENNO extends CustomCard {
   public static final String ID = "QuickThinking_TENNO";

@@ -33,7 +33,7 @@ public class UmbralHowl_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.SKILL,
         AbstractCardEnum.TENNO_GENERATED,
-        CardRarity.SPECIAL,
+        CardRarity.RARE,
         CardTarget.ALL_ENEMY
     );
     this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;

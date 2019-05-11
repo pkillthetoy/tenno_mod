@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.powers.EmbraceTheVoidPower_TENNO;
-import tenno_mod.powers.GrowingPowerPower_TENNO;
 
 public class EmbraceTheVoid_TENNO extends CustomCard {
   public static final String ID = "EmbraceTheVoid_TENNO";
@@ -21,7 +20,7 @@ public class EmbraceTheVoid_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Power.png";
   private static final int COST = 1;
-  private static final int MAGIC_NUMBER = 3;
+  private static final int MAGIC_NUMBER = 1;
   private static final int UPG_MAGIC_NUMBER = 1;
 
   public EmbraceTheVoid_TENNO() {
@@ -44,8 +43,8 @@ public class EmbraceTheVoid_TENNO extends CustomCard {
         new ApplyPowerAction(
             p,
             p,
-            new EmbraceTheVoidPower_TENNO(p, 1), 1));
-    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new VoidCard(), magicNumber));
+            new EmbraceTheVoidPower_TENNO(p, this.magicNumber), this.magicNumber));
+    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new VoidCard(), 3));
   }
 
   public AbstractCard makeCopy() {
