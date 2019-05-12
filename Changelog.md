@@ -1,3 +1,11 @@
+### 5/12/2019 - 0.2.1.2
+
+In which I learn more about Paint.net than I ever wanted.
+
+* Removed some (not all) assets copied from Marisa mod.
+* Tenno now uses Ironclad's energy orbs.
+* Added non-beta art for Nikana.
+
 ### 5/11/2019 - 0.2.1.1
 
 Oops.

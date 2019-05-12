@@ -17,7 +17,7 @@ public class Nikana_TENNO extends CustomRelic {
   private static final int MAGIC_NUMBER = 1;
 
   private static final String IMG = "img/relics/Nikana.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG_OTL = "img/relics/outline/Nikana_s.png";
 
   private int skillCount = 0;
   private int attackCount = 0;
