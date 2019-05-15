@@ -17,7 +17,7 @@ public class DragonNikana_TENNO extends CustomRelic {
   private static final int MAGIC_NUMBER = 2;
 
   private static final String IMG = "img/relics/DragonNikana.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG_OTL = "img/relics/outline/DragonNikana_s.png";
 
   private int skillCount = 0;
   private int attackCount = 0;

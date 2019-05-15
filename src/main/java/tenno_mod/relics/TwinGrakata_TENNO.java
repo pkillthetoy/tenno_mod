@@ -13,8 +13,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class TwinGrakata_TENNO extends CustomRelic {
   public static final String ID = "TwinGrakata_TENNO";
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/TwinGrakata.png";
+  private static final String IMG_OTL = "img/relics/outline/TwinGrakata_s.png";
 
   private boolean activated;
 

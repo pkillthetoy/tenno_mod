@@ -7,8 +7,8 @@ Cards and Relics: Done!
 
 Graphics progress:
 
-* Relics: 1/10
-* Cards: 0/75
+* Relics: 4/10
+* Cards: 0/78
 * Other: 
     * Idle graphic (0/1)
     * Campfire Shoulder view (0/1)

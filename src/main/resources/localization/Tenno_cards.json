@@ -377,7 +377,7 @@
   "Parkour_TENNO": {
     "NAME": "Parkour",
     "DESCRIPTION": "Whenever you play a card with reduced cost, draw a card.",
-    "UPG_DESCRIPTION": "Whenever you play a card with reduced cost, draw !M! cards."
+    "UPGRADE_DESCRIPTION": "Whenever you play a card with reduced cost, draw !M! cards."
   },
   "Reserves_TENNO": {
     "NAME": "Reserves",

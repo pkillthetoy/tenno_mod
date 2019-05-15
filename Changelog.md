@@ -1,3 +1,11 @@
+### 5/14/2019 - 0.2.1.3
+
+* Added 3 more relic images - Dragon Nikana, Kuva, Twin Grakata.
+* Fixed an issue where Parkour's upgraded text wasn't listed properly.
+
+I still don't know what's causing the reported audio crash - I haven't been able to replicate it myself
+(yet), and I'm not sure what in this mod might be causing it. Will investigate more on the weekend.
+
 ### 5/12/2019 - 0.2.1.2
 
 In which I learn more about Paint.net than I ever wanted.

@@ -13,8 +13,8 @@ public class Kuva_TENNO extends CustomRelic {
   public static final String ID = "Kuva_TENNO";
   private static final int HEAL = 2;
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/Kuva.png";
+  private static final String IMG_OTL = "img/relics/outline/Kuva_s.png";
 
   public Kuva_TENNO() {
     super(ID,
