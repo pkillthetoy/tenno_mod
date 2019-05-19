@@ -44,7 +44,7 @@ public class HeavySlam_TENNO extends CustomCard {
         new DamageAction(
             m,
             new DamageInfo(p, this.damage, this.damageTypeForTurn),
-            AbstractGameAction.AttackEffect.BLUNT_LIGHT
+            AbstractGameAction.AttackEffect.BLUNT_HEAVY
         )
     );
   }

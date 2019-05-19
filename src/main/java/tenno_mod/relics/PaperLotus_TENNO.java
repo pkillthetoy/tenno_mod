@@ -19,7 +19,7 @@ public class PaperLotus_TENNO extends CustomRelic {
   private static final int DAMAGE = 3;
 
   private static final String IMG = "img/relics/PaperLotus.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG_OTL = "img/relics/outline/PaperLotus_s.png";
 
   public PaperLotus_TENNO() {
     super(ID,

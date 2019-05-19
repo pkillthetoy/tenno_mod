@@ -21,10 +21,9 @@ public class MaimingStrike_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Beta.png";
   private static final int COST = 1;
+  private static final int UPG_COST = 1;
   private static final int ATTACK_DMG = 7;
-  private static final int UPGRADE_PLUS_DMG = 3;
   private static final int MAGIC_NUMBER = 1;
-  private static final int UPG_MAGIC_NUMBER = 1;
 
   public MaimingStrike_TENNO() {
     super(
@@ -68,8 +67,7 @@ public class MaimingStrike_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      upgradeDamage(UPGRADE_PLUS_DMG);
-      upgradeMagicNumber(UPG_MAGIC_NUMBER);
+      upgradeBaseCost(UPG_COST);
     }
   }
 }

@@ -212,7 +212,7 @@
     "UPGRADE_DESCRIPTION": "Draw two cards. They cost [E] less this combat. Exhaust."
   },
   "Versatility_TENNO": {
-    "NAME": "Versatility ",
+    "NAME": "Versatility",
     "DESCRIPTION": "Gain 1 Strength. Gain 1 Dexterity. Draw a card.",
     "UPGRADE_DESCRIPTION": "Gain 1 Strength. Gain 1 Dexterity. Draw two cards."
   },

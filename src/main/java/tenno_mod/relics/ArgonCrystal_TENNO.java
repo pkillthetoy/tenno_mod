@@ -11,8 +11,8 @@ public class ArgonCrystal_TENNO extends CustomRelic {
   public static final String ID = "ArgonCrystal_TENNO";
   private static final int DAMAGE = 3;
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/ArgonCrystal.png";
+  private static final String IMG_OTL = "img/relics/outline/ArgonCrystal_s.png";
 
   public ArgonCrystal_TENNO() {
     super(ID,

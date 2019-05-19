@@ -19,10 +19,9 @@ public class BulletJump_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Skill.png";
   private static final int COST = 1;
+  private static final int UPG_COST = 0;
   private static final int BLOCK_AMT = 6;
-  private static final int UPGRADE_PLUS_BLOCK = 3;
   private static final int MAGIC_NUMBER = 1;
-  private static final int UPG_MAGIC_NUMBER = 1;
 
   public BulletJump_TENNO() {
     super(
@@ -61,8 +60,7 @@ public class BulletJump_TENNO extends CustomCard {
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      upgradeBlock(UPGRADE_PLUS_BLOCK);
-      upgradeMagicNumber(UPG_MAGIC_NUMBER);
+      upgradeBaseCost(UPG_COST);
     }
   }
 }

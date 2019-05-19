@@ -17,8 +17,8 @@ public class JanusKey_TENNO extends CustomRelic {
   private static final int GAIN_NUMBER = 2;
   private static final int SHUFFLE_NUMBER = 3;
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/JanusKey.png";
+  private static final String IMG_OTL = "img/relics/outline/JanusKey_s.png";
 
   public JanusKey_TENNO() {
     super(ID,

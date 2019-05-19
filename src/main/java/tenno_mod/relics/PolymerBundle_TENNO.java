@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class PolymerBundle_TENNO extends CustomRelic {
   public static final String ID = "PolymerBundle_TENNO";
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/PolymerBundle.png";
+  private static final String IMG_OTL = "img/relics/outline/PolymerBundle_s.png";
 
   public PolymerBundle_TENNO() {
     super(ID,
@@ -27,7 +27,7 @@ public class PolymerBundle_TENNO extends CustomRelic {
   public void onPlayerEndTurn() {
     AbstractPlayer p = AbstractDungeon.player;
     flash();
-    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, p.hand.size()));
+    AbstractDungeon.actionManager.addToTop(new GainBlockAction(p, p, p.hand.size()));
 
   }
 

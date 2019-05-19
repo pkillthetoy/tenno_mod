@@ -33,7 +33,7 @@ public class ScattershotPower_TENNO extends AbstractPower {
   public void atEndOfTurn(boolean isPlayer) {
     if (isPlayer) {
 
-      AbstractDungeon.actionManager.addToBottom(
+      AbstractDungeon.actionManager.addToTop(
           new ScattershotDamageAction(
               AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng),
               new DamageInfo(AbstractDungeon.player, this.amount, DamageInfo.DamageType.THORNS),

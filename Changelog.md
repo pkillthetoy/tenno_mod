@@ -1,3 +1,22 @@
+### 5/18/2019 - 0.2.1.4
+
+Relics!
+
+* Added images for all remaining relics.
+* Cleaned up Marisa mod images from the relics folder.
+
+Balance changes:
+
+* Bullet Jump and Maiming Strike now upgrade from 1 to 0 cost again instead of gaining values. 
+I didn't like how, between them and Transferrence Beam, it was easy to keep an enemy permanently weak 
+and/or vulnerable.
+
+Minor fixes:
+
+* Removed an extra space from the name of Versatility
+* Heavy Slam now uses the heavy blunt effect. 
+* Made Scattershot and Polymer Bundle happen before the "Enemy Turn" popup.
+
 ### 5/14/2019 - 0.2.1.3
 
 * Added 3 more relic images - Dragon Nikana, Kuva, Twin Grakata.

@@ -13,8 +13,8 @@ public class RaktaDarkDagger_TENNO extends CustomRelic {
   public static final String ID = "RaktaDarkDagger_TENNO";
   private static final int MAGIC_NUMBER = 1;
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/RaktaDarkDagger.png";
+  private static final String IMG_OTL = "img/relics/outline/RaktaDarkDagger_s.png";
 
   public RaktaDarkDagger_TENNO() {
     super(ID,

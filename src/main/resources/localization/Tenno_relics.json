@@ -43,7 +43,7 @@
     "NAME": "Argon Crystal",
     "FLAVOR": "An unstable crystal pilfered from the void.",
     "DESCRIPTIONS": [
-      "At the start of your turn, reduce the cost of a random card in your hand by #b1. Increase the cost of another card by #1."
+      "At the start of your turn, reduce the cost of a random card in your hand by #b1. Increase the cost of another card by #b1."
     ]
   },
   "Skiajati_TENNO": {

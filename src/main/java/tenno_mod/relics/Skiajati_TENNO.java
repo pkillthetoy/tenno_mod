@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class Skiajati_TENNO extends CustomRelic {
   public static final String ID = "Skiajati_TENNO";
 
-  private static final String IMG = "img/relics/Beta.png";
-  private static final String IMG_OTL = "img/relics/outline/Hakkero_s.png";
+  private static final String IMG = "img/relics/Skiajati.png";
+  private static final String IMG_OTL = "img/relics/outline/Skiajati_s.png";
 
   public Skiajati_TENNO() {
     super(ID,

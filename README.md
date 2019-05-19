@@ -7,7 +7,7 @@ Cards and Relics: Done!
 
 Graphics progress:
 
-* Relics: 4/10
+* Relics: DONE
 * Cards: 0/78
 * Other: 
     * Idle graphic (0/1)
