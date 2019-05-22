@@ -1,3 +1,14 @@
+### 5/21/2019 - 0.2.1.5
+
+No release, but added the final over-the-shoulder view, marked other character graphics as done
+or skipped.
+
+It's a lot harder than expected to get a good image of Excalibur for this. Lighting in captura
+is very dim, and more importantly, Warframes are much taller and skinnier than Spire characters.
+
+Ironclad is roughly 4 heads high, while Excalibur is 6 heads high even while in a stance - 
+he's probably closer to 7 heads high while standing straight..
+
 ### 5/18/2019 - 0.2.1.4
 
 Relics!

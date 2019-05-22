@@ -10,8 +10,8 @@ Graphics progress:
 * Relics: DONE
 * Cards: 0/78
 * Other: 
-    * Idle graphic (0/1)
-    * Campfire Shoulder view (0/1)
+    * Idle/Dead graphic: SKIPPED
+    * Campfire Shoulder view: DONE
     * Card backgrounds (0/3)
     * Energy Orb (0/1)
 
