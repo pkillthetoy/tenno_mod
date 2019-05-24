@@ -161,7 +161,7 @@
     "DESCRIPTION": "Gain !B! Block. A random Attack in your hand costs [E] less this turn."
   },
   "FlyingShot_TENNO": {
-    "NAME": "Flying Shot",
+    "NAME": "Sliding Shot",
     "DESCRIPTION": "Deal !D! Damage. A random Skill in your hand costs [E] less this turn."
   },
   "CorrosiveProjection_TENNO": {
@@ -216,12 +216,8 @@
     "DESCRIPTION": "Gain 1 Strength. Gain 1 Dexterity. Draw a card.",
     "UPGRADE_DESCRIPTION": "Gain 1 Strength. Gain 1 Dexterity. Draw two cards."
   },
-  "FallingKick_TENNO": {
-    "NAME": "Falling Kick",
-    "DESCRIPTION": "Deal !D! damage. Draw !M! cards."
-  },
   "CombatKnowledge_TENNO": {
-    "NAME": "Combat Knowledge",
+    "NAME": "Handspring",
     "DESCRIPTION": "Gain Block equal to the number of cards in your hand. Draw !M! cards.",
     "UPGRADE_DESCRIPTION": "Gain Block equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [

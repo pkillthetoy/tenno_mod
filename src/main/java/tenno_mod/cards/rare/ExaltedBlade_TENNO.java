@@ -17,7 +17,7 @@ public class ExaltedBlade_TENNO extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Beta.png";
+  public static final String IMG_PATH = "img/cards/ExaltedBlade.png";
   private static final int COST = 1;
   private static final int ATTACK_DMG = 5;
   private static final int UPG_ATTACK_DAMAGE = 2;

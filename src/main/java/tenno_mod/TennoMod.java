@@ -44,7 +44,7 @@ public class TennoMod implements EditCharactersSubscriber,
     EditKeywordsSubscriber,
     PostPowerApplySubscriber {
   private static final String MY_CHARACTER_BUTTON = "img/charSelect/TennoButton.png";
-  private static final String MARISA_PORTRAIT = "img/charSelect/Excalibur.png";
+  private static final String TENNO_PORTRAIT = "img/charSelect/Excalibur.png";
 
   private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
 
@@ -55,15 +55,15 @@ public class TennoMod implements EditCharactersSubscriber,
     logger.info("creating color TENNO_COLOR");
     BaseMod.addColor(TENNO_COLOR,
         Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD,
-        "img/512/bg_attack_MRS_s.png", "img/512/bg_skill_MRS_s.png", "img/512/bg_power_MRS_s.png",
+        "img/512/bg_attack_TENNO.png", "img/512/bg_skill_TENNO.png", "img/512/bg_power_TENNO.png",
         "img/512/card_orb.png",
-        "img/1024/bg_attack_MRS.png", "img/1024/bg_skill_MRS.png", "img/1024/bg_power_MRS.png",
+        "img/1024/bg_attack_TENNO.png", "img/1024/bg_skill_TENNO.png", "img/1024/bg_power_TENNO.png",
         "img/1024/card_orb.png", "img/UI/energyOrb.png");
     BaseMod.addColor(TENNO_GENERATED,
         Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD, Color.GOLD,
-        "img/512/bg_attack_MRS_s.png", "img/512/bg_skill_MRS_s.png", "img/512/bg_power_MRS_s.png",
+        "img/512/bg_attack_TENNO.png", "img/512/bg_skill_TENNO.png", "img/512/bg_power_TENNO.png",
         "img/512/card_orb.png",
-        "img/1024/bg_attack_MRS.png", "img/1024/bg_skill_MRS.png", "img/1024/bg_power_MRS.png",
+        "img/1024/bg_attack_TENNO.png", "img/1024/bg_skill_TENNO.png", "img/1024/bg_power_TENNO.png",
         "img/1024/card_orb.png", "img/UI/energyOrb.png");
 
   }
@@ -75,7 +75,7 @@ public class TennoMod implements EditCharactersSubscriber,
   @Override
   public void receiveEditCharacters() {
     logger.info("adding " + TennoPlayerClassEnum.TENNO);
-    BaseMod.addCharacter(new Tenno("Tenno"), MY_CHARACTER_BUTTON, MARISA_PORTRAIT, TennoPlayerClassEnum.TENNO);
+    BaseMod.addCharacter(new Tenno("Tenno"), MY_CHARACTER_BUTTON, TENNO_PORTRAIT, TennoPlayerClassEnum.TENNO);
 
   }
 

@@ -19,7 +19,7 @@ public class CleansingStrike_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Beta.png";
+  public static final String IMG_PATH = "img/cards/CleansingStrike.png";
   private static final int COST = 1;
   private static final int ATTACK_DMG = 10;
   private static final int UPGRADE_PLUS_DMG = 3;

@@ -1,3 +1,13 @@
+### 5/21/2019 - 0.2.2
+
+Increase the version number to commemmorate graphics kicking into gear.
+
+* Added images for 12 different cards.
+* Added proper yellow backgrounds. 
+* Deleted a ton of old Marisa assets. 
+* Renamed Flying shot to Sliding Shot
+* Renamed Combat Knowledge to Handspring.
+
 ### 5/21/2019 - 0.2.1.5
 
 No release, but added the final over-the-shoulder view, marked other character graphics as done

@@ -29,15 +29,11 @@ import java.util.ArrayList;
 public class Tenno extends CustomPlayer {
   private static final int ENERGY_PER_TURN = 3;
 
-  private static final String TENNO_MAIN = "img/char/Marisa/tennoMain.png"; // main image
-  private static final String TENNO_SHOULDER_2 = "img/char/Marisa/shoulder.png"; // shoulder2 / shoulder_1
-  private static final String TENNO_SHOULDER_1 = "img/char/Marisa/shoulder.png"; // shoulder1 / shoulder_2
-  private static final String TENNO_CORPSE = "img/char/Marisa/tennoMain.png"; // dead corpse
+  private static final String TENNO_MAIN = "img/char/Tenno/tennoMain.png"; // main image
+  private static final String TENNO_SHOULDER_2 = "img/char/Tenno/shoulder.png"; // shoulder2 / shoulder_1
+  private static final String TENNO_SHOULDER_1 = "img/char/Tenno/shoulder.png"; // shoulder1 / shoulder_2
+  private static final String TENNO_CORPSE = "img/char/Tenno/tennoMain.png"; // dead corpse
   public static final Logger logger = LogManager.getLogger(TennoMod.class.getName());
-  //private static final float[] layerSpeeds = { 20.0F, 0.0F, -40.0F, 0.0F, 0.0F, 5.0F, 0.0F, -8.0F, 0.0F, 8.0F };
-  private static final String MARISA_SKELETON_ATLAS = "img/char/Marisa/MarisaModelv3.atlas";// Marisa_v0 / MarisaModel_v02 /MarisaModelv3
-  private static final String MARISA_SKELETON_JSON = "img/char/Marisa/MarisaModelv3.json";
-  private static final String MARISA_ANIMATION = "Idle";// Sprite / Idle
   private static final String[] ORB_TEXTURES = {
       "img/UI/EPanel/layer1.png",
       "img/UI/EPanel/layer2.png",
@@ -62,8 +58,6 @@ public class Tenno extends CustomPlayer {
 
     logger.info("init Tenno");
 
-
-    // TODO: Use non-marisa images and animations.
     initializeClass(
         TENNO_MAIN,
         TENNO_SHOULDER_2, // required call to load textures and setup energy/loadout

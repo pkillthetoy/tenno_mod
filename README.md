@@ -8,7 +8,8 @@ Cards and Relics: Done!
 Graphics progress:
 
 * Relics: DONE
-* Cards: 0/78
+* Cards: 12/78
+* Powers: 0/??
 * Other: 
     * Idle/Dead graphic: SKIPPED
     * Campfire Shoulder view: DONE
