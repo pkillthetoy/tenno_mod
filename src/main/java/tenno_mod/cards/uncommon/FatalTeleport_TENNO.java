@@ -18,7 +18,7 @@ public class FatalTeleport_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Skill.png";
+  public static final String IMG_PATH = "img/cards/FatalTeleport.png";
   private static final int COST = 1;
   private static final int MAGIC_NUMBER = 6;
   private static final int UPG_MAGIC_NUMBER = 2;

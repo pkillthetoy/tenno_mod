@@ -18,7 +18,7 @@ public class ConcealedWeapons_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Beta.png";
+  public static final String IMG_PATH = "img/cards/ConcealedWeapons.png";
   private static final int COST = 2;
   private static final int DAMAGE = 4;
   private static final int UPG_DAMAGE = 2;

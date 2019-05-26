@@ -16,7 +16,7 @@ public class DrinkTheKuva_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Skill.png";
+  public static final String IMG_PATH = "img/cards/DrinkTheKuva.png";
   private static final int COST = 1;
   private static final int MAGIC_NUMBER = 6;
   private static final int UPG_MAGIC_NUMBER = 2;

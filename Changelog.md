@@ -1,3 +1,7 @@
+## 5/26/2019
+
+No release, but by my count we're up to (roughly?) 40 card images. 
+
 ## 5/25/2019
 
 No release. Edited art for some cards to get better framing. 

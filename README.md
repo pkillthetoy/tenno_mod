@@ -8,12 +8,12 @@ Cards and Relics: Done!
 Graphics progress:
 
 * Relics: DONE
-* Cards: 21?/78
+* Cards: 40?/78
 * Powers: 0/??
 * Other: 
     * Idle/Dead graphic: SKIPPED
     * Campfire Shoulder view: DONE
-    * Card backgrounds (0/3)
+    * Card backgrounds DONE
     * Energy Orb (0/1)
 
 Progress will be slow. The current plan is:
