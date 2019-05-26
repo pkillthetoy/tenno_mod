@@ -1,3 +1,8 @@
+## 5/25/2019
+
+No release. Edited art for some cards to get better framing. 
+Added art for more cards. 
+
 ### 5/21/2019 - 0.2.2
 
 Increase the version number to commemmorate graphics kicking into gear.

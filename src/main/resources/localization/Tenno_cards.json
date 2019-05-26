@@ -30,7 +30,7 @@
     "DESCRIPTION": "Deal !D! damage. Add a Void into your discard pile."
   },
   "HeavySlam_TENNO": {
-    "NAME": "Heavy Slam",
+    "NAME": "Heavy Impact",
     "DESCRIPTION": "Deal !D! damage. Costs [E] less if you played a Skill this turn."
   },
   "CleansingStrike_TENNO": {
@@ -241,7 +241,7 @@
     "DESCRIPTION": "Put an Attack and a Skill from your draw pile into your hand. Exhaust."
   },
   "DoubleGuard_TENNO": {
-    "NAME": "Double Guard",
+    "NAME": "Steel Fiber",
     "DESCRIPTION": "Gain !B! Block twice."
   },
   "BlindRage_TENNO": {
