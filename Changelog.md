@@ -1,3 +1,7 @@
+## 5/27/2019
+
+Again no release, but 54 images now? 
+
 ## 5/26/2019
 
 No release, but by my count we're up to (roughly?) 40 card images. 

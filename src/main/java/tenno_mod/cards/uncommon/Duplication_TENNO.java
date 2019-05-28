@@ -16,7 +16,7 @@ public class Duplication_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Skill.png";
+  public static final String IMG_PATH = "img/cards/Duplication.png";
   private static final int COST = 1;
 
   public Duplication_TENNO() {

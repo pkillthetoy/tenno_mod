@@ -8,7 +8,7 @@ Cards and Relics: Done!
 Graphics progress:
 
 * Relics: DONE
-* Cards: 40?/78
+* Cards: 54?/78
 * Powers: 0/??
 * Other: 
     * Idle/Dead graphic: SKIPPED

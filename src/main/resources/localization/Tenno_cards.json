@@ -44,11 +44,11 @@
     "UPGRADE_DESCRIPTION": "Gain !B! Block. Exhaust two Voids from your draw pile or discard pile."
   },
   "TapDodge_TENNO": {
-    "NAME": "Tap Dodge",
+    "NAME": "Feint",
     "DESCRIPTION": "Gain !B! Block. This turn, your next Attack is played twice."
   },
   "BurstStrike_TENNO": {
-    "NAME": "Burst Strike",
+    "NAME": "Blade Testing",
     "DESCRIPTION": "Deal !D! damage. This turn, your next Skill is played twice."
   },
   "DailyLogin_TENNO": {
@@ -144,7 +144,7 @@
     "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Add a Void into your discard pile."
   },
   "EnergyOrb_TENNO": {
-    "NAME": "Energy Orb",
+    "NAME": "Recharge Energy",
     "DESCRIPTION": "Gain [E].",
     "UPGRADE_DESCRIPTION": "Gain [E] [E]."
   },
@@ -183,7 +183,7 @@
     "DESCRIPTION": "Whenever you receive attack damage, reduce the cost of a random card in your hand by 1 at the start of your next turn."
   },
   "Flurry_TENNO": {
-    "NAME": "Flurry",
+    "NAME": "Fury",
     "DESCRIPTION": "Deal !D! damage. Draw a card. If you draw a skill, reduce its cost by 1 this turn."
   },
   "Reposition_TENNO": {
@@ -262,7 +262,7 @@
     "DESCRIPTION": "Gain !B! Block. Gain !M! Artifact."
   },
   "Duplication_TENNO": {
-    "NAME": "Duplication",
+    "NAME": "Flexible Technique",
     "DESCRIPTION": "Choose a card in your hand. Make a copy that costs [E] less.",
     "UPGRADE_DESCRIPTION": "Choose a card in your hand. Make a copy that costs 0."
   },
@@ -371,7 +371,7 @@
     "DESCRIPTION": "Deal !D! damage. Draw a card for each unique debuff the enemy has."
   },
   "Parkour_TENNO": {
-    "NAME": "Parkour",
+    "NAME": "Sprinter",
     "DESCRIPTION": "Whenever you play a card with reduced cost, draw a card.",
     "UPGRADE_DESCRIPTION": "Whenever you play a card with reduced cost, draw !M! cards."
   },

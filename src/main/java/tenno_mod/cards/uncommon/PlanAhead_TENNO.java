@@ -16,7 +16,7 @@ public class PlanAhead_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Skill.png";
+  public static final String IMG_PATH = "img/cards/PlanAhead.png";
   private static final int COST = 1;
   private static final int BLOCK_AMT = 8;
   private static final int UPG_BLOCK_AMT = 3;
