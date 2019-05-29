@@ -1,6 +1,11 @@
 # tenno_mod
 Tenno class mod for Slay the Spire
 
+WARNING: This mod contains spoilers for The Second Dream, The War Within, and The Sacrifice. 
+You probably won't notice if you don't already know what they are.
+
+To be safe, if you see something in this mod you don't recognize or aren't familiar with, don't search for it.
+
 Work in progress. 
 
 Cards and Relics: Done!
@@ -8,7 +13,7 @@ Cards and Relics: Done!
 Graphics progress:
 
 * Relics: DONE
-* Cards: 54?/78
+* Cards: DONE
 * Powers: 0/??
 * Other: 
     * Idle/Dead graphic: SKIPPED

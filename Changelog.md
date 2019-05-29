@@ -1,3 +1,11 @@
+## 5/28/2019 - 0.7.0
+
+All cards finished! A lot of cards have been renamed. 
+
+The art isn't super great for some of them, but I'm just making do with wiki mod images.
+ 
+Version number jumped by a ton because this is nearing completion.
+
 ## 5/27/2019
 
 Again no release, but 54 images now? 

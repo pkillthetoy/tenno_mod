@@ -16,7 +16,7 @@ public class QuickThinking_TENNO extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Skill.png";
+  public static final String IMG_PATH = "img/cards/QuickThinking.png";
   private static final int COST = 1;
   private static final int UPG_COST = 0;
 

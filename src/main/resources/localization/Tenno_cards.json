@@ -52,7 +52,7 @@
     "DESCRIPTION": "Deal !D! damage. This turn, your next Skill is played twice."
   },
   "DailyLogin_TENNO": {
-    "NAME": "Daily Login",
+    "NAME": "Daily Tribute",
     "DESCRIPTION": "Add a random Attack and Skill into your hand. They cost 0 this turn. Exhaust."
   },
   "RollingGuard_TENNO": {
@@ -237,7 +237,7 @@
     "DESCRIPTION": "Whenever you play a card this turn, draw a card."
   },
   "MasterfulCombination_TENNO": {
-    "NAME": "Masterful Combination",
+    "NAME": "Favored Loadout",
     "DESCRIPTION": "Put an Attack and a Skill from your draw pile into your hand. Exhaust."
   },
   "DoubleGuard_TENNO": {
@@ -376,7 +376,7 @@
     "UPGRADE_DESCRIPTION": "Whenever you play a card with reduced cost, draw !M! cards."
   },
   "Reserves_TENNO": {
-    "NAME": "Reserves",
+    "NAME": "Sure Footing",
     "DESCRIPTION": "Unplayable. NL When you draw this, draw a card.",
     "UPGRADE_DESCRIPTION": "Unplayable. NL When you draw this, draw !M! cards.",
     "EXTENDED_DESCRIPTION": [

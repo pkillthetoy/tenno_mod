@@ -165,10 +165,6 @@ public class TennoMod implements EditCharactersSubscriber,
     cardsToAdd.add(new WildFrenzy_TENNO());
 
     // Generated cards
-    cardsToAdd.add(new CuttingPoise_TENNO());
-    cardsToAdd.add(new EqualLaceration_TENNO());
-    cardsToAdd.add(new LancingJustice_TENNO());
-    cardsToAdd.add(new VirtuousSlash_TENNO());
     cardsToAdd.add(new UmbralFiber_TENNO());
     cardsToAdd.add(new UmbralIntensify_TENNO());
     cardsToAdd.add(new UmbralHowl_TENNO());

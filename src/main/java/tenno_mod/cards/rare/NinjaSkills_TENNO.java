@@ -17,7 +17,7 @@ public class NinjaSkills_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String DESCRIPTION_UPG = cardStrings.UPGRADE_DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Power.png";
+  public static final String IMG_PATH = "img/cards/TennoMastery.png";
   private static final int COST = 2;
   private static final int MAGIC_NUMBER = 1;
   private static final int UPG_MAGIC_NUMBER = 1;
