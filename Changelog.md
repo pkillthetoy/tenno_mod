@@ -1,3 +1,10 @@
+## 6/1/2019 - 0.8.0
+
+Finishes the cards. The energy orb will probably come in a few days. 
+
+After that it's just a balance pass unless I want to commission some art for Excal. 
+Seems unlikely. 
+
 ## 5/28/2019 - 0.7.0
 
 All cards finished! A lot of cards have been renamed. 

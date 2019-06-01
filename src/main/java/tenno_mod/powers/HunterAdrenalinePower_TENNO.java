@@ -22,7 +22,7 @@ public class HunterAdrenalinePower_TENNO extends AbstractPower {
     this.amount = lightningAmount;
     updateDescription();
     this.type = PowerType.BUFF;
-    this.img = new Texture("img/powers/uparrow.png");
+    this.img = new Texture("img/powers/hunterAdrenaline.png");
   }
 
   public int onAttacked(DamageInfo info, int damageAmount) {

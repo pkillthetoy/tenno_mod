@@ -21,7 +21,7 @@ public class UpgResourcefulnessPower_TENNO extends AbstractPower {
     this.amount = amount;
     updateDescription();
     this.type = PowerType.BUFF;
-    this.img = new Texture("img/powers/uparrow.png");
+    loadRegion("curiosity");
   }
 
   public void atStartOfTurn() {

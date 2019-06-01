@@ -23,7 +23,7 @@ public class DriftingContactPower_TENNO extends AbstractPower {
     this.amount = amount;
     updateDescription();
     this.type = PowerType.BUFF;
-    this.img = new Texture("img/powers/uparrow.png");
+    this.img = new Texture("img/powers/driftingContact.png");
   }
 
   public void updateDescription() {

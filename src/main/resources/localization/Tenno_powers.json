@@ -156,7 +156,7 @@
   },
   "ParkourPower_TENNO":
   {
-    "NAME": "Parkour",
+    "NAME": "Sprinter",
     "DESCRIPTIONS": [
       "Whenever you play a card with reduced cost, draw a card.",
       "Whenever you play a card with reduced cost, draw #b", " cards."

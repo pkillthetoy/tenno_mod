@@ -24,7 +24,7 @@ public class GrowingPowerPower_TENNO extends AbstractPower {
     this.amount = amount;
     updateDescription();
     this.type = PowerType.BUFF;
-    this.img = new Texture("img/powers/uparrow.png");
+    this.img = new Texture("img/powers/growingPower.png");
   }
 
   public void updateDescription() {

@@ -14,7 +14,7 @@ Graphics progress:
 
 * Relics: DONE
 * Cards: DONE
-* Powers: 0/??
+* Powers: DONE
 * Other: 
     * Idle/Dead graphic: SKIPPED
     * Campfire Shoulder view: DONE

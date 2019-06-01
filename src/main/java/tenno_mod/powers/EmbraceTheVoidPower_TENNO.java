@@ -1,6 +1,7 @@
 
 package tenno_mod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.VoidCard;
@@ -23,7 +24,7 @@ public class EmbraceTheVoidPower_TENNO extends AbstractPower {
     this.owner = owner;
     this.amount = amount;
     updateDescription();
-    loadRegion("darkembrace");
+    this.img = new Texture("img/powers/embraceTheVoid.png");
   }
 
   public void updateDescription() {

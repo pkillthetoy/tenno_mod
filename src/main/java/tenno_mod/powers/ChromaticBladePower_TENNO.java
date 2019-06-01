@@ -28,7 +28,7 @@ public class ChromaticBladePower_TENNO extends AbstractPower {
     this.amount = amount;
     updateDescription();
     this.type = PowerType.BUFF;
-    this.img = new Texture("img/powers/uparrow.png");
+    this.img = new Texture("img/powers/chromaticBlade.png");
   }
 
   public void updateDescription() {
