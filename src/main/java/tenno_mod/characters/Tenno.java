@@ -47,7 +47,7 @@ public class Tenno extends CustomPlayer {
       "img/UI/EPanel/layer4d.png",
       "img/UI/EPanel/layer5d.png"
   };
-  private static final String ORB_VFX = "img/UI/energyRedVFX.png";
+  private static final String ORB_VFX = "img/UI/energyBlueVFX.png";
   private static final float[] LAYER_SPEED =
       {-40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F};
 

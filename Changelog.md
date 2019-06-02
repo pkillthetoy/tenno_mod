@@ -1,3 +1,7 @@
+## 6/1/2019 - 0.9.0
+
+Finished the energy orb. 
+
 ## 6/1/2019 - 0.8.0
 
 Finishes the cards. The energy orb will probably come in a few days. 
