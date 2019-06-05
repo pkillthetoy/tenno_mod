@@ -2,6 +2,7 @@ package tenno_mod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -31,7 +32,7 @@ public class ScattershotPower_TENNO extends AbstractPower {
   }
 
   public void atEndOfTurn(boolean isPlayer) {
-    if (isPlayer) {
+    if (isPlayer && AbstractDungeon.player.hand.size() > 0) {
 
       AbstractDungeon.actionManager.addToTop(
           new ScattershotDamageAction(

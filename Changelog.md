@@ -1,4 +1,12 @@
-## 6/5/2019 - 0.9.1
+## 6/5/2019 - 0.9.1.1
+
+Fixed Cripple being useless.
+
+Nerfed the damage on Void Radiance. It's really strong with a bit of support, should
+still be great. 
+
+Tenno is winding up kind of OP on balance. Void synergy might be a tad easy to come by. Might
+nerf Embrace the Void to shuffle fewer Voids. 
 
 Tenno seems to like shuriken/kunai just as much as Silent, if not more. 
 
