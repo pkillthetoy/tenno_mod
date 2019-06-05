@@ -1,3 +1,15 @@
+## 6/5/2019 - 0.9.1
+
+Tenno seems to like shuriken/kunai just as much as Silent, if not more. 
+
+Shrank power graphics slightly so they're closer to base game power icons. 
+
+Tenno Mastery now applies two powers, showing the number of skills/attacks left to get the stat bonus 
+(similar to how Panache displays cards left). 
+
+Parkour has been changed to draw cards when you play any card that costs 0. It wasn't interacting properly with
+full-fight cost changes like Snecko Eye and Self Improvement. 
+
 ## 6/1/2019 - 0.9.0
 
 Finished the energy orb. 

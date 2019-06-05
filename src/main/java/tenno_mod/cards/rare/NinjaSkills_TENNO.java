@@ -9,7 +9,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
-import tenno_mod.powers.NinjaSkillsPower_TENNO;
+import tenno_mod.powers.TennoMasteryAttackPower_TENNO;
+import tenno_mod.powers.TennoMasterySkillPower_TENNO;
 
 public class NinjaSkills_TENNO extends CustomCard {
   public static final String ID = "NinjaSkills_TENNO";
@@ -42,7 +43,12 @@ public class NinjaSkills_TENNO extends CustomCard {
         new ApplyPowerAction(
             p,
             p,
-            new NinjaSkillsPower_TENNO(p, this.magicNumber), this.magicNumber));
+            new TennoMasterySkillPower_TENNO(p, this.magicNumber), this.magicNumber));
+    AbstractDungeon.actionManager.addToBottom(
+        new ApplyPowerAction(
+            p,
+            p,
+            new TennoMasteryAttackPower_TENNO(p, this.magicNumber), this.magicNumber));
   }
 
   public AbstractCard makeCopy() {

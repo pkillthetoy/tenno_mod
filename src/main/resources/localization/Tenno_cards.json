@@ -372,8 +372,8 @@
   },
   "Parkour_TENNO": {
     "NAME": "Sprinter",
-    "DESCRIPTION": "Whenever you play a card with reduced cost, draw a card.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a card with reduced cost, draw !M! cards."
+    "DESCRIPTION": "Whenever you play a card that costs 0, draw a card.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card that costs 0, draw !M! cards."
   },
   "Reserves_TENNO": {
     "NAME": "Sure Footing",

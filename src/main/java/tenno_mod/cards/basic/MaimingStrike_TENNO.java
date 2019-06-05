@@ -21,7 +21,7 @@ public class MaimingStrike_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/MaimingStrike.png";
   private static final int COST = 1;
-  private static final int UPG_COST = 1;
+  private static final int UPG_COST = 0;
   private static final int ATTACK_DMG = 7;
   private static final int MAGIC_NUMBER = 1;
 

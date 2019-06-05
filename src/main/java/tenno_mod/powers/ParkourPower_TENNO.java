@@ -26,7 +26,7 @@ public class ParkourPower_TENNO extends AbstractPower {
   }
 
   public void onAfterCardPlayed(AbstractCard c) {
-    if ((c.freeToPlayOnce && c.cost != 0) || (c.costForTurn < c.cost)) {
+    if (c.freeToPlayOnce || c.costForTurn == 0) {
       AbstractDungeon.actionManager.addToTop(new DrawCardAction(owner, 1));
     }
   }

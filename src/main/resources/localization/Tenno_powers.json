@@ -146,20 +146,30 @@
       " Block."
     ]
   },
-  "NinjaSkillsPower_TENNO": {
-    "NAME": "Tenno Mastery",
+  "TennoMasteryAttackPower_TENNO": {
+    "NAME": "Attack Mastery",
     "DESCRIPTIONS": [
-      "Every time you play 3 #yAttacks in a single turn, gain #b",
-      " Dexterity. Every time you play 3 #ySkills in a single turn, gain #b",
-      " Strength."
+      "If you play #b",
+      " more #yAttack this turn, gain #b",
+      " Dexterity.",
+      " more #yAttacks this turn, gain #b"
     ]
   },
-  "ParkourPower_TENNO":
-  {
+  "TennoMasterySkillPower_TENNO": {
+    "NAME": "Skill Mastery",
+    "DESCRIPTIONS": [
+      "If you play #b",
+      " more #ySkill this turn, gain #b",
+      " Strength.",
+      " more #ySkills this turn, gain #b"
+    ]
+  },
+  "ParkourPower_TENNO": {
     "NAME": "Sprinter",
     "DESCRIPTIONS": [
-      "Whenever you play a card with reduced cost, draw a card.",
-      "Whenever you play a card with reduced cost, draw #b", " cards."
+      "Whenever you play a card that costs 0, draw a card.",
+      "Whenever you play a card that costs 0, draw #b",
+      " cards."
     ]
   }
 }

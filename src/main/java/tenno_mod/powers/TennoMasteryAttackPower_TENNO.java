@@ -11,57 +11,55 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class NinjaSkillsPower_TENNO extends AbstractPower {
-  public static final String POWER_ID = "NinjaSkillsPower_TENNO";
+public class TennoMasteryAttackPower_TENNO extends AbstractPower {
+  public static final String POWER_ID = "TennoMasteryAttackPower_TENNO";
   private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
   public static final String NAME = powerStrings.NAME;
   public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-  private int skillCount = 0;
-  private int attackCount = 0;
+  private int statGain;
 
-  public NinjaSkillsPower_TENNO(AbstractCreature owner, int amount) {
+  public TennoMasteryAttackPower_TENNO(AbstractCreature owner, int amount) {
     this.name = NAME;
     this.ID = POWER_ID;
     this.owner = owner;
-    this.amount = amount;
+    this.amount = 3;
+    this.statGain = amount;
     updateDescription();
     this.type = PowerType.BUFF;
-    this.img = new Texture("img/powers/tennoMastery.png");
+    this.img = new Texture("img/powers/tennoMasteryAttack.png");
+  }
+
+  public void stackPower(int stackAmount) {
+    this.fontScale = 8.0F;
+    this.statGain += stackAmount;
+    updateDescription();
   }
 
   public void atStartOfTurn() {
-    skillCount = 0;
-    attackCount = 0;
-
+    this.amount = 3;
   }
 
   public void onAfterCardPlayed(AbstractCard c) {
     if (c.type == AbstractCard.CardType.ATTACK) {
-      attackCount++;
+      this.amount--;
+      if (amount == 0) {
+        flash();
+        this.amount = 3;
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(
+            owner,
+            owner,
+            new DexterityPower(owner, this.amount), this.statGain));
+      }
     }
-    if (c.type == AbstractCard.CardType.SKILL) {
-      skillCount++;
-    }
-    if (attackCount >= 3) {
-      AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(
-          owner,
-          owner,
-          new DexterityPower(owner, this.amount), this.amount));
-      attackCount = 0;
-    }
-    if (skillCount >= 3) {
-      AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(
-          owner,
-          owner,
-          new StrengthPower(owner, this.amount), this.amount));
-      skillCount = 0;
-    }
-
   }
 
   public void updateDescription() {
-    this.description = (DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2]);
+    if (this.amount == 1) {
+      this.description = (DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.statGain + DESCRIPTIONS[2]);
+    } else {
+      this.description = (DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[3] + this.statGain + DESCRIPTIONS[2]);
+    }
   }
 }
 
