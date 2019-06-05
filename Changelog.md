@@ -2,6 +2,8 @@
 
 Fixed Cripple being useless.
 
+Fixed Scattershot triggering even on an empty hand.
+
 Nerfed the damage on Void Radiance. It's really strong with a bit of support, should
 still be great. 
 
