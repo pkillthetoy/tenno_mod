@@ -141,7 +141,7 @@
   },
   "VoidDash_TENNO": {
     "NAME": "Void Dash",
-    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Add a Void into your discard pile."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Add a Void into your discard pile."
   },
   "EnergyOrb_TENNO": {
     "NAME": "Recharge Energy",
@@ -218,7 +218,7 @@
   },
   "CombatKnowledge_TENNO": {
     "NAME": "Handspring",
-    "DESCRIPTION": "Gain Block equal to the number of cards in your hand. Draw !M! cards.",
+    "DESCRIPTION": "Gain Block equal to the number of cards in your hand. Draw a card.",
     "UPGRADE_DESCRIPTION": "Gain Block equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)"
@@ -226,7 +226,7 @@
   },
   "ExploitOptions_TENNO": {
     "NAME": "Falling Kick",
-    "DESCRIPTION": "Deal damage equal to the number of cards in your hand. Draw !M! cards",
+    "DESCRIPTION": "Deal damage equal to the number of cards in your hand. Draw a card.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! Damage.)"
@@ -355,7 +355,8 @@
   },
   "DrinkTheKuva_TENNO": {
     "NAME": "Drink the Kuva",
-    "DESCRIPTION": "Put Voids in your hand until you have !M! cards in hand. Exhaust."
+    "DESCRIPTION": "Put X Voids in your hand.",
+    "UPGRADE_DESCRIPTION": "Put X+1 Voids in your hand."
   },
   "PlanAhead_TENNO": {
     "NAME": "Plan Ahead",

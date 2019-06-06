@@ -1,4 +1,23 @@
-## 6/5/2019 - 0.9.1.1
+## 6/5/2019 - 0.9.2
+
+Look at that, an actual balance pass!
+
+Card changes:
+* Drink the Kuva is now an X-cost card that does not exhaust, and puts X(+1) voids into your hand. 
+* Handspring and Falling Kick both now only draw 1 card unupgraded.
+* Flurry and Reposition moved to common. Damage/block nerfed by 1. 
+* Quick Slice and Quick Guard moved to uncommon.
+* Covert Lethality increased to 3 energy. Increased to 20(27) damage.
+* Embrace the Void increased to 3 energy. Strength gain increased to 2(3) per void.
+
+Bug fixes:
+* Changed Covert Lethality being improperly marked as multi-target.
+* Changed Cleaving Whirlwind being not marked as multi-target. 
+
+Other:
+* Rakta Dark Dagger now grants energy faster and is overall smoother. 
+
+## 6/4/2019 - 0.9.1.1
 
 Fixed Cripple being useless.
 

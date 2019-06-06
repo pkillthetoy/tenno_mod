@@ -46,8 +46,8 @@ public class RaktaDarkDagger_TENNO extends CustomRelic {
     if (ATTACK && SKILL && this.activated) {
       flash();
       this.activated = false;
-      AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-      AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
+      AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+      AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
       stopPulse();
     }
   }

@@ -19,9 +19,9 @@ public class CovertLethality_TENNO extends CustomCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/CovertLethality.png";
-  private static final int COST = 2;
-  private static final int ATTACK_DMG = 16;
-  private static final int UPGRADE_PLUS_DMG = 6;
+  private static final int COST = 3;
+  private static final int ATTACK_DMG = 20;
+  private static final int UPGRADE_PLUS_DMG = 7;
 
   public CovertLethality_TENNO() {
     super(
@@ -36,7 +36,6 @@ public class CovertLethality_TENNO extends CustomCard {
         CardTarget.ENEMY
     );
     this.baseDamage = ATTACK_DMG;
-    this.isMultiDamage = true;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
@@ -56,7 +55,6 @@ public class CovertLethality_TENNO extends CustomCard {
     if (cullCheck(m)) {
       AbstractDungeon.actionManager.addToBottom(new CullingAction(m));
     }
-
   }
 
   public AbstractCard makeCopy() {

@@ -1,7 +1,7 @@
-package tenno_mod.cards.common;
+package tenno_mod.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,47 +10,47 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class QuickGuard_TENNO extends CustomCard {
-  public static final String ID = "QuickGuard_TENNO";
+public class QuickSlash_TENNO extends CustomCard {
+  public static final String ID = "QuickSlash_TENNO";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/QuickGuard.png";
+  public static final String IMG_PATH = "img/cards/QuickSlash.png";
   private static final int COST = 0;
-  private static final int BLOCK_AMT = 1;
+  private static final int ATTACK_DMG = 2;
 
-  private static final int UPGRADE_PLUS_BLOCK = 2;
+  private static final int UPGRADE_PLUS_DMG = 2;
 
-  public QuickGuard_TENNO() {
+  public QuickSlash_TENNO() {
     super(
         ID,
         NAME,
         IMG_PATH,
         COST,
         DESCRIPTION,
-        CardType.SKILL,
+        CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.COMMON,
-        CardTarget.SELF
+        CardRarity.UNCOMMON,
+        CardTarget.ENEMY
     );
-    this.baseBlock = BLOCK_AMT;
+    this.baseDamage = ATTACK_DMG;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {
-    AbstractDungeon.actionManager.addToBottom(
-        new GainBlockAction(p, p, this.block)
-    );
+    AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
+        new com.megacrit.cardcrawl.cards.DamageInfo(p, this.damage, this.damageTypeForTurn),
+        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DrawCardAction(p, 1));
   }
 
   public AbstractCard makeCopy() {
-    return new QuickGuard_TENNO();
+    return new QuickSlash_TENNO();
   }
 
   public void upgrade() {
     if (!this.upgraded) {
       upgradeName();
-      upgradeBlock(UPGRADE_PLUS_BLOCK);
+      upgradeDamage(UPGRADE_PLUS_DMG);
     }
   }
 }

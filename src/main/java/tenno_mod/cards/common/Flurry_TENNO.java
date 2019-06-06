@@ -1,4 +1,4 @@
-package tenno_mod.cards.uncommon;
+package tenno_mod.cards.common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -20,7 +20,7 @@ public class Flurry_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/Flurry.png";
   private static final int COST = 1;
-  private static final int ATTACK_DMG = 9;
+  private static final int ATTACK_DMG = 8;
   private static final int UPGRADE_PLUS_DMG = 3;
 
 
@@ -33,7 +33,7 @@ public class Flurry_TENNO extends CustomCard {
         DESCRIPTION,
         CardType.ATTACK,
         AbstractCardEnum.TENNO_COLOR,
-        CardRarity.UNCOMMON,
+        CardRarity.COMMON,
         CardTarget.ENEMY
     );
     this.baseDamage = ATTACK_DMG;

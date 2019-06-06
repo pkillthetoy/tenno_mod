@@ -37,6 +37,7 @@ public class CleavingWhirlwind_TENNO extends CustomCard {
         CardTarget.ALL_ENEMY
     );
     this.baseDamage = ATTACK_DMG;
+    this.isMultiDamage = true;
   }
 
   public void use(AbstractPlayer p, AbstractMonster m) {

@@ -8,20 +8,20 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import tenno_mod.actions.DrawAndReduceAction;
 import tenno_mod.patches.AbstractCardEnum;
 
-public class Reposition_TENNO extends CustomCard {
-  public static final String ID = "Reposition_TENNO";
+public class QuickGuard_TENNO extends CustomCard {
+  public static final String ID = "QuickGuard_TENNO";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-  public static final String IMG_PATH = "img/cards/Reposition.png";
-  private static final int COST = 1;
-  private static final int BLOCK_AMT = 8;
-  private static final int UPGRADE_PLUS_BLOCK = 3;
+  public static final String IMG_PATH = "img/cards/QuickGuard.png";
+  private static final int COST = 0;
+  private static final int BLOCK_AMT = 1;
 
-  public Reposition_TENNO() {
+  private static final int UPGRADE_PLUS_BLOCK = 2;
+
+  public QuickGuard_TENNO() {
     super(
         ID,
         NAME,
@@ -40,11 +40,11 @@ public class Reposition_TENNO extends CustomCard {
     AbstractDungeon.actionManager.addToBottom(
         new GainBlockAction(p, p, this.block)
     );
-    AbstractDungeon.actionManager.addToBottom(new DrawAndReduceAction(p, CardType.ATTACK));
+    AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DrawCardAction(p, 1));
   }
 
   public AbstractCard makeCopy() {
-    return new Reposition_TENNO();
+    return new QuickGuard_TENNO();
   }
 
   public void upgrade() {

@@ -17,8 +17,8 @@ public class PurgeCorruption_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/PurgeCorruption.png";
   private static final int COST = 1;
-  private static final int BLOCK_AMT = 4;
-  private static final int UPG_BLOCK_AMT = 1;
+  private static final int BLOCK_AMT = 6;
+  private static final int UPG_BLOCK_AMT = 2;
 
   public PurgeCorruption_TENNO() {
     super(
