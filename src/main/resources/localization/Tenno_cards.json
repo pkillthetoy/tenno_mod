@@ -218,7 +218,7 @@
   },
   "CombatKnowledge_TENNO": {
     "NAME": "Handspring",
-    "DESCRIPTION": "Gain Block equal to the number of cards in your hand. Draw a card.",
+    "DESCRIPTION": "Gain Block equal to the number of cards in your hand. Draw !M! cards.",
     "UPGRADE_DESCRIPTION": "Gain Block equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)"
@@ -226,7 +226,7 @@
   },
   "ExploitOptions_TENNO": {
     "NAME": "Falling Kick",
-    "DESCRIPTION": "Deal damage equal to the number of cards in your hand. Draw a card.",
+    "DESCRIPTION": "Deal damage equal to the number of cards in your hand. Draw !M! cards.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your hand +3. Draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! Damage.)"

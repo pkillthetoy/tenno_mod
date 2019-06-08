@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tenno_mod.TennoMod;
+import tenno_mod.cards.basic.BulletJump_TENNO;
 import tenno_mod.patches.AbstractCardEnum;
 import tenno_mod.patches.TennoPlayerClassEnum;
 import tenno_mod.relics.Nikana_TENNO;
@@ -130,7 +131,7 @@ public class Tenno extends CustomPlayer {
 
   @Override
   public AbstractCard getStartCardForEvent() {
-    return null;
+    return new BulletJump_TENNO();
   }
 
   public String getTitle(PlayerClass playerClass) {

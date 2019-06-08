@@ -17,7 +17,7 @@ public class QuickGuard_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/QuickGuard.png";
   private static final int COST = 0;
-  private static final int BLOCK_AMT = 1;
+  private static final int BLOCK_AMT = 2;
 
   private static final int UPGRADE_PLUS_BLOCK = 2;
 

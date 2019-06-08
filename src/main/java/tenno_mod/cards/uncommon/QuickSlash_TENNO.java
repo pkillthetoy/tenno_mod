@@ -17,9 +17,9 @@ public class QuickSlash_TENNO extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String IMG_PATH = "img/cards/QuickSlash.png";
   private static final int COST = 0;
-  private static final int ATTACK_DMG = 2;
+  private static final int ATTACK_DMG = 3;
 
-  private static final int UPGRADE_PLUS_DMG = 2;
+  private static final int UPGRADE_PLUS_DMG = 3;
 
   public QuickSlash_TENNO() {
     super(

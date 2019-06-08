@@ -1,3 +1,20 @@
+## 6/8/2019 - 1.0.0
+
+Found the biggest source of imbalance. 
+
+* Nikana now only gives Str/Dex for the first Skill/Attack played each turn. 
+* Dragon Nikana gives 1 Str/Dex, down from 2 (matches old Nikana)
+
+As a result:
+
+* Falling Kick and Handspring back up to 2 cards drawn.
+* Quick Guard buffed to 2(4) block and Quick Slash buffed to 3(6) damage, making them functionally
+identical to Finesse and Flash of Steel. 
+
+With these changes, Tenno now feels pretty in line with the base game characters, with his own vulnerabiliites. 
+No more of him just breezing through acts without taking a lick of damage, off the back of absurd amounts of Str/Dex 
+gain.
+
 ## 6/5/2019 - 0.9.2
 
 Look at that, an actual balance pass!

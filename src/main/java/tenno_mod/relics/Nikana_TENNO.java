@@ -29,19 +29,19 @@ public class Nikana_TENNO extends CustomRelic {
   }
 
   public String getUpdatedDescription() {
-    return this.DESCRIPTIONS[0] + MAGIC_NUMBER + this.DESCRIPTIONS[1] + MAGIC_NUMBER + this.DESCRIPTIONS[2];
+    return this.DESCRIPTIONS[0] + MAGIC_NUMBER + this.DESCRIPTIONS[1];
   }
 
   public void onUseCard(AbstractCard card, UseCardAction action) {
     AbstractPlayer p = AbstractDungeon.player;
-    if (card.type == AbstractCard.CardType.SKILL) {
+    if (card.type == AbstractCard.CardType.SKILL && skillCount == 0) {
       flash();
       AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(p, this));
       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
           p, p, new StrengthPower(p, MAGIC_NUMBER), MAGIC_NUMBER));
       skillCount++;
     }
-    if (card.type == AbstractCard.CardType.ATTACK) {
+    if (card.type == AbstractCard.CardType.ATTACK && attackCount == 0) {
       flash();
       AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(p, this));
       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
@@ -51,7 +51,6 @@ public class Nikana_TENNO extends CustomRelic {
   }
 
   public void atTurnStart() {
-    AbstractPlayer p = AbstractDungeon.player;
     removeStrength();
     removeDex();
 

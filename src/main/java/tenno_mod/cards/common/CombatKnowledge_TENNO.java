@@ -20,8 +20,7 @@ public class CombatKnowledge_TENNO extends CustomCard {
   public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
   public static final String IMG_PATH = "img/cards/CombatKnowledge.png";
   private static final int COST = 1;
-  private static final int MAGIC_NUMBER = 1;
-  private static final int UPG_MAGIC_NUMBER = 1;
+  private static final int MAGIC_NUMBER = 2;
 
   public CombatKnowledge_TENNO() {
     super(
@@ -72,7 +71,6 @@ public class CombatKnowledge_TENNO extends CustomCard {
     if (!this.upgraded) {
       upgradeName();
       upgradeBlock(3);
-      upgradeMagicNumber(UPG_MAGIC_NUMBER);
       this.rawDescription = UPGRADE_DESCRIPTION;
       initializeDescription();
     }
